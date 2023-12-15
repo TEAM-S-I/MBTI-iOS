@@ -13,8 +13,8 @@ extension Color {
     static let black = Color("000000")
     static let red = Color("F72416")
 
-    static let main100 = Color( "FFFCF8")
-    static let main300 = Color( "DEC4AD")
+    static let main100 = Color("FFFCF8")
+    static let main300 = Color("DEC4AD")
     static let main800 = Color("453D35")
 
     static let gray100 = Color("F1F1F1")
