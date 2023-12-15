@@ -14,18 +14,34 @@ struct HomeView: View {
                 Spacer()
                 VStack {
                     Spacer()
-                    
-                    Button {
-                        print("Hello!")
-                    } label: {
-                        Text("Hello")
-                    }
-                    
+                
+                    Text("Hello 반갑습니다")
+                        .font(.title)
+                
+                    Text("Hello 반갑습니다")
+                        .font(.subtitle)
+                
+                    Text("Hello 반갑습니다")
+                        .font(.body)
+                
+                    Text("Hello 반갑습니다")
+                        .font(.label)
+                
+                    Text("Hello 반갑습니다")
+                        .font(.caption)
                     Spacer()
                 }
                 Spacer()
             }
         }
         .background(Color.main100)
+        .onAppear {
+            for family: String in UIFont.familyNames {
+                print(family)
+                for names: String in UIFont.fontNames(forFamilyName: family) {
+                    print("=== \(names)")
+                }
+            }
+        }
     }
 }
