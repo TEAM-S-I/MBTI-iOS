@@ -20,6 +20,8 @@ struct TestView: View {
                     VStack {
                         Spacer()
                         
+                        MbtiLogo()
+                        
                         MbtiTextField("이름을 입력해주세yo", text: $testText)
                         MbtiTextField("이름을 입력해주세yo", text: $testText, type: .topRadius)
                         MbtiTextField("이름을 입력해주세yo", text: $testText, type: .bottomRadius)
