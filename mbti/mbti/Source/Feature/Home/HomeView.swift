@@ -14,6 +14,11 @@ struct HomeView: View {
                 Spacer()
                 VStack {
                     Spacer()
+                    
+                    NameCircle("이진수", type: .blue)
+                    NameCircle("이진수", type: .yellow)
+                    NameCircle("이진수", type: .salmon)
+                    NameCircle("이진수", type: .green)
                     MbtiButton("Test") {
                         print("Hello World!")
                     }
