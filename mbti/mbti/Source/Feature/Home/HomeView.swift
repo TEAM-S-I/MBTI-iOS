@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var testText: String = ""
+    
     var body: some View {
         GeometryReader { geo in
             HStack {
                 Spacer()
-                VStack {
+                ScrollView {
                     Spacer()
+                    
+                    MbtiTextField("이름을 입력해주세yo", text: $testText)
                     
                     NameCircle("이진수", type: .blue)
                     NameCircle("이진수", type: .yellow)
