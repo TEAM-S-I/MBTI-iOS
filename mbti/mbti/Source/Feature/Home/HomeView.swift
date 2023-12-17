@@ -14,6 +14,10 @@ struct HomeView: View {
                 Spacer()
                 VStack {
                     Spacer()
+                    
+                    MbtiLogoImage(type: .small, renderingMode: .template)
+                        .foregroundColor(Color.main300)
+                    MbtiLogoImage(type: .normal)
                     MbtiLogoImage(type: .big)
                 
                     Text("Hello 반갑습니다")

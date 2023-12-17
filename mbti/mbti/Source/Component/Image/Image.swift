@@ -10,35 +10,40 @@ import SwiftUI
 struct MbtiLogoImage: View {
     
     let type: MbtiLogoType
+    let renderingMode: Image.TemplateRenderingMode
+    
+    init(type: MbtiLogoType,
+         renderingMode: Image.TemplateRenderingMode = .original) {
+        self.type = type
+        self.renderingMode = renderingMode
+    }
     
     var body: some View {
         
+        let size = type.size()
+        
         Image("MbtiLogo")
             .resizable()
-            .frame(width: type.width(), height: type.height())
+            .renderingMode(renderingMode)
+            .frame(width: size.0, height: size.1)
     }
 }
 
 
 enum MbtiLogoType {
     case small
+    case normal
     case big
     
-    func width() -> CGFloat {
+    func size() -> (CGFloat, CGFloat) {
         switch self {
         case .small:
-            88
+            (46, 16)
+        case .normal:
+            (88, 31)
         case .big:
-            108
+            (108, 38)
         }
-    }
-    
-    func height() -> CGFloat {
-        switch self {
-        case .small :
-            31
-        case .big :
-            38
     }
     
 }
