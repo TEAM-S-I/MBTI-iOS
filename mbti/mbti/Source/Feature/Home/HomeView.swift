@@ -16,19 +16,20 @@ struct HomeView: View {
                     Spacer()
                 
                     Text("Hello 반갑습니다")
-                        .font(.title)
+                        .foregroundColor(Color.main300)
+                        .applyFontStyle(.title)
                 
                     Text("Hello 반갑습니다")
-                        .font(.subtitle)
+                        .applyFontStyle(.subtitle)
                 
                     Text("Hello 반갑습니다")
-                        .font(.body)
+                        .applyFontStyle(.body)
                 
                     Text("Hello 반갑습니다")
-                        .font(.label)
+                        .applyFontStyle(.label)
                 
                     Text("Hello 반갑습니다")
-                        .font(.caption)
+                        .applyFontStyle(.caption)
                     Spacer()
                 }
                 Spacer()
