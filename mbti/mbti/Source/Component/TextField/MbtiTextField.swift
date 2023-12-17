@@ -11,13 +11,18 @@ struct MbtiTextField: View {
     
     let hint: String
     let text: Binding<String>
+    let type: MbtiTextFieldType
     
-    init(_ hint: String = "", text: Binding<String>) {
+    init(_ hint: String = "",
+         text: Binding<String>,
+         type: MbtiTextFieldType = .normal) {
         self.hint = hint
         self.text = text
+        self.type = type
     }
     
     var body: some View {
+        let radius = type.radius()
         TextField("",
                   text: text,
                   prompt: 

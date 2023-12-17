@@ -15,6 +15,8 @@
 		4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */; };
 		4DD2BF9A2B2F212A00A732CD /* AddCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF992B2F212A00A732CD /* AddCircleButton.swift */; };
 		4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF9C2B2F22CA00A732CD /* MbtiTextField.swift */; };
+		4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF9E2B2F26AD00A732CD /* MbtiTextFieldType.swift */; };
+		4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA12B2F2B9F00A732CD /* TestView.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCircleType.swift; sourceTree = "<group>"; };
 		4DD2BF992B2F212A00A732CD /* AddCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCircleButton.swift; sourceTree = "<group>"; };
 		4DD2BF9C2B2F22CA00A732CD /* MbtiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiTextField.swift; sourceTree = "<group>"; };
+		4DD2BF9E2B2F26AD00A732CD /* MbtiTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiTextFieldType.swift; sourceTree = "<group>"; };
+		4DD2BFA12B2F2B9F00A732CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -119,8 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				4DD2BF9C2B2F22CA00A732CD /* MbtiTextField.swift */,
+				4DD2BF9E2B2F26AD00A732CD /* MbtiTextFieldType.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		4DD2BFA02B2F2B9600A732CD /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2BFA12B2F2B9F00A732CD /* TestView.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		4DF0D1DE2B2C0CCC0065387A = {
@@ -173,6 +186,7 @@
 		4DF0D1F92B2C0D0C0065387A /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2BFA02B2F2B9600A732CD /* Test */,
 				4DF0D1FC2B2C0DCD0065387A /* Home */,
 				4DF0D1FD2B2C0DD70065387A /* Match */,
 				4DF0D1FE2B2C0DEE0065387A /* Result */,
@@ -356,7 +370,9 @@
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
+				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
+				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct mbtiApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            TestView()
         }
     }
 }
