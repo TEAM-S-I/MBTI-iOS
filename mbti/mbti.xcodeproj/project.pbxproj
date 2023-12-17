@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD2BF892B2F116200A732CD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF882B2F116200A732CD /* Image.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DD2BF882B2F116200A732CD /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DD2BF872B2F115A00A732CD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2BF882B2F116200A732CD /* Image.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		4DF0D1DE2B2C0CCC0065387A = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2BF872B2F115A00A732CD /* Image */,
 				4DF0D2312B2C33BF0065387A /* Text */,
 				4DF0D2092B2C0F190065387A /* Theme */,
 			);
@@ -277,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
+				4DD2BF892B2F116200A732CD /* Image.swift in Sources */,
 				4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */,
 				4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */,
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
