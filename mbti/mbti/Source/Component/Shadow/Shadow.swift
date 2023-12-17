@@ -18,9 +18,17 @@ extension View {
     
     func shadow2() -> some View {
         self.shadow(
-            color: Color("#EEBBBBBB"),
+            color: Color("#241708").opacity(0.04),
+            radius: 20,
+            y: -8
+        )
+    }
+    
+    func colorShadow(color: Color) -> some View {
+        self.shadow(
+            color: color.opacity(0.15),
             radius: 8,
-            y: 3
+            y: 4
         )
     }
 }
