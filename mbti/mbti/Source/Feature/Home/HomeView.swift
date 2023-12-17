@@ -14,6 +14,12 @@ struct HomeView: View {
                 Spacer()
                 VStack {
                     Spacer()
+                    MbtiButton("Test") {
+                        print("Hello World!")
+                    }
+                    MbtiTransparentButton("Test") {
+                        
+                    }
                     
                     MbtiLogoImage(type: .small, renderingMode: .template)
                         .foregroundColor(Color.main300)
