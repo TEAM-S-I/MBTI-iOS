@@ -54,16 +54,6 @@
 		4DF0D2032B2C0EA20065387A /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		4DF0D2052B2C0EA60065387A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		4DF0D20A2B2C0F230065387A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		4DF0D20D2B2C309D0065387A /* 강원교육모두 Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육모두 Bold.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육모두 Bold.otf"; sourceTree = "<group>"; };
-		4DF0D20E2B2C309D0065387A /* 강원교육현옥샘.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육현옥샘.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육현옥샘.otf"; sourceTree = "<group>"; };
-		4DF0D20F2B2C309D0065387A /* 강원교육모두 Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육모두 Light.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육모두 Light.otf"; sourceTree = "<group>"; };
-		4DF0D2102B2C309D0065387A /* 강원교육튼튼.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육튼튼.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육튼튼.otf"; sourceTree = "<group>"; };
-		4DF0D2112B2C309D0065387A /* 강원교육새음.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육새음.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육새음.otf"; sourceTree = "<group>"; };
-		4DF0D2182B2C310B0065387A /* 강원교육튼튼.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육튼튼.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육튼튼.otf"; sourceTree = "<group>"; };
-		4DF0D2192B2C310B0065387A /* 강원교육모두 Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육모두 Light.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육모두 Light.otf"; sourceTree = "<group>"; };
-		4DF0D21A2B2C310B0065387A /* 강원교육모두 Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육모두 Bold.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육모두 Bold.otf"; sourceTree = "<group>"; };
-		4DF0D21B2B2C310B0065387A /* 강원교육현옥샘.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육현옥샘.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육현옥샘.otf"; sourceTree = "<group>"; };
-		4DF0D21C2B2C310B0065387A /* 강원교육새음.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "강원교육새음.otf"; path = "../../../../../../../Downloads/ê° ì êµ ì ¡ ì ì²´(5ì¢ )_OTF(MACì ©)(1)/강원교육새음.otf"; sourceTree = "<group>"; };
 		4DF0D2222B2C312D0065387A /* GangwonEduAll-OTFLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduAll-OTFLight.otf"; sourceTree = "<group>"; };
 		4DF0D2262B2C312D0065387A /* GangwonEduAll-OTFBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduAll-OTFBold.otf"; sourceTree = "<group>"; };
 		4DF0D2322B2C33C20065387A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -217,16 +207,6 @@
 		4DF0D1FA2B2C0D140065387A /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4DF0D21A2B2C310B0065387A /* 강원교육모두 Bold.otf */,
-				4DF0D2192B2C310B0065387A /* 강원교육모두 Light.otf */,
-				4DF0D21C2B2C310B0065387A /* 강원교육새음.otf */,
-				4DF0D2182B2C310B0065387A /* 강원교육튼튼.otf */,
-				4DF0D21B2B2C310B0065387A /* 강원교육현옥샘.otf */,
-				4DF0D20D2B2C309D0065387A /* 강원교육모두 Bold.otf */,
-				4DF0D20F2B2C309D0065387A /* 강원교육모두 Light.otf */,
-				4DF0D2112B2C309D0065387A /* 강원교육새음.otf */,
-				4DF0D2102B2C309D0065387A /* 강원교육튼튼.otf */,
-				4DF0D20E2B2C309D0065387A /* 강원교육현옥샘.otf */,
 			);
 			path = Service;
 			sourceTree = "<group>";
