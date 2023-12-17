@@ -13,6 +13,7 @@
 		4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF912B2F17DA00A732CD /* Shadow.swift */; };
 		4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF942B2F1E7300A732CD /* NameCircle.swift */; };
 		4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */; };
+		4DD2BF9A2B2F212A00A732CD /* AddCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF992B2F212A00A732CD /* AddCircleButton.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		4DD2BF912B2F17DA00A732CD /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		4DD2BF942B2F1E7300A732CD /* NameCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCircle.swift; sourceTree = "<group>"; };
 		4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCircleType.swift; sourceTree = "<group>"; };
+		4DD2BF992B2F212A00A732CD /* AddCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCircleButton.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		4DD2BF8A2B2F156600A732CD /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2BF992B2F212A00A732CD /* AddCircleButton.swift */,
 				4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */,
 			);
 			path = Button;
@@ -347,6 +350,7 @@
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,
 				4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */,
+				4DD2BF9A2B2F212A00A732CD /* AddCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

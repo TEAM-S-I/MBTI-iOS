@@ -19,6 +19,9 @@ struct HomeView: View {
                     NameCircle("이진수", type: .yellow)
                     NameCircle("이진수", type: .salmon)
                     NameCircle("이진수", type: .green)
+                    AddCircleButton {
+                        print("click add circle button")
+                    }
                     MbtiButton("Test") {
                         print("Hello World!")
                     }
