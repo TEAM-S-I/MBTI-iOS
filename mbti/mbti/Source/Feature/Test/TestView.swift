@@ -19,6 +19,7 @@ struct TestView: View {
                     Spacer()
                     VStack {
                         Spacer()
+                        MbtiDropDown()
                         
                         MbtiLogo()
                         

@@ -18,6 +18,7 @@
 		4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF9E2B2F26AD00A732CD /* MbtiTextFieldType.swift */; };
 		4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA12B2F2B9F00A732CD /* TestView.swift */; };
 		4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA42B2F2C0200A732CD /* MbtiLogo.swift */; };
+		4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA72B2FB8CC00A732CD /* MbtiDropDown.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		4DD2BF9E2B2F26AD00A732CD /* MbtiTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiTextFieldType.swift; sourceTree = "<group>"; };
 		4DD2BFA12B2F2B9F00A732CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		4DD2BFA42B2F2C0200A732CD /* MbtiLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogo.swift; sourceTree = "<group>"; };
+		4DD2BFA72B2FB8CC00A732CD /* MbtiDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiDropDown.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 				4DD2BFA42B2F2C0200A732CD /* MbtiLogo.swift */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		4DD2BFA62B2FB8C200A732CD /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2BFA72B2FB8CC00A732CD /* MbtiDropDown.swift */,
+			);
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		4DF0D1DE2B2C0CCC0065387A = {
@@ -257,6 +267,7 @@
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2BFA62B2FB8C200A732CD /* DropDown */,
 				4DD2BFA32B2F2BF900A732CD /* Logo */,
 				4DD2BF9B2B2F22C200A732CD /* TextField */,
 				4DD2BF932B2F1DB000A732CD /* NameCircle */,
@@ -387,6 +398,7 @@
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
+				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,
 				4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */,
