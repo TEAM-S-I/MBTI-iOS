@@ -12,3 +12,20 @@ extension View {
         clipShape(RoundedCorner(radius: radius, corners: corners))
     }
 }
+
+
+extension View {
+    func addMbtiLogo() -> some View {
+        ZStack {
+            self
+            VStack {
+                HStack {
+                    MbtiLogo()
+                        .padding(.leading, 20)
+                    Spacer()
+                }
+                Spacer()
+            }
+        }
+    }
+}
