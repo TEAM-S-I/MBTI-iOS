@@ -26,8 +26,8 @@
 		4DD2BFB52B2FD65C00A732CD /* TabViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFB42B2FD65C00A732CD /* TabViewType.swift */; };
 		4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFB72B2FD69F00A732CD /* FindView.swift */; };
 		4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */; };
+		4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
-		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
 		4DF0D1F22B2C0CCD0065387A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */; };
 		4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D2012B2C0E990065387A /* HomeView.swift */; };
@@ -59,9 +59,9 @@
 		4DD2BFB42B2FD65C00A732CD /* TabViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewType.swift; sourceTree = "<group>"; };
 		4DD2BFB72B2FD69F00A732CD /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
 		4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
-		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DF0D2012B2C0E990065387A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -202,6 +202,22 @@
 			path = Check;
 			sourceTree = "<group>";
 		};
+		4DD2BFBC2B2FE3C500A732CD /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		4DD2BFBF2B2FE44E00A732CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4DF0D2012B2C0E990065387A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		4DF0D1DE2B2C0CCC0065387A = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +269,9 @@
 		4DF0D1F92B2C0D0C0065387A /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2BFBF2B2FE44E00A732CD /* Home */,
+				4DD2BFBC2B2FE3C500A732CD /* LaunchScreen */,
 				4DD2BFA02B2F2B9600A732CD /* Test */,
-				4DF0D1FC2B2C0DCD0065387A /* Home */,
 				4DF0D1FD2B2C0DD70065387A /* Match */,
 				4DD2BFB62B2FD68F00A732CD /* Find */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
@@ -274,17 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */,
-				4DF0D1EC2B2C0CCC0065387A /* MainView.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		4DF0D1FC2B2C0DCD0065387A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4DF0D2012B2C0E990065387A /* HomeView.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		4DF0D1FD2B2C0DD70065387A /* Match */ = {
@@ -428,7 +436,6 @@
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
-				4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */,
 				4DD2BFB12B2FD03A00A732CD /* ViewExt.swift in Sources */,
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
 				4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */,
@@ -450,6 +457,7 @@
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,
 				4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */,
+				4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */,
 				4DD2BF9A2B2F212A00A732CD /* AddCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
