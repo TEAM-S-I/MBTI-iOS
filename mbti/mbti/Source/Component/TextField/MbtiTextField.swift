@@ -22,7 +22,6 @@ struct MbtiTextField: View {
     }
     
     var body: some View {
-        let radius = type.radius()
         TextField("",
                   text: text,
                   prompt: 
@@ -34,7 +33,7 @@ struct MbtiTextField: View {
             .padding(.horizontal, 16)
             .cornerRadius(8)
             .overlay(
-                RoundedRectangle(cornerRadius: 8)
+                RoundedCorner(radius: 8, corners: type.corner)
                     .stroke(Color.main300, lineWidth: 1)
             )
             .font(.body)

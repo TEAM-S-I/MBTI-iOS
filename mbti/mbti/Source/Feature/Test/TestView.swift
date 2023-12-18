@@ -20,6 +20,9 @@ struct TestView: View {
                     VStack {
                         Spacer()
                         MbtiDropDown()
+                        MbtiDropDown(type: .bottomRadius)
+                        MbtiDropDown(type: .topRadius)
+                        
                         
                         MbtiLogo()
                         

@@ -10,6 +10,11 @@ import SwiftUI
 struct MbtiDropDown: View {
     
     @State var choicedElement = MbtiType.allCases[0]
+    let type: MbtiDropDownType
+    
+    init(type: MbtiDropDownType = .normal) {
+        self.type = type
+    }
     
     var body: some View {
         Menu {
@@ -29,7 +34,7 @@ struct MbtiDropDown: View {
                 .padding(.horizontal, 16)
                 .cornerRadius(8)
                 .overlay(
-                    RoundedCorner(radius: 8, corners: [.bottomLeft])
+                    RoundedCorner(radius: 8, corners: type.corner)
                         .stroke(Color.main300, lineWidth: 1)
                 )
                 .font(.body)

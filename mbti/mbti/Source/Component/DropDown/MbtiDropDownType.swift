@@ -1,13 +1,13 @@
 //
-//  MbtiTextFieldType.swift
+//  MbtiDropDownType.swift
 //  mbti
 //
-//  Created by dgsw8th71 on 12/17/23.
+//  Created by dgsw8th71 on 12/18/23.
 //
 
 import SwiftUI
 
-enum MbtiTextFieldType {
+enum MbtiDropDownType {
     case normal
     case topRadius
     case bottomRadius
