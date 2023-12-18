@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var isLoading: Bool = true
     @State var selectedTab: TabViewType = .match
     
     var body: some View {
@@ -45,7 +46,15 @@ struct HomeView: View {
                     }
                 }
             }
+            if isLoading {
+                LaunchScreenView().transition(.opacity).zIndex(1)
+            }
         }
         .background(Color.main100)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                withAnimation { isLoading = false }
+            })
+        }
     }
 }

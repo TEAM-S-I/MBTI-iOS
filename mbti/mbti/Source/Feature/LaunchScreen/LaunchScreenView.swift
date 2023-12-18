@@ -9,10 +9,18 @@ import SwiftUI
 
 struct LaunchScreenView: View {
     var body: some View {
-        HStack(alignment: .center) {
-            VStack(alignment: .center) {
+        HStack {
+            Spacer()
+            VStack {
+                Spacer()
                 MbtiLogoImage(type: .big)
+                Text("팀 매칭")
+                    .applyFontStyle(.title)
+                    .padding(.top, 8)
+                Spacer()
             }
+            Spacer()
         }
+        .background(Color.main100)
     }
 }
