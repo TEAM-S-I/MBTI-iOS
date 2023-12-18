@@ -30,7 +30,3 @@ struct MatchView: View {
         }
     }
 }
-
-#Preview {
-    MatchView()
-}

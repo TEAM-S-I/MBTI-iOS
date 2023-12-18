@@ -33,7 +33,12 @@ struct HomeView: View {
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .never))
-            VStack {
+            VStack(spacing: 0) {
+                HStack {
+                    MbtiLogo()
+                        .padding(.leading, 20)
+                    Spacer()
+                }
                 Spacer()
                 HStack {
                     ForEach(TabViewType.allCases, id: \.self) { tab in
