@@ -24,11 +24,11 @@ struct MbtiButton: View {
         } label: {
             Text(text)
                 .applyFontStyle(.body)
+                .frame(width: 256, height: 48)
+                .background(Color.main100)
+                .cornerRadius(8)
+                .shadow1()
         }
-        .frame(width: 256, height: 48)
-        .background(Color.main100)
-        .cornerRadius(8)
-        .shadow1()
     }
 }
 
