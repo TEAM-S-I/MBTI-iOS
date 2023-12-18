@@ -29,7 +29,7 @@ struct MbtiDropDown: View {
             }
         } label: {
             Text("\(choicedElement.rawValue)")
-                .frame(width: 256, height: 48, alignment: .leading)
+                .frame(width: 256 - 32, height: 48, alignment: .leading)
                 .background(Color.main100)
                 .padding(.horizontal, 16)
                 .cornerRadius(8)
