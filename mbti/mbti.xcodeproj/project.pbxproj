@@ -19,6 +19,7 @@
 		4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA12B2F2B9F00A732CD /* TestView.swift */; };
 		4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA42B2F2C0200A732CD /* MbtiLogo.swift */; };
 		4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFA72B2FB8CC00A732CD /* MbtiDropDown.swift */; };
+		4DD2BFAB2B2FB9DD00A732CD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFAA2B2FB9DD00A732CD /* Constant.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1ED2B2C0CCC0065387A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EC2B2C0CCC0065387A /* MainView.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		4DD2BFA12B2F2B9F00A732CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		4DD2BFA42B2F2C0200A732CD /* MbtiLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogo.swift; sourceTree = "<group>"; };
 		4DD2BFA72B2FB8CC00A732CD /* MbtiDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiDropDown.swift; sourceTree = "<group>"; };
+		4DD2BFAA2B2FB9DD00A732CD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EC2B2C0CCC0065387A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = DropDown;
 			sourceTree = "<group>";
 		};
+		4DD2BFA92B2FB9CF00A732CD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2BFAA2B2FB9DD00A732CD /* Constant.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		4DF0D1DE2B2C0CCC0065387A = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 				4DF0D1FB2B2C0D3F0065387A /* Application */,
 				4DF0D1FF2B2C0E660065387A /* Component */,
 				4DF0D1F92B2C0D0C0065387A /* Feature */,
+				4DD2BFA92B2FB9CF00A732CD /* Util */,
 				4DF0D2072B2C0EBF0065387A /* Local */,
 				4DF0D1FA2B2C0D140065387A /* Service */,
 			);
@@ -371,6 +382,7 @@
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
 				4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */,
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
+				4DD2BFAB2B2FB9DD00A732CD /* Constant.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,

@@ -9,25 +9,20 @@ import SwiftUI
 
 struct MbtiDropDown: View {
     
-    @State var choicedElement = 0
+    @State var choicedElement = MbtiType.allCases[0].rawValue
     
     var body: some View {
         Menu {
-            Button {
-                choicedElement = 0
-            } label: {
-                Text("0").applyFontStyle(.body)
+//            Picker()
+            ForEach(MbtiType.allCases, id: \.self) { mbti in
+                Button {
+                    choicedElement = mbti.rawValue
+                } label: {
+                    Text(mbti.rawValue).applyFontStyle(.body)
+                }
             }
-            Button {
-                choicedElement = 1
-            } label: {
-                Text("1").applyFontStyle(.body)
-            }
-            Button {
-                choicedElement = 2
-            } label: {
-                Text("2").applyFontStyle(.body)
-            }
+            
+            
         } label: {
             Text("\(choicedElement)")
                 .frame(width: 256, height: 48)
