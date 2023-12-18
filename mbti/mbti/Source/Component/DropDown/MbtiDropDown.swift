@@ -9,7 +9,9 @@ import SwiftUI
 
 struct MbtiDropDown: View {
     
-    @State var choicedElement = MbtiType.allCases[0]
+    @State var choicedElement: MbtiType? = nil
+    @State var isSelected = false
+    
     let type: MbtiDropDownType
     
     init(type: MbtiDropDownType = .normal) {
@@ -18,17 +20,18 @@ struct MbtiDropDown: View {
     
     var body: some View {
         Menu {
-            Picker(selection: $choicedElement, label: Text("Test")) {
-                ForEach(MbtiType.allCases, id: \.self) { mbti in
-                    Button {
-                        choicedElement = mbti
-                    } label: {
-                        Text(mbti.rawValue).applyFontStyle(.body)
-                    }
+            ForEach(MbtiType.allCases, id: \.self) { mbti in
+                Button {
+                    choicedElement = mbti
+                } label: {
+                    Text(mbti.rawValue)
+                        .applyFontStyle(.body)
                 }
             }
         } label: {
-            Text("\(choicedElement.rawValue)")
+            Text("\(choicedElement?.rawValue ?? "MBTI를 선택해 주세요")")
+                .foregroundColor(choicedElement == nil ? .main300 : .main800)
+                .applyFontStyle(.body)
                 .frame(width: 256 - 32, height: 48, alignment: .leading)
                 .background(Color.main100)
                 .padding(.horizontal, 16)
@@ -46,9 +49,6 @@ struct MbtiDropDown: View {
                             .padding(.trailing, 12)
                     }
                 )
-                .font(.body)
-                .accentColor(.main300)
-                .foregroundColor(.main800)
         }
     }
 }
