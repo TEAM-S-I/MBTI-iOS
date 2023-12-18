@@ -15,39 +15,38 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            TabView(selection: $selectedTab) {
-                MatchView()
-                    .tabItem {
-                        MbtiLogoImage(type: .small)
+            NavigationView {
+                ZStack {
+                    TabView(selection: $selectedTab) {
+                        MatchView()
+                            .tabItem {
+                                MbtiLogoImage(type: .small)
+                            }
+                            .tag(TabViewType.match)
+                        FindView()
+                            .tabItem {
+                                MbtiLogoImage(type: .small)
+                            }
+                            .tag(TabViewType.find)
+                        CheckView()
+                            .tabItem {
+                                MbtiLogoImage(type: .small)
+                            }
+                            .tag(TabViewType.check)
                     }
-                    .tag(TabViewType.match)
-                FindView()
-                    .tabItem {
-                        MbtiLogoImage(type: .small)
-                    }
-                    .tag(TabViewType.find)
-                CheckView()
-                    .tabItem {
-                        MbtiLogoImage(type: .small)
-                    }
-                    .tag(TabViewType.check)
-            }
-            .tabViewStyle(.page)
-            .indexViewStyle(.page(backgroundDisplayMode: .never))
-            VStack(spacing: 0) {
-                HStack {
-                    MbtiLogo()
-                        .padding(.leading, 20)
-                    Spacer()
-                }
-                Spacer()
-                HStack {
-                    ForEach(TabViewType.allCases, id: \.self) { tab in
-                        Button {
-                            selectedTab = tab
-                        } label: {
-                            Text("\(tab.rawValue)")
-                                .foregroundColor(selectedTab == tab ? .red : .blue)
+                    .tabViewStyle(.page)
+                    .indexViewStyle(.page(backgroundDisplayMode: .never))
+                    VStack(spacing: 0) {
+                        Spacer()
+                        HStack {
+                            ForEach(TabViewType.allCases, id: \.self) { tab in
+                                Button {
+                                    selectedTab = tab
+                                } label: {
+                                    Text("\(tab.rawValue)")
+                                        .foregroundColor(selectedTab == tab ? .red : .blue)
+                                }
+                            }
                         }
                     }
                 }

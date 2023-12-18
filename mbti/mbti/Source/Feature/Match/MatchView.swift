@@ -9,38 +9,42 @@ import SwiftUI
 
 struct MatchView: View {
     
+    @State var isMatch = false
+    
     var body: some View {
-        NavigationStack {
-            HStack {
+        HStack {
+            Spacer()
+            VStack(spacing: 0) {
                 Spacer()
-                VStack(spacing: 0) {
-                    Spacer()
-                    MbtiLogoImage(type: .normal)
-                    Text("팀 매칭")
-                        .applyFontStyle(.title)
-                        .padding(.top, 12)
-                    NavigationLink {
-                        MatchFirst()
-                    } label: {
-                        MbtiButton("MBTI 팀 매칭 시작") {
-                        }
-                    }
-                    .padding(.top, 32)
-                    Button {
-                        print("match log")
-                    } label: {
-                        Text("매칭 기록 보기")
-                            .foregroundColor(.gray500)
-                            .applyFontStyle(.label)
-                            .underline()
-                    }
-                    .padding(.top, 24)
-                    Spacer()
+                MbtiLogoImage(type: .normal)
+                Text("팀 매칭")
+                    .applyFontStyle(.title)
+                    .padding(.top, 12)
+                NavigationLink("ss") {
+                    MatchFirst()
                 }
+                MbtiButton("MBTI 팀 매칭 시작") {
+                    isMatch = true
+                }
+                .padding(.top, 32)
+                Button {
+                    print("match log")
+                } label: {
+                    Text("매칭 기록 보기")
+                        .foregroundColor(.gray500)
+                        .applyFontStyle(.label)
+                        .underline()
+                }
+                .padding(.top, 24)
                 Spacer()
             }
-            .background(Color.main100)
+            Spacer()
         }
+        .background(Color.main100)
+        .addMbtiLogo()
+        //        .navigationDestination(isPresented: $isMatch) {
+        //            MatchFirst()
+        //        }
         
     }
 }
