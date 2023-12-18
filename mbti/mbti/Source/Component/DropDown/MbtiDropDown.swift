@@ -29,13 +29,22 @@ struct MbtiDropDown: View {
             }
         } label: {
             Text("\(choicedElement.rawValue)")
-                .frame(width: 256, height: 48)
+                .frame(width: 256, height: 48, alignment: .leading)
                 .background(Color.main100)
                 .padding(.horizontal, 16)
                 .cornerRadius(8)
                 .overlay(
                     RoundedCorner(radius: 8, corners: type.corner)
                         .stroke(Color.main300, lineWidth: 1)
+                )
+                .overlay(
+                    HStack {
+                        Spacer()
+                        Image("DropDown")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .padding(.trailing, 12)
+                    }
                 )
                 .font(.body)
                 .accentColor(.main300)
