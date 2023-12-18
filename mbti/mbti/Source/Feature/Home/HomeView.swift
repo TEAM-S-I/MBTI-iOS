@@ -46,5 +46,6 @@ struct HomeView: View {
                 }
             }
         }
+        .background(Color.main100)
     }
 }
