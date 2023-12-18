@@ -11,7 +11,22 @@ import SwiftUI
 struct mbtiApp: App {
     var body: some Scene {
         WindowGroup {
-            TestView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Text("test")
+                    }
+                HomeView()
+                    .tabItem {
+                        MbtiLogoImage(type: .small)
+                    }
+                HomeView()
+                    .tabItem {
+                        MbtiLogoImage(type: .small)
+                    }
+                
+            }
+            .tabViewStyle(.page)
         }
     }
 }
