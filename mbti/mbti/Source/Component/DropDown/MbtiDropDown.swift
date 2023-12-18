@@ -29,7 +29,7 @@ struct MbtiDropDown: View {
                 .padding(.horizontal, 16)
                 .cornerRadius(8)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 8)
+                    RoundedCorner(radius: 8, corners: [.bottomLeft])
                         .stroke(Color.main300, lineWidth: 1)
                 )
                 .font(.body)
