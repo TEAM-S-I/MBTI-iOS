@@ -12,6 +12,7 @@ struct HomeView: View {
     @State var isLoading: Bool = true
     @State var selectedTab: TabViewType = .match
     
+    
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {

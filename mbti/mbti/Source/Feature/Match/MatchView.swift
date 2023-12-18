@@ -8,25 +8,39 @@
 import SwiftUI
 
 struct MatchView: View {
+    
     var body: some View {
-        VStack(spacing: 0) {
-            MbtiLogoImage(type: .normal)
-            Text("팀 매칭")
-                .applyFontStyle(.title)
-                .padding(.top, 12)
-            MbtiButton("MBTI 팀 매칭 시작") {
-                print("start")
+        NavigationStack {
+            HStack {
+                Spacer()
+                VStack(spacing: 0) {
+                    Spacer()
+                    MbtiLogoImage(type: .normal)
+                    Text("팀 매칭")
+                        .applyFontStyle(.title)
+                        .padding(.top, 12)
+                    NavigationLink {
+                        MatchFirst()
+                    } label: {
+                        MbtiButton("MBTI 팀 매칭 시작") {
+                        }
+                    }
+                    .padding(.top, 32)
+                    Button {
+                        print("match log")
+                    } label: {
+                        Text("매칭 기록 보기")
+                            .foregroundColor(.gray500)
+                            .applyFontStyle(.label)
+                            .underline()
+                    }
+                    .padding(.top, 24)
+                    Spacer()
+                }
+                Spacer()
             }
-            .padding(.top, 32)
-            Button {
-                print("match log")
-            } label: {
-                Text("매칭 기록 보기")
-                    .foregroundColor(.gray500)
-                    .applyFontStyle(.label)
-                    .underline()
-            }
-            .padding(.top, 24)
+            .background(Color.main100)
         }
+        
     }
 }

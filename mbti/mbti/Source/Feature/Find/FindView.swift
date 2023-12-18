@@ -23,5 +23,6 @@ struct FindView: View {
             .padding(.top, 8)
             
         }
+        .background(Color.main100)
     }
 }

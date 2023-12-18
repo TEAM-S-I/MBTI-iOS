@@ -21,5 +21,6 @@ struct CheckView: View {
             }
             .padding(.top, 24)
         }
+        .background(Color.main100)
     }
 }
