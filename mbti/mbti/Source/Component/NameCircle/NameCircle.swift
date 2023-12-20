@@ -19,14 +19,12 @@ struct NameCircle: View {
     
     var body: some View {
         let color = type.color()
-        ZStack {
-            Text(text)
-                .foregroundColor(color.0)
-                .applyFontStyle(.body)
-        }
-        .frame(width: 67, height: 67)
-        .background(color.1)
-        .cornerRadius(50)
-        .colorShadow(color: color.0)
+        Text(text)
+            .foregroundColor(color.0)
+            .applyFontStyle(.body)
+            .frame(width: 67, height: 67)
+            .background(color.1)
+            .cornerRadius(50)
+            .colorShadow(color: color.0)
     }
 }
