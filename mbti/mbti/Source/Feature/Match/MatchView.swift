@@ -9,8 +9,6 @@ import SwiftUI
 
 struct MatchView: View {
     
-    @State var isMatch = false
-    
     var body: some View {
         HStack {
             Spacer()
@@ -22,8 +20,8 @@ struct MatchView: View {
                     .padding(.top, 12)
                 NavigationLink(destination: MatchFirst()) {
                     MbtiButton("MBTI 팀 매칭 시작") {
-                        isMatch = true
                     }
+                    .disabled(true)
                 }
                 .padding(.top, 32)
                 Button {
@@ -39,9 +37,5 @@ struct MatchView: View {
             }
             Spacer()
         }
-        .navigationDestination(isPresented: $isMatch) {
-            MatchFirst()
-        }
-        
     }
 }
