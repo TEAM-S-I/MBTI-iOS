@@ -28,4 +28,25 @@ extension View {
             }
         }
     }
+    
+    func addBackButton(callback: @escaping () -> Void) -> some View {
+        ZStack {
+            self
+            VStack {
+                HStack {
+                    Button {
+                        callback()
+                    } label: {
+                        Image("Back")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                    }
+                    .padding(.leading, 20)
+                    .padding(.top, 44)
+                    Spacer()
+                }
+                Spacer()
+            }
+        }
+    }
 }

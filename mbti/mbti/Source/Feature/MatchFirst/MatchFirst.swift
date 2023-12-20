@@ -8,20 +8,28 @@
 import SwiftUI
 
 struct MatchFirst: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        HStack {
-            Spacer()
-            
+        ZStack {
             VStack {
                 Spacer()
-                Text("매칭할 팀원을 추가해 주세요")
-                    .applyFontStyle(.title)
-                    .padding(.top, 100)
+                HStack {
+                    Spacer()
+                    Text("매칭할 팀원을 추가해 주세요")
+                        .applyFontStyle(.title)
+                        .padding(.top, 100)
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
         }
+        .addMbtiLogo()
+        .addBackButton {
+            dismiss()
+        }
+        .navigationBarBackButtonHidden()
         .background(Color.main100)
-        
     }
 }
