@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
+		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
+		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
 		4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6565D32B30FC97009BA840 /* MatchFirst.swift */; };
 		4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */; };
 		4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
+		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
+		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
 		4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogoImage.swift; sourceTree = "<group>"; };
 		4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiButton.swift; sourceTree = "<group>"; };
@@ -94,6 +98,23 @@
 				4D3C1E222B32825A000B2234 /* MatchSecondView.swift */,
 			);
 			path = MatchSecond;
+			sourceTree = "<group>";
+		};
+		4D3C1E242B32B547000B2234 /* FindResult */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C1E272B32B5B9000B2234 /* Component */,
+				4D3C1E252B32B553000B2234 /* FindResultView.swift */,
+			);
+			path = FindResult;
+			sourceTree = "<group>";
+		};
+		4D3C1E272B32B5B9000B2234 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		4D6565D22B30FC8D009BA840 /* MatchFirst */ = {
@@ -296,6 +317,7 @@
 				4D6565D22B30FC8D009BA840 /* MatchFirst */,
 				4D3C1E212B32824D000B2234 /* MatchSecond */,
 				4DD2BFB62B2FD68F00A732CD /* Find */,
+				4D3C1E242B32B547000B2234 /* FindResult */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
 				4DF0D1FE2B2C0DEE0065387A /* Result */,
 			);
@@ -455,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */,
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
@@ -474,6 +497,7 @@
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
+				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,

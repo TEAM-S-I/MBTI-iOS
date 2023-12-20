@@ -20,8 +20,13 @@ struct FindView: View {
                     .applyFontStyle(.body)
                 MbtiDropDown()
                     .padding(.top, 24)
-                MbtiButton("찾기") {
-                    print("find")
+                NavigationLink {
+                    FindResultView()
+                } label: {
+                    MbtiButton("찾기") {
+                        print("find")
+                    }
+                    .disabled(true)
                 }
                 .padding(.top, 8)
                 Spacer()
