@@ -11,7 +11,7 @@ struct CheckView: View {
     var body: some View {
         HStack {
             Spacer()
-            VStack {
+            VStack(spacing: 0) {
                 Spacer()
                 Text("내 팀의 장단점은 무엇일까?")
                     .applyFontStyle(.title)
