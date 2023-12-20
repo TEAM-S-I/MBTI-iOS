@@ -17,6 +17,8 @@ struct HomeView: View {
         ZStack {
             NavigationView {
                 ZStack {
+                    Color.main100
+                        .ignoresSafeArea()
                     TabView(selection: $selectedTab) {
                         MatchView()
                             .tabItem {
@@ -34,6 +36,7 @@ struct HomeView: View {
                             }
                             .tag(TabViewType.check)
                     }
+                    .addMbtiLogo()
                     .tabViewStyle(.page)
                     .indexViewStyle(.page(backgroundDisplayMode: .never))
                     VStack(spacing: 0) {
@@ -55,7 +58,6 @@ struct HomeView: View {
                 LaunchScreenView().transition(.opacity).zIndex(1)
             }
         }
-        .background(Color.main100)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
                 withAnimation { isLoading = false }

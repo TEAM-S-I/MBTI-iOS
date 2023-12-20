@@ -70,7 +70,6 @@ struct TestView: View {
                 }
             }
         }
-        .background(Color.main100)
         .onAppear {
             for family: String in UIFont.familyNames {
                 print(family)

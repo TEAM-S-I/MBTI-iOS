@@ -20,11 +20,10 @@ struct MatchView: View {
                 Text("팀 매칭")
                     .applyFontStyle(.title)
                     .padding(.top, 12)
-                NavigationLink("ss") {
-                    MatchFirst()
-                }
-                MbtiButton("MBTI 팀 매칭 시작") {
-                    isMatch = true
+                NavigationLink(destination: MatchFirst()) {
+                    MbtiButton("MBTI 팀 매칭 시작") {
+                        isMatch = true
+                    }
                 }
                 .padding(.top, 32)
                 Button {
@@ -40,11 +39,9 @@ struct MatchView: View {
             }
             Spacer()
         }
-        .background(Color.main100)
-        .addMbtiLogo()
-        //        .navigationDestination(isPresented: $isMatch) {
-        //            MatchFirst()
-        //        }
+        .navigationDestination(isPresented: $isMatch) {
+            MatchFirst()
+        }
         
     }
 }
