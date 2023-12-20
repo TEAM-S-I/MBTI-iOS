@@ -38,9 +38,12 @@ struct MatchSecondView: View {
                         .foregroundColor(.main300)
                         .applyFontStyle(.body)
                     Spacer()
-                    MbtiTransparentButton("다음 단계로") {
-                        print("NextLevel")
+                    NavigationLink {
+                        // TODO : reqeust AI result
+                    } label: {
+                        MbtiTransparentButton("매칭 시작!") {}
                     }
+                    .disabled(true)
                     .padding(.vertical, 12)
                 }
                 Spacer()
