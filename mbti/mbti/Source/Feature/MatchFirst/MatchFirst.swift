@@ -46,8 +46,13 @@ struct MatchFirst: View {
                 }
                 .padding(.top, 64)
                 Spacer()
-                MbtiTransparentButton("다음 단계로") {
-                    print("NextLevel")
+                NavigationLink {
+                    MatchSecondView()
+                } label: {
+                    MbtiTransparentButton("다음 단계로") {
+                        
+                    }
+                    .disabled(true)
                 }
                 .padding(.vertical, 12)
             }
