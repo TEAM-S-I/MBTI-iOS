@@ -11,6 +11,8 @@
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
 		4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6565D32B30FC97009BA840 /* MatchFirst.swift */; };
+		4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiModel.swift */; };
+		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */; };
 		4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */; };
 		4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF8E2B2F15A600A732CD /* MbtiLogoType.swift */; };
@@ -48,6 +50,8 @@
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
+		4DD21FFB2B33BE020015311B /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
+		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogoImage.swift; sourceTree = "<group>"; };
 		4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiButton.swift; sourceTree = "<group>"; };
 		4DD2BF8E2B2F15A600A732CD /* MbtiLogoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogoType.swift; sourceTree = "<group>"; };
@@ -123,6 +127,14 @@
 				4D6565D32B30FC97009BA840 /* MatchFirst.swift */,
 			);
 			path = MatchFirst;
+			sourceTree = "<group>";
+		};
+		4DD21FFA2B33BDEB0015311B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4DD21FFB2B33BE020015311B /* MbtiModel.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		4DD2BF872B2F115A00A732CD /* Image */ = {
@@ -223,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD2BFB02B2FD03A00A732CD /* ViewExt.swift */,
+				4DD21FFD2B33BF2E0015311B /* StringExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -300,6 +313,8 @@
 				4DF0D1FB2B2C0D3F0065387A /* Application */,
 				4DF0D1FF2B2C0E660065387A /* Component */,
 				4DF0D1F92B2C0D0C0065387A /* Feature */,
+				4DD21FFA2B33BDEB0015311B /* DTO */,
+				4DD2BFAF2B2FD03300A732CD /* Extension */,
 				4DD2BFA92B2FB9CF00A732CD /* Util */,
 				4DF0D2072B2C0EBF0065387A /* Local */,
 				4DF0D1FA2B2C0D140065387A /* Service */,
@@ -358,7 +373,6 @@
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				4DD2BFAF2B2FD03300A732CD /* Extension */,
 				4DD2BFAC2B2FD01100A732CD /* Shape */,
 				4DD2BFA62B2FB8C200A732CD /* DropDown */,
 				4DD2BFA32B2F2BF900A732CD /* Logo */,
@@ -489,7 +503,9 @@
 				4DD2BFAB2B2FB9DD00A732CD /* MbtiType.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
+				4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
+				4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
