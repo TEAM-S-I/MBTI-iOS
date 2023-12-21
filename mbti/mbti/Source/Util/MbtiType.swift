@@ -5,6 +5,8 @@
 //  Created by dgsw8th71 on 12/18/23.
 //
 
+import SwiftUI
+
 enum MbtiType: String, CaseIterable {
     case istp = "ISTP"
     case istj = "ISTJ"
@@ -23,4 +25,21 @@ enum MbtiType: String, CaseIterable {
     case enfp = "ENFP"
     case enfj = "ENFJ"
     
+    var nameCircleType: NameCircleType {
+        get {
+            let mid = self.rawValue[1...2]
+            switch mid {
+            case "ST":
+                return .salmon
+            case "SF":
+                return .yellow
+            case "NT":
+                return .blue
+            case "NF":
+                return .green
+            default:
+                return .blue
+            }
+        }
+    }
 }
