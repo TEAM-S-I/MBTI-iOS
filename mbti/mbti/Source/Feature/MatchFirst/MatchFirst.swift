@@ -13,6 +13,13 @@ struct MatchFirst: View {
     
     var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 67 + 8)), count: 3)
     
+    var data: [MbtiModel] = [
+        MbtiModel(name: "한준혁", mbti: .isfp),
+        MbtiModel(name: "양예성", mbti: .estp),
+        MbtiModel(name: "박병준", mbti: .infp),
+        MbtiModel(name: "이강현", mbti: .entp)
+    ]
+    
     var body: some View {
         HStack {
             Spacer()
@@ -23,10 +30,10 @@ struct MatchFirst: View {
                     .padding(.top, 100)
                 ScrollView {
                     LazyVGrid(columns: columns) {
-                        ForEach((0..<7), id: \.self) { _ in
+                        ForEach(data, id: \.self) { model in
                             VStack {
-                                NameCircle("한준혁", type: .yellow)
-                                Text("ISFP")
+                                NameCircle(model.name, type: model.mbti.nameCircleType)
+                                Text(model.mbti.rawValue)
                                     .applyFontStyle(.label)
                                     .foregroundColor(.gray300)
                                     .padding(.top, 8)
