@@ -12,6 +12,9 @@
 		4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B402B3AF1B300E64C24 /* MatchSecondViewModel.swift */; };
 		4D155B442B3AF29300E64C24 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D155B432B3AF29300E64C24 /* Alamofire */; };
 		4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B452B3AF2E600E64C24 /* Secret.swift */; };
+		4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B482B3AFBF100E64C24 /* BaseResponse.swift */; };
+		4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */; };
+		4D155B4D2B3AFC4500E64C24 /* MbtiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -58,6 +61,9 @@
 		4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirstViewModel.swift; sourceTree = "<group>"; };
 		4D155B402B3AF1B300E64C24 /* MatchSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondViewModel.swift; sourceTree = "<group>"; };
 		4D155B452B3AF2E600E64C24 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		4D155B482B3AFBF100E64C24 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamResponse.swift; sourceTree = "<group>"; };
+		4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiResponse.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -112,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D155B472B3AFBE700E64C24 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				4D155B482B3AFBF100E64C24 /* BaseResponse.swift */,
+				4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */,
+				4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		4D3C1E212B32824D000B2234 /* MatchSecond */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 		4DD21FFA2B33BDEB0015311B /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				4D155B472B3AFBE700E64C24 /* Response */,
 				4DD21FFB2B33BE020015311B /* MbtiModel.swift */,
 			);
 			path = DTO;
@@ -559,10 +576,12 @@
 				4DD2BFAB2B2FB9DD00A732CD /* MbtiType.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
+				4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */,
 				4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
 				4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
+				4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
 				4DD220092B3502420015311B /* CheckFirstView.swift in Sources */,
@@ -582,6 +601,7 @@
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,
 				4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */,
 				4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */,
+				4D155B4D2B3AFC4500E64C24 /* MbtiResponse.swift in Sources */,
 				4DD2BF9A2B2F212A00A732CD /* AddCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
