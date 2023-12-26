@@ -15,7 +15,9 @@ struct MbtiDialog<DC>: View where DC: View {
     
     @State private var offset: CGFloat = 1000
     
-    init(isActive: Binding<Bool>, isCloseButton: Bool, content: @escaping () -> DC) {
+    init(isActive: Binding<Bool>, 
+         isCloseButton: Bool = true,
+         content: @escaping () -> DC) {
         self._isActive = isActive
         self.isCloseButton = isCloseButton
         self.content = content
