@@ -25,7 +25,9 @@ struct CheckFirstView: View {
                 Text("진단할 팀원을 추가해 주세요")
                     .applyFontStyle(.title)
                     .padding(.top, 100)
-                MbtiGrid(data: data)
+                MbtiGrid(data: data) {
+                    
+                }
                     .padding(.top, 64)
                 Spacer()
                 NavigationLink {

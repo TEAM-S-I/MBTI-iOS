@@ -12,6 +12,12 @@ struct MbtiGrid: View {
     var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 67 + 8)), count: 3)
     
     var data: [MbtiModel]
+    var addCallback: () -> Void
+    
+    init(data: [MbtiModel], addCallback: @escaping () -> Void) {
+        self.data = data
+        self.addCallback = addCallback
+    }
     
     var body: some View {
         ScrollView {
@@ -27,7 +33,7 @@ struct MbtiGrid: View {
                 }
                 VStack {
                     AddCircleButton {
-                        
+                        addCallback()
                     }
                     Text("")
                         .applyFontStyle(.label)

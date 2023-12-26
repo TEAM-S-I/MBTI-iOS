@@ -37,11 +37,14 @@ struct MbtiTransparentButton: View {
     
     let text: String
     let callback: () -> Void
+    let fontStyle: Font
     
     init(_ text: String,
+         fontStyle: Font = .subtitle,
          callback: @escaping () -> Void) {
-        self.callback = callback
         self.text = text
+        self.callback = callback
+        self.fontStyle = fontStyle
     }
     
     var body: some View {
@@ -49,7 +52,7 @@ struct MbtiTransparentButton: View {
             callback()
         } label: {
             Text(text)
-                .applyFontStyle(.subtitle)
+                .applyFontStyle(fontStyle)
         }
     }
 }
