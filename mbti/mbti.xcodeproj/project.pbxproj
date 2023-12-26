@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */; };
 		4D155B3F2B3AEB0B00E64C24 /* MatchFirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */; };
+		4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B402B3AF1B300E64C24 /* MatchSecondViewModel.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTestView.swift; sourceTree = "<group>"; };
 		4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirstViewModel.swift; sourceTree = "<group>"; };
+		4D155B402B3AF1B300E64C24 /* MatchSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondViewModel.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3C1E222B32825A000B2234 /* MatchSecondView.swift */,
+				4D155B402B3AF1B300E64C24 /* MatchSecondViewModel.swift */,
 			);
 			path = MatchSecond;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */,
 				4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */,
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
+				4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
 				4DD2BFB12B2FD03A00A732CD /* ViewExt.swift in Sources */,

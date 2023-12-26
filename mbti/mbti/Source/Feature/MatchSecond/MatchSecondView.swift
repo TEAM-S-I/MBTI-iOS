@@ -11,6 +11,11 @@ struct MatchSecondView: View {
     
     @Environment(\.dismiss) private var dismiss
     @State var sliderValue = 1.0
+    @ObservedObject var viewModel = MatchSecondViewModel()
+    
+    init(data: [MbtiModel]) {
+        viewModel.data = data
+    }
     
     var body: some View {
         GeometryReader { geo in
