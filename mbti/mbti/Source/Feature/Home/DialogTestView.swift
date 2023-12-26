@@ -10,6 +10,7 @@ import SwiftUI
 struct DialogTestView: View {
     @State var isActive: Bool = false
     @State var text: String = ""
+    @State var mbti: MbtiType? = nil
     
     var body: some View {
         ZStack {
@@ -29,7 +30,7 @@ struct DialogTestView: View {
                         .applyFontStyle(.title)
                         .toLeading()
                     MbtiTextField("id", text: $text, type: .topRadius)
-                    MbtiDropDown(type: .bottomRadius)
+                    MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
                 }
             }
         }

@@ -9,12 +9,14 @@ import SwiftUI
 
 struct MbtiDropDown: View {
     
-    @State var choicedElement: MbtiType? = nil
+    @Binding var choicedElement: MbtiType?
     @State var isSelected = false
     
     let type: MbtiDropDownType
     
-    init(type: MbtiDropDownType = .normal) {
+    init(choicedElement: Binding<MbtiType?>,
+         type: MbtiDropDownType = .normal) {
+        self._choicedElement = choicedElement
         self.type = type
     }
     

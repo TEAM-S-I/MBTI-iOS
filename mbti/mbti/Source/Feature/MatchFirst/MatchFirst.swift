@@ -12,6 +12,7 @@ struct MatchFirst: View {
     @Environment(\.dismiss) private var dismiss
     @State var isAddActive = false
     @State var name = ""
+    @State var mbti: MbtiType? = nil
     
     var data: [MbtiModel] = [
         MbtiModel(name: "한준혁", mbti: .isfp),
@@ -60,7 +61,7 @@ struct MatchFirst: View {
                         .toLeading()
                     MbtiTextField("이름을 입력해 주세요", text: $name, type: .topRadius)
                         .padding(.top, 12)
-                    MbtiDropDown(type: .bottomRadius)
+                    MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
                     MbtiTransparentButton("추가 완료", fontStyle: .body) {
                         print("complete to add")
                         isAddActive = false

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FindView: View {
+    
+    @State var mbti: MbtiType? = nil
     var body: some View {
         HStack {
             Spacer()
@@ -18,7 +20,7 @@ struct FindView: View {
                 Text("자신의 MBTI를 입력해 보세요")
                     .foregroundColor(.main300)
                     .applyFontStyle(.body)
-                MbtiDropDown()
+                MbtiDropDown(choicedElement: $mbti)
                     .padding(.top, 24)
                 NavigationLink {
                     FindResultView()

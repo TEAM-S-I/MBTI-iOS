@@ -11,6 +11,7 @@ struct TestView: View {
     
     @State var testText: String = ""
     
+    @State var mbti: MbtiType? = nil
     var body: some View {
         
         GeometryReader { geo in
@@ -19,9 +20,9 @@ struct TestView: View {
                     Spacer()
                     VStack {
                         Spacer()
-                        MbtiDropDown()
-                        MbtiDropDown(type: .bottomRadius)
-                        MbtiDropDown(type: .topRadius)
+                        MbtiDropDown(choicedElement: $mbti)
+                        MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
+                        MbtiDropDown(choicedElement: $mbti, type: .topRadius)
                         
                         
                         MbtiLogo()
