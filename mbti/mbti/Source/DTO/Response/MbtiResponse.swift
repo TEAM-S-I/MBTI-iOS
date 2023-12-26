@@ -12,11 +12,7 @@ struct MbtiResponse: Decodable {
 
 extension MbtiResponse {
     func toModel() -> MbtiModel {
-        let mbtiType = MbtiType.allCases.filter { i in
-            i.rawValue == self.mbti
-        }[0]
-        
-        return MbtiModel(name: self.name, mbti: mbtiType)
+        return MbtiModel(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
     }
 }
 
