@@ -42,4 +42,16 @@ enum MbtiType: String, CaseIterable {
             }
         }
     }
+    
+    static func getType(_ str: String) -> MbtiType? {
+        let mbtiTypes = MbtiType.allCases.filter { i in
+            i.rawValue == str
+        }
+        
+        if mbtiTypes.count == 0 {
+            return nil
+        }
+        
+        return mbtiTypes[0]
+    }
 }
