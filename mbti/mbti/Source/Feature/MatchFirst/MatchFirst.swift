@@ -70,6 +70,5 @@ struct MatchFirst: View {
                 }
             }
         }
-        
     }
 }

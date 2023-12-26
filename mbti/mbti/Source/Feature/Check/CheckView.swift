@@ -19,10 +19,16 @@ struct CheckView: View {
                     .foregroundColor(.main300)
                     .applyFontStyle(.body)
                     .padding(.top, 4)
-                MbtiButton("팀 진단 시작하기") {
-                    print("let's start to check")
+                NavigationLink {
+                    CheckFirstView()
+                } label: {
+                    MbtiButton("팀 진단 시작하기") {
+                        print("let's start to check")
+                    }
+                    .disabled(true)
+                    .padding(.top, 24)
                 }
-                .padding(.top, 24)
+                
                 Spacer()
             }
             Spacer()
