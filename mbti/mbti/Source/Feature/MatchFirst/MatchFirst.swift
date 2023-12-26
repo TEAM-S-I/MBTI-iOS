@@ -11,6 +11,7 @@ struct MatchFirst: View {
     
     @Environment(\.dismiss) private var dismiss
     @State var isAddActive = false
+    @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
     @ObservedObject var viewModel = MatchFirstViewModel()
@@ -33,9 +34,9 @@ struct MatchFirst: View {
                         MatchSecondView(data: viewModel.data)
                     } label: {
                         MbtiTransparentButton("다음 단계로") {
-                            
+                            isWarnActive = true
                         }
-                        .disabled(true)
+                        .disabled(viewModel.data.count >= 2)
                     }
                     .padding(.vertical, 12)
                 }
@@ -65,6 +66,19 @@ struct MatchFirst: View {
                     }
                     .padding(.top, 16)
                     .padding(.bottom, 4)
+                }
+            }
+            if isWarnActive {
+                MbtiDialog(isActive: $isAddActive) {
+                    Text("팀원을 두 명 이상 추가해 주세요!")
+                        .applyFontStyle(.subtitle)
+                        .padding(.leading, 4)
+                        .toLeading()
+                    
+                    MbtiTransparentButton("닫기", fontStyle: .body) {
+                        isWarnActive = false
+                    }
+                    .padding(.top, 36)
                 }
             }
         }
