@@ -60,6 +60,8 @@ struct MatchFirst: View {
                     MbtiTransparentButton("추가 완료", fontStyle: .body) {
                         guard name.isEmpty || mbti == nil else {
                             viewModel.addMember(name: name, mbti: mbti!)
+                            name = ""
+                            mbti = nil
                             isAddActive = false
                             return
                         }
