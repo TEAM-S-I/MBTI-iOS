@@ -31,7 +31,7 @@ struct CheckFirstView: View {
                     .padding(.top, 64)
                 Spacer()
                 NavigationLink {
-                    MatchSecondView()
+//                    MatchSecondView(data: viewModel.data)
                 } label: {
                     MbtiTransparentButton("다음 단계로") {
                         
