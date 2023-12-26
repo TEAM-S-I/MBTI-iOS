@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */; };
+		4D155B3F2B3AEB0B00E64C24 /* MatchFirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTestView.swift; sourceTree = "<group>"; };
+		4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirstViewModel.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6565D32B30FC97009BA840 /* MatchFirst.swift */,
+				4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */,
 			);
 			path = MatchFirst;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
+				4D155B3F2B3AEB0B00E64C24 /* MatchFirstViewModel.swift in Sources */,
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,
 				4DD2BF972B2F1EA700A732CD /* NameCircleType.swift in Sources */,
 				4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */,
