@@ -8,11 +8,18 @@ import SwiftUI
 
 struct MbtiDialog<DC>: View where DC: View {
     @Binding var isActive: Bool
+    var isCloseButton: Bool
 
     @ViewBuilder
     let content: () -> DC
     
     @State private var offset: CGFloat = 1000
+    
+    init(isActive: Binding<Bool>, isCloseButton: Bool, content: @escaping () -> DC) {
+        self._isActive = isActive
+        self.isCloseButton = isCloseButton
+        self.content = content
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -32,18 +39,21 @@ struct MbtiDialog<DC>: View where DC: View {
                 .cornerRadius(12)
                 .fixedSize(horizontal: true, vertical: false)
                 .overlay(alignment: .topTrailing) {
-                    Button {
-                        close()
-                        isActive = false
-                    } label: {
-                        Image(systemName: "xmark")
-                            .resizable()
-                            .frame(width: 13, height: 13)
-                            .font(.title2)
-                            
+                    if isCloseButton {
+                        Button {
+                            close()
+                            isActive = false
+                        } label: {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 13, height: 13)
+                                .font(.title2)
+                                
+                        }
+                        .tint(.black)
+                        .padding(16)
                     }
-                    .tint(.black)
-                    .padding(16)
+                    
                 }
                 .shadow1()
                 .offset(x: 0, y: offset)
