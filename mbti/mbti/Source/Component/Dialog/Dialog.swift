@@ -7,13 +7,15 @@
 import SwiftUI
 
 struct MbtiDialog<DC>: View where DC: View {
+    
     @Binding var isActive: Bool
     var isCloseButton: Bool
 
     @ViewBuilder
     let content: () -> DC
     
-    @State private var offset: CGFloat = 1000
+    @State private var offset: CGFloat = 20
+    @State private var opacity = 0.0
     
     init(isActive: Binding<Bool>, 
          isCloseButton: Bool = true,
@@ -61,19 +63,22 @@ struct MbtiDialog<DC>: View where DC: View {
                 .offset(x: 0, y: offset)
                 .onAppear {
                     print("Hello")
-                    withAnimation {
+                    withAnimation(.easeInOut(duration: 0.1)) {
                         offset = 0
+                        opacity = 1
                     }
                 }
             }
+            .opacity(opacity)
             .ignoresSafeArea()
         }
         
     }
 
     func close() {
-        withAnimation(.spring()) {
-            offset = 1000
+        withAnimation(.easeInOut(duration: 0.1)) {
+            offset = 20
+            opacity = 0
         }
     }
 }

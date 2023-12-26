@@ -69,7 +69,7 @@ struct MatchFirst: View {
                 }
             }
             if isWarnActive {
-                MbtiDialog(isActive: $isAddActive) {
+                MbtiDialog(isActive: $isWarnActive, isCloseButton: false) {
                     Text("팀원을 두 명 이상 추가해 주세요!")
                         .applyFontStyle(.subtitle)
                         .padding(.leading, 4)
