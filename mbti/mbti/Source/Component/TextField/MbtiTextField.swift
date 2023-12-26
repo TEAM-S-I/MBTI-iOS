@@ -28,7 +28,7 @@ struct MbtiTextField: View {
                     Text(hint)
                       .foregroundColor(.main300)
                       .applyFontStyle(.body))
-            .frame(width: 256, height: 48)
+            .frame(width: 256 - 32, height: 48)
             .background(Color.main100)
             .padding(.horizontal, 16)
             .cornerRadius(8)
