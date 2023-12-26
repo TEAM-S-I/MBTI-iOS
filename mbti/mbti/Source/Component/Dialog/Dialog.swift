@@ -17,7 +17,7 @@ struct MbtiDialog<DC>: View where DC: View {
     
     init(isActive: Binding<Bool>, 
          isCloseButton: Bool = true,
-         content: @escaping () -> DC) {
+         @ViewBuilder content: @escaping () -> DC) {
         self._isActive = isActive
         self.isCloseButton = isCloseButton
         self.content = content
