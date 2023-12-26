@@ -21,7 +21,7 @@ struct MbtiGrid: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns) {
+            LazyVGrid(columns: columns, alignment: .center) {
                 ForEach(data, id: \.self) { model in
                     VStack {
                         NameCircle(model.name, type: model.mbti.nameCircleType)
@@ -31,17 +31,20 @@ struct MbtiGrid: View {
                             .padding(.top, 8)
                     }
                 }
-                VStack {
-                    AddCircleButton {
-                        addCallback()
+                HStack {
+                    VStack {
+                        AddCircleButton {
+                            addCallback()
+                        }
+                        Text("")
+                            .applyFontStyle(.label)
+                            .foregroundColor(.gray300)
+                            .padding(.top, 8)
                     }
-                    Text("")
-                        .applyFontStyle(.label)
-                        .foregroundColor(.gray300)
-                        .padding(.top, 8)
                 }
             }
             .padding(.horizontal)
+            Spacer()
         }
     }
 }

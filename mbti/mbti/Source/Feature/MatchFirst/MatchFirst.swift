@@ -11,7 +11,8 @@ struct MatchFirst: View {
     
     @Environment(\.dismiss) private var dismiss
     @State var isAddActive = false
-    
+    @State var name = ""
+    @State var mbti: MbtiType? = nil
     @ObservedObject var viewModel = MatchFirstViewModel()
     
     var body: some View {
@@ -52,14 +53,14 @@ struct MatchFirst: View {
                         .applyFontStyle(.subtitle)
                         .padding(.leading, 4)
                         .toLeading()
-                    MbtiTextField("이름을 입력해 주세요", text: $viewModel.name, type: .topRadius)
+                    MbtiTextField("이름을 입력해 주세요", text: $name, type: .topRadius)
                         .padding(.top, 12)
-                    MbtiDropDown(choicedElement: $viewModel.mbti, type: .bottomRadius)
+                    MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
                     MbtiTransparentButton("추가 완료", fontStyle: .body) {
-                        isAddActive = false
-                        viewModel.initState()
-                        viewModel.addMember {
-                            print("can not add member")
+                        guard name.isEmpty || mbti == nil else {
+                            viewModel.addMember(name: name, mbti: mbti!)
+                            isAddActive = false
+                            return
                         }
                     }
                     .padding(.top, 16)
