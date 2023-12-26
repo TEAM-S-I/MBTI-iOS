@@ -22,6 +22,8 @@
 		4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B562B3AFF4300E64C24 /* PlanResponse.swift */; };
 		4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */; };
 		4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */; };
+		4D155B5D2B3B008800E64C24 /* PacResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5C2B3B008800E64C24 /* PacResponse.swift */; };
+		4D155B5F2B3B00A200E64C24 /* PacMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5E2B3B00A200E64C24 /* PacMemberResponse.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -78,6 +80,8 @@
 		4D155B562B3AFF4300E64C24 /* PlanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanResponse.swift; sourceTree = "<group>"; };
 		4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMemberResponse.swift; sourceTree = "<group>"; };
 		4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTeamResponse.swift; sourceTree = "<group>"; };
+		4D155B5C2B3B008800E64C24 /* PacResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacResponse.swift; sourceTree = "<group>"; };
+		4D155B5E2B3B00A200E64C24 /* PacMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacMemberResponse.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				4D155B562B3AFF4300E64C24 /* PlanResponse.swift */,
 				4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */,
 				4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */,
+				4D155B5C2B3B008800E64C24 /* PacResponse.swift */,
+				4D155B5E2B3B00A200E64C24 /* PacMemberResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -605,8 +611,10 @@
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
 				4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */,
 				4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */,
+				4D155B5D2B3B008800E64C24 /* PacResponse.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */,
+				4D155B5F2B3B00A200E64C24 /* PacMemberResponse.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
 				4DD220092B3502420015311B /* CheckFirstView.swift in Sources */,
