@@ -15,6 +15,13 @@
 		4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B482B3AFBF100E64C24 /* BaseResponse.swift */; };
 		4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */; };
 		4D155B4D2B3AFC4500E64C24 /* MbtiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */; };
+		4D155B4F2B3AFD0F00E64C24 /* TeamResposne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */; };
+		4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */; };
+		4D155B532B3AFD5F00E64C24 /* TeamMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */; };
+		4D155B552B3AFE4300E64C24 /* TeamMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */; };
+		4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B562B3AFF4300E64C24 /* PlanResponse.swift */; };
+		4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */; };
+		4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -64,6 +71,13 @@
 		4D155B482B3AFBF100E64C24 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamResponse.swift; sourceTree = "<group>"; };
 		4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiResponse.swift; sourceTree = "<group>"; };
+		4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResposne.swift; sourceTree = "<group>"; };
+		4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDescriptionResponse.swift; sourceTree = "<group>"; };
+		4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberResponse.swift; sourceTree = "<group>"; };
+		4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberModel.swift; sourceTree = "<group>"; };
+		4D155B562B3AFF4300E64C24 /* PlanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanResponse.swift; sourceTree = "<group>"; };
+		4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMemberResponse.swift; sourceTree = "<group>"; };
+		4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTeamResponse.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -124,6 +138,12 @@
 				4D155B482B3AFBF100E64C24 /* BaseResponse.swift */,
 				4D155B4A2B3AFC1400E64C24 /* CreateTeamResponse.swift */,
 				4D155B4C2B3AFC4500E64C24 /* MbtiResponse.swift */,
+				4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */,
+				4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */,
+				4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */,
+				4D155B562B3AFF4300E64C24 /* PlanResponse.swift */,
+				4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */,
+				4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -168,6 +188,7 @@
 			children = (
 				4D155B472B3AFBE700E64C24 /* Response */,
 				4DD21FFB2B33BE020015311B /* MbtiModel.swift */,
+				4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -561,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D155B532B3AFD5F00E64C24 /* TeamMemberResponse.swift in Sources */,
 				4DD220012B33F7B40015311B /* Dialog.swift in Sources */,
 				4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */,
 				4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */,
@@ -572,14 +594,17 @@
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
 				4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */,
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
+				4D155B4F2B3AFD0F00E64C24 /* TeamResposne.swift in Sources */,
 				4DD2BFB52B2FD65C00A732CD /* TabViewType.swift in Sources */,
 				4DD2BFAB2B2FB9DD00A732CD /* MbtiType.swift in Sources */,
+				4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
 				4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */,
 				4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
 				4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */,
+				4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
@@ -588,11 +613,14 @@
 				4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
+				4D155B552B3AFE4300E64C24 /* TeamMemberModel.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
+				4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
+				4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */,
 				4DD220062B3501480015311B /* MbtiGrid.swift in Sources */,
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
