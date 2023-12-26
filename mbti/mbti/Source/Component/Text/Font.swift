@@ -23,7 +23,7 @@ enum GangwonEduAllFontFamily: String {
 extension Text {
     func applyFontStyle(_ fontStyle: Font) -> Text {
         self.font(fontStyle)
-            .foregroundStyle(Color.main800)
+            .foregroundColor(Color.main800)
     }
 }
 

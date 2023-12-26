@@ -1,13 +1,13 @@
 //
-//  MatchFirst.swift
+//  CheckFirstView.swift
 //  mbti
 //
-//  Created by dgsw8th71 on 12/19/23.
+//  Created by dgsw8th71 on 12/22/23.
 //
 
 import SwiftUI
 
-struct MatchFirst: View {
+struct CheckFirstView: View {
     
     @Environment(\.dismiss) private var dismiss
     
@@ -17,17 +17,16 @@ struct MatchFirst: View {
         MbtiModel(name: "박병준", mbti: .infp),
         MbtiModel(name: "이강현", mbti: .entp)
     ]
-    
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 Spacer()
-                Text("매칭할 팀원을 추가해 주세요")
+                Text("진단할 팀원을 추가해 주세요")
                     .applyFontStyle(.title)
                     .padding(.top, 100)
                 MbtiGrid(data: data)
-                .padding(.top, 64)
+                    .padding(.top, 64)
                 Spacer()
                 NavigationLink {
                     MatchSecondView()

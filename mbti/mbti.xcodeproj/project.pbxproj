@@ -15,6 +15,8 @@
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
 		4DD220032B33F7E70015311B /* DialogTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220022B33F7E70015311B /* DialogTest.swift */; };
+		4DD220062B3501480015311B /* MbtiGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220052B3501480015311B /* MbtiGrid.swift */; };
+		4DD220092B3502420015311B /* CheckFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220082B3502420015311B /* CheckFirstView.swift */; };
 		4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */; };
 		4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */; };
 		4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BF8E2B2F15A600A732CD /* MbtiLogoType.swift */; };
@@ -56,6 +58,8 @@
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		4DD220022B33F7E70015311B /* DialogTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTest.swift; sourceTree = "<group>"; };
+		4DD220052B3501480015311B /* MbtiGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiGrid.swift; sourceTree = "<group>"; };
+		4DD220082B3502420015311B /* CheckFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFirstView.swift; sourceTree = "<group>"; };
 		4DD2BF882B2F116200A732CD /* MbtiLogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogoImage.swift; sourceTree = "<group>"; };
 		4DD2BF8B2B2F156B00A732CD /* MbtiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiButton.swift; sourceTree = "<group>"; };
 		4DD2BF8E2B2F15A600A732CD /* MbtiLogoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiLogoType.swift; sourceTree = "<group>"; };
@@ -147,6 +151,22 @@
 				4DD220002B33F7B40015311B /* Dialog.swift */,
 			);
 			path = Dialog;
+			sourceTree = "<group>";
+		};
+		4DD220042B35013B0015311B /* Mbti */ = {
+			isa = PBXGroup;
+			children = (
+				4DD220052B3501480015311B /* MbtiGrid.swift */,
+			);
+			path = Mbti;
+			sourceTree = "<group>";
+		};
+		4DD220072B3502360015311B /* CheckFirst */ = {
+			isa = PBXGroup;
+			children = (
+				4DD220082B3502420015311B /* CheckFirstView.swift */,
+			);
+			path = CheckFirst;
 			sourceTree = "<group>";
 		};
 		4DD2BF872B2F115A00A732CD /* Image */ = {
@@ -347,6 +367,7 @@
 				4DD2BFB62B2FD68F00A732CD /* Find */,
 				4D3C1E242B32B547000B2234 /* FindResult */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
+				4DD220072B3502360015311B /* CheckFirst */,
 				4DF0D1FE2B2C0DEE0065387A /* Result */,
 			);
 			path = Feature;
@@ -386,6 +407,7 @@
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4DD220042B35013B0015311B /* Mbti */,
 				4DD21FFF2B33F7AF0015311B /* Dialog */,
 				4DD2BFAC2B2FD01100A732CD /* Shape */,
 				4DD2BFA62B2FB8C200A732CD /* DropDown */,
@@ -525,6 +547,7 @@
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
+				4DD220092B3502420015311B /* CheckFirstView.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
@@ -532,6 +555,7 @@
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
+				4DD220062B3501480015311B /* MbtiGrid.swift in Sources */,
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
@@ -680,6 +704,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -709,6 +734,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
