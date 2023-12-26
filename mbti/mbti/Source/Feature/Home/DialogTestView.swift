@@ -23,7 +23,7 @@ struct DialogTestView: View {
             .padding()
             
             if isActive {
-                CustomDialog(isActive: $isActive) {
+                MbtiDialog(isActive: $isActive) {
                     
                     Text("Hello World!")
                         .applyFontStyle(.title)

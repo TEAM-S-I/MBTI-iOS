@@ -12,7 +12,7 @@ struct mbtiApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DialogTestView()
+            HomeView()
         }
     }
 }

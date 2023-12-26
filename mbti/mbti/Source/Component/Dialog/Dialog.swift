@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct CustomDialog<DC>: View where DC: View {
+struct MbtiDialog<DC>: View where DC: View {
     @Binding var isActive: Bool
 
     @ViewBuilder
