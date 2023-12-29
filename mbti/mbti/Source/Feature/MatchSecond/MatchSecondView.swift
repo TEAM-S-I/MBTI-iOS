@@ -50,8 +50,8 @@ struct MatchSecondView: View {
                         MbtiTransparentButton("매칭 시작!") {
                             
                         }
+                        .disabled(true)
                     }
-                    .disabled(true)
                     .padding(.vertical, 12)
                 }
                 Spacer()
