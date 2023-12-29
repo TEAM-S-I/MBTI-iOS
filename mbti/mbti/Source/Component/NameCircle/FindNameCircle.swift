@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct FindNameCircle: View {
+    
+    let mbti: MbtiType
+    let title: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            NameCircle(mbti.rawValue, type: mbti.nameCircleType)
+            Text(title)
+                .applyFontStyle(.title)
+                .foregroundColor(.main800)
+                .padding(.top, 8)
+        }
     }
-}
-
-#Preview {
-    FindNameCircle()
 }
