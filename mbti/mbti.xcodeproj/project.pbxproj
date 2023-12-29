@@ -24,6 +24,7 @@
 		4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */; };
 		4D155B5D2B3B008800E64C24 /* PacResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5C2B3B008800E64C24 /* PacResponse.swift */; };
 		4D155B5F2B3B00A200E64C24 /* PacMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5E2B3B00A200E64C24 /* PacMemberResponse.swift */; };
+		4D39B4962B3E739F001DBC24 /* MatchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -58,7 +59,7 @@
 		4DF0D1F22B2C0CCD0065387A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */; };
 		4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D2012B2C0E990065387A /* HomeView.swift */; };
 		4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D2032B2C0EA20065387A /* MatchView.swift */; };
-		4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D2052B2C0EA60065387A /* ResultView.swift */; };
+		4DF0D2062B2C0EA60065387A /* MatchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D2052B2C0EA60065387A /* MatchResultView.swift */; };
 		4DF0D20B2B2C0F230065387A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D20A2B2C0F230065387A /* Color.swift */; };
 		4DF0D22E2B2C32C00065387A /* GangwonEduAll-OTFLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D2222B2C312D0065387A /* GangwonEduAll-OTFLight.otf */; };
 		4DF0D2302B2C32C00065387A /* GangwonEduAll-OTFBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D2262B2C312D0065387A /* GangwonEduAll-OTFBold.otf */; };
@@ -82,6 +83,7 @@
 		4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTeamResponse.swift; sourceTree = "<group>"; };
 		4D155B5C2B3B008800E64C24 /* PacResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacResponse.swift; sourceTree = "<group>"; };
 		4D155B5E2B3B00A200E64C24 /* PacMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacMemberResponse.swift; sourceTree = "<group>"; };
+		4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultViewModel.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 		4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DF0D2012B2C0E990065387A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4DF0D2032B2C0EA20065387A /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
-		4DF0D2052B2C0EA60065387A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		4DF0D2052B2C0EA60065387A /* MatchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultView.swift; sourceTree = "<group>"; };
 		4DF0D20A2B2C0F230065387A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4DF0D2222B2C312D0065387A /* GangwonEduAll-OTFLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduAll-OTFLight.otf"; sourceTree = "<group>"; };
 		4DF0D2262B2C312D0065387A /* GangwonEduAll-OTFBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduAll-OTFBold.otf"; sourceTree = "<group>"; };
@@ -418,11 +420,11 @@
 				4DF0D1FD2B2C0DD70065387A /* Match */,
 				4D6565D22B30FC8D009BA840 /* MatchFirst */,
 				4D3C1E212B32824D000B2234 /* MatchSecond */,
+				4DF0D1FE2B2C0DEE0065387A /* MatchResult */,
 				4DD2BFB62B2FD68F00A732CD /* Find */,
 				4D3C1E242B32B547000B2234 /* FindResult */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
 				4DD220072B3502360015311B /* CheckFirst */,
-				4DF0D1FE2B2C0DEE0065387A /* Result */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -451,12 +453,13 @@
 			path = Match;
 			sourceTree = "<group>";
 		};
-		4DF0D1FE2B2C0DEE0065387A /* Result */ = {
+		4DF0D1FE2B2C0DEE0065387A /* MatchResult */ = {
 			isa = PBXGroup;
 			children = (
-				4DF0D2052B2C0EA60065387A /* ResultView.swift */,
+				4DF0D2052B2C0EA60065387A /* MatchResultView.swift */,
+				4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */,
 			);
-			path = Result;
+			path = MatchResult;
 			sourceTree = "<group>";
 		};
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
@@ -598,7 +601,7 @@
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
 				4DD2BFB12B2FD03A00A732CD /* ViewExt.swift in Sources */,
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
-				4DF0D2062B2C0EA60065387A /* ResultView.swift in Sources */,
+				4DF0D2062B2C0EA60065387A /* MatchResultView.swift in Sources */,
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
 				4D155B4F2B3AFD0F00E64C24 /* TeamResposne.swift in Sources */,
 				4DD2BFB52B2FD65C00A732CD /* TabViewType.swift in Sources */,
@@ -629,6 +632,7 @@
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
 				4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */,
+				4D39B4962B3E739F001DBC24 /* MatchResultViewModel.swift in Sources */,
 				4DD220062B3501480015311B /* MbtiGrid.swift in Sources */,
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,

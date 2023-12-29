@@ -45,13 +45,13 @@ struct MatchSecondView: View {
                         .applyFontStyle(.body)
                     Spacer()
                     NavigationLink {
-                        // TODO : reqeust AI result
+                        MatchResultView(data: viewModel.data, sliderValue: Int(sliderValue))
                     } label: {
                         MbtiTransparentButton("매칭 시작!") {
-                            viewModel.getResult(s: count)
+                            
                         }
                     }
-//                    .disabled(true)
+                    .disabled(true)
                     .padding(.vertical, 12)
                 }
                 Spacer()
