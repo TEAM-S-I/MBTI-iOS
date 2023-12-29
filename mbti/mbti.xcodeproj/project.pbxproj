@@ -32,6 +32,7 @@
 		4D39B4A32B3E7869001DBC24 /* FindNameCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A22B3E7869001DBC24 /* FindNameCircle.swift */; };
 		4D39B4A62B3E90BD001DBC24 /* FailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A52B3E90BD001DBC24 /* FailView.swift */; };
 		4D39B4A92B3E9848001DBC24 /* HomeNavigationCeilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A82B3E9848001DBC24 /* HomeNavigationCeilView.swift */; };
+		4D39B4AB2B3EA2C0001DBC24 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4AA2B3EA2C0001DBC24 /* NavigationUtil.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -98,6 +99,7 @@
 		4D39B4A22B3E7869001DBC24 /* FindNameCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNameCircle.swift; sourceTree = "<group>"; };
 		4D39B4A52B3E90BD001DBC24 /* FailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailView.swift; sourceTree = "<group>"; };
 		4D39B4A82B3E9848001DBC24 /* HomeNavigationCeilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationCeilView.swift; sourceTree = "<group>"; };
+		4D39B4AA2B3EA2C0001DBC24 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 			children = (
 				4DD2BFAA2B2FB9DD00A732CD /* MbtiType.swift */,
 				4DD2BFB42B2FD65C00A732CD /* TabViewType.swift */,
+				4D39B4AA2B3EA2C0001DBC24 /* NavigationUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				4DD2BFB52B2FD65C00A732CD /* TabViewType.swift in Sources */,
 				4DD2BFAB2B2FB9DD00A732CD /* MbtiType.swift in Sources */,
 				4D39B49A2B3E75B5001DBC24 /* LoadingView.swift in Sources */,
+				4D39B4AB2B3EA2C0001DBC24 /* NavigationUtil.swift in Sources */,
 				4D39B4A92B3E9848001DBC24 /* HomeNavigationCeilView.swift in Sources */,
 				4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
