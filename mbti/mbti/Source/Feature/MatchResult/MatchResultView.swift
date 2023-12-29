@@ -19,13 +19,13 @@ struct MatchResultView: View {
         VStack(spacing: 0) {
             switch viewModel.sideEffect {
             case .Loading:
-                LoadingView()
+                LoadingView(title: "AI가 최적의 팀을\n만드는 중이에요")
             case .Success:
-                CompleteView()
+                CompleteView(title: "MBTI 팀 매칭이 완료되었습니다\n")
             case .Result:
                 matchResult
             case .Fail:
-                LoadingView()
+                FailView(title: "MBTI 팀 매칭에 실패했습니다\n")
             }
         }
         .addMbtiLogo()
