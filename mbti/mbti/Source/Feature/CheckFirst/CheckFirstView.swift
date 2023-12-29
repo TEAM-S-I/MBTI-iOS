@@ -11,12 +11,7 @@ struct CheckFirstView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    var data: [MbtiModel] = [
-        MbtiModel(name: "한준혁", mbti: .isfp),
-        MbtiModel(name: "양예성", mbti: .estp),
-        MbtiModel(name: "박병준", mbti: .infp),
-        MbtiModel(name: "이강현", mbti: .entp)
-    ]
+    var data: [MbtiModel] = []
     var body: some View {
         HStack {
             Spacer()

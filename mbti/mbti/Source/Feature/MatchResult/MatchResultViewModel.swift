@@ -16,22 +16,21 @@ enum MatchResultSideEffect {
 }
 
 class MatchResultViewModel : ObservableObject {
-    @Published var data: [MbtiModel] = []
     @Published var sliderValue: Int = 0
     @Published var sideEffect: MatchResultSideEffect = .Loading
     @Published var resultData: [CreateTeamResponse] = []
     
-    func getResult() {
+    func getResult(data: [MbtiModel]) {
         
         var lst: [String] = []
         for i in data {
             lst.append("\(i.name) : \(i.mbti)")
         }
         
-        let prompt = lst.joined(separator: ", ")
-        
+        let prompt = "총 \(sliderValue)팀 팀원수 \(data.count)명 " + lst.joined(separator: ", ")
+        print("prompt - \(prompt)")
         AF.request("\(Secret.baseUrl)/make/team", method: .post, parameters: [
-            "data": "총 \(sliderValue)팀 팀원수 \(data.count)명 " + prompt
+            "data": prompt
         ], encoding: JSONEncoding.default)
         .responseDecodable(of: BaseResponse<[CreateTeamResponse]>.self) { response in
                 switch response.result {

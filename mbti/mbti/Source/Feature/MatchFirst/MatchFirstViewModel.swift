@@ -8,9 +8,4 @@
 import Foundation
 
 class MatchFirstViewModel : ObservableObject {
-    @Published var data: [MbtiModel] = []
-    
-    func addMember(name: String, mbti: MbtiType) {
-        data.append(MbtiModel(name: name, mbti: mbti))
-    }
 }
