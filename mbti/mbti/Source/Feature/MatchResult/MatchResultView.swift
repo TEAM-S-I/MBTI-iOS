@@ -15,7 +15,7 @@ struct MatchResultView: View {
     let sliderValue: Int
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             switch viewModel.sideEffect {
             case .Loading:
                 LoadingView()
@@ -31,7 +31,9 @@ struct MatchResultView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            viewModel.getResult()
+            withAnimation {
+                viewModel.getResult()
+            }
         }
         .onAppear {
             viewModel.data = data
@@ -45,6 +47,7 @@ struct MatchResultView: View {
             .applyFontStyle(.title)
             .padding(.top, 72)
         Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
+            .applyFontStyle(.label)
             .padding(.top, 12)
         ScrollView {
             VStack {

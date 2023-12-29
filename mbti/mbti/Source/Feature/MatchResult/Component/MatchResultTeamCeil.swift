@@ -15,6 +15,7 @@ struct MatchResultTeamCeil: View {
     var body: some View {
         VStack {
             Text(teamName)
+                .applyFontStyle(.subtitle)
             HStack {
                 ForEach(members, id: \.self) {
                     NormalNameCircle(model: $0)
