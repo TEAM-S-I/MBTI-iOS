@@ -14,7 +14,7 @@ struct MatchFirst: View {
     @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
-    @ObservedObject var viewModel = MatchFirstViewModel()
+    @State var data: [MbtiModel] = []
     
     var body: some View {
         ZStack {
@@ -25,18 +25,18 @@ struct MatchFirst: View {
                     Text("매칭할 팀원을 추가해 주세요")
                         .applyFontStyle(.title)
                         .padding(.top, 100)
-                    MbtiGrid(data: viewModel.data) {
+                    MbtiGrid(data: data) {
                         isAddActive = true
                     }
                     .padding(.top, 64)
                     Spacer()
                     NavigationLink {
-                        MatchSecondView(data: viewModel.data)
+                        MatchSecondView(data: $data)
                     } label: {
                         MbtiTransparentButton("다음 단계로") {
                             isWarnActive = true
                         }
-                        .disabled(viewModel.data.count >= 2)
+                        .disabled(data.count >= 2)
                     }
                     .padding(.vertical, 12)
                 }
@@ -59,7 +59,7 @@ struct MatchFirst: View {
                     MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
                     MbtiTransparentButton("추가 완료", fontStyle: .body) {
                         guard name.isEmpty || mbti == nil else {
-                            viewModel.data.append(MbtiModel(name: name, mbti: mbti ?? .enfj))
+                            data.append(MbtiModel(name: name, mbti: mbti ?? .enfj))
                             name = ""
                             mbti = nil
                             isAddActive = false

@@ -12,13 +12,10 @@ struct MatchSecondView: View {
     @Environment(\.dismiss) private var dismiss
     @State var sliderValue = 1.0
     @ObservedObject var viewModel = MatchSecondViewModel()
-    
-    init(data: [MbtiModel]) {
-        viewModel.data = data
-    }
+    @Binding var data: [MbtiModel]
     
     var body: some View {
-        let count = viewModel.data.count
+        let count = data.count
         GeometryReader { geo in
             HStack {
                 Spacer()
@@ -45,7 +42,7 @@ struct MatchSecondView: View {
                         .applyFontStyle(.body)
                     Spacer()
                     NavigationLink {
-                        MatchResultView(data: viewModel.data, sliderValue: Int(sliderValue))
+                        MatchResultView(sliderValue: $sliderValue, data: $data)
                     } label: {
                         MbtiTransparentButton("매칭 시작!") {
                             

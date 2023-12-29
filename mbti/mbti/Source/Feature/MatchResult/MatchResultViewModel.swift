@@ -16,12 +16,10 @@ enum MatchResultSideEffect {
 }
 
 class MatchResultViewModel : ObservableObject {
-    @Published var data: [MbtiModel] = []
-    @Published var sliderValue: Int = 0
     @Published var sideEffect: MatchResultSideEffect = .Loading
     @Published var resultData: [CreateTeamResponse] = []
     
-    func getResult() {
+    func getResult(data: [MbtiModel], sliderValue: Int) {
         
         var lst: [String] = []
         for i in data {

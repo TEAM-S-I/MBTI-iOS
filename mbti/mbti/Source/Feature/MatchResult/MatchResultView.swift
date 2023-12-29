@@ -11,14 +11,8 @@ struct MatchResultView: View {
     
     @StateObject var viewModel = MatchResultViewModel()
     @State var opacity: Double = 0
-    let sliderValue: Int
-    
-    let data: [MbtiModel]
-    
-    init(data: [MbtiModel], sliderValue: Int) {
-        self.sliderValue = sliderValue
-        self.data = data
-    }
+    @Binding var sliderValue: Double
+    @Binding var data: [MbtiModel]
     
     var body: some View {
         VStack(spacing: 0) {
@@ -37,11 +31,7 @@ struct MatchResultView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            viewModel.getResult()
-        }
-        .onAppear {
-            viewModel.sliderValue = sliderValue
-            viewModel.data = data
+            viewModel.getResult(data: data, sliderValue: Int(sliderValue))
         }
     }
     
