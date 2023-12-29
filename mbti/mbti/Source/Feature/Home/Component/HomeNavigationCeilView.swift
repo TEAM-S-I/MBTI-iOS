@@ -15,10 +15,15 @@ struct HomeNavigationCeilView: View {
     var body: some View {
         VStack(spacing: 0) {
             Image(image)
+                .resizable()
+                .renderingMode(.template)
+                .frame(width: 24, height: 24)
+                .foregroundColor(isSelected ? .main800 : .main300)
             Rectangle()
                 .foregroundColor(isSelected ? .main800 : .main100)
                 .frame(width: 24, height: 4)
                 .cornerRadius(2)
+                .padding(.top, 4)
         }
     }
 }

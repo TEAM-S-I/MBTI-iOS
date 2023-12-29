@@ -9,4 +9,17 @@ enum TabViewType: String, CaseIterable {
     case match = "match"
     case find = "find"
     case check = "check"
+    
+    var image: String {
+        get {
+            switch self {
+            case .match:
+                return "Team"
+            case .find:
+                return "Find"
+            case .check:
+                return "Check1"
+            }
+        }
+    }
 }

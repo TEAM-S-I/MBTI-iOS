@@ -46,9 +46,8 @@ struct HomeView: View {
                                 Button {
                                     selectedTab = tab
                                 } label: {
-                                    
-                                    Text("\(tab.rawValue)")
-                                        .foregroundColor(selectedTab == tab ? .red : .blue)
+                                    HomeNavigationCeilView(image: tab.image, isSelected: selectedTab == tab)
+                                        .padding(.horizontal, 46)
                                 }
                             }
                         }
