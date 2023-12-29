@@ -29,6 +29,7 @@
 		4D39B49C2B3E7691001DBC24 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B49B2B3E7691001DBC24 /* CompleteView.swift */; };
 		4D39B49F2B3E7780001DBC24 /* MatchResultTeamCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B49E2B3E7780001DBC24 /* MatchResultTeamCeil.swift */; };
 		4D39B4A12B3E7811001DBC24 /* NormalNameCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */; };
+		4D39B4A32B3E7869001DBC24 /* FindNameCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A22B3E7869001DBC24 /* FindNameCircle.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -92,6 +93,7 @@
 		4D39B49B2B3E7691001DBC24 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
 		4D39B49E2B3E7780001DBC24 /* MatchResultTeamCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultTeamCeil.swift; sourceTree = "<group>"; };
 		4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNameCircle.swift; sourceTree = "<group>"; };
+		4D39B4A22B3E7869001DBC24 /* FindNameCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNameCircle.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				4DD2BF942B2F1E7300A732CD /* NameCircle.swift */,
 				4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */,
 				4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */,
+				4D39B4A22B3E7869001DBC24 /* FindNameCircle.swift */,
 			);
 			path = NameCircle;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				4D155B5D2B3B008800E64C24 /* PacResponse.swift in Sources */,
 				4DD2BFA22B2F2B9F00A732CD /* TestView.swift in Sources */,
 				4D155B4B2B3AFC1400E64C24 /* CreateTeamResponse.swift in Sources */,
+				4D39B4A32B3E7869001DBC24 /* FindNameCircle.swift in Sources */,
 				4D155B5F2B3B00A200E64C24 /* PacMemberResponse.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
