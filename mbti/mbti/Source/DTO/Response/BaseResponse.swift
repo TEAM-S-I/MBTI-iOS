@@ -6,5 +6,5 @@
 //
 
 struct BaseResponse<T: Decodable>: Decodable {
-    let teams: T
+    let data: T
 }

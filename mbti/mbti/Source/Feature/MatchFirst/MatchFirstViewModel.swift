@@ -8,4 +8,5 @@
 import Foundation
 
 class MatchFirstViewModel : ObservableObject {
+    @Published var data: [MbtiModel] = []
 }

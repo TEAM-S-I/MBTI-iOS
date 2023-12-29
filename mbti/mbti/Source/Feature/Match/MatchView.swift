@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MatchView: View {
     
-    @StateObject var matchModel = MatchModel()
     @State var isMatchStarted = false
     
     var body: some View {
@@ -22,15 +21,14 @@ struct MatchView: View {
                     .applyFontStyle(.title)
                     .padding(.top, 12)
                 NavigationLink(isActive: $isMatchStarted) {
-                    MatchFirst(isMatchStarted: $isMatchStarted)
-                        .environmentObject(matchModel)
+                    MatchFirst()
                 } label: {
-                    MbtiButton("MBTI 팀 매칭 시작") {
-                    }
-                    .disabled(true)
+                }
+                
+                MbtiButton("MBTI 팀 매칭 시작") {
+                    isMatchStarted = true
                 }
                 .padding(.top, 32)
-                
                 
                 Button {
                     print("match log")

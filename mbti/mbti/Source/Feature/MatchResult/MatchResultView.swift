@@ -10,11 +10,16 @@ import SwiftUI
 struct MatchResultView: View {
     
     @StateObject var viewModel = MatchResultViewModel()
-    @EnvironmentObject var matchModel: MatchModel
     @State var opacity: Double = 0
-    @Binding var isMatchStarted: Bool
     let sliderValue: Int
-        
+    
+    let data: [MbtiModel]
+    
+    init(data: [MbtiModel], sliderValue: Int) {
+        self.sliderValue = sliderValue
+        self.data = data
+    }
+    
     var body: some View {
         VStack(spacing: 0) {
             switch viewModel.sideEffect {
@@ -32,11 +37,11 @@ struct MatchResultView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            print(matchModel.data)
-            viewModel.getResult(data: matchModel.data)
+            viewModel.getResult()
         }
         .onAppear {
             viewModel.sliderValue = sliderValue
+            viewModel.data = data
         }
     }
     
@@ -61,8 +66,8 @@ struct MatchResultView: View {
                 }
                 MbtiTransparentButton("홈으로") {
                     // TODO: save
-                    matchModel.data = []
-                    isMatchStarted = false
+                    // remove
+                    NavigationUtil.popToRootView()
                 }
                 .padding(.vertical, 12)
             }
