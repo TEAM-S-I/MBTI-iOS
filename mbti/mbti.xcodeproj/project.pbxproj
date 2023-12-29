@@ -176,6 +176,13 @@
 			path = Complete;
 			sourceTree = "<group>";
 		};
+		4D39B49D2B3E7727001DBC24 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		4D3C1E212B32824D000B2234 /* MatchSecond */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD2BFA12B2F2B9F00A732CD /* TestView.swift */,
+				4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -376,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				4DF0D2012B2C0E990065387A /* HomeView.swift */,
-				4D155B3A2B3ADE2D00E64C24 /* DialogTestView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -478,6 +485,7 @@
 		4DF0D1FE2B2C0DEE0065387A /* MatchResult */ = {
 			isa = PBXGroup;
 			children = (
+				4D39B49D2B3E7727001DBC24 /* Component */,
 				4DF0D2052B2C0EA60065387A /* MatchResultView.swift */,
 				4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */,
 			);
