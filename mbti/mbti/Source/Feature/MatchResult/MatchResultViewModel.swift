@@ -33,15 +33,18 @@ class MatchResultViewModel : ObservableObject {
         AF.request("\(Secret.baseUrl)/make/team", method: .post, parameters: [
             "data": "총 \(sliderValue)팀 팀원수 \(data.count)명 " + prompt
         ], encoding: JSONEncoding.default)
-            .responseDecodable(of: BaseResponse<[CreateTeamResponse]>.self) { response in
-                
+        .responseDecodable(of: BaseResponse<[CreateTeamResponse]>.self) { response in
                 switch response.result {
                 case .success(let res):
                     self.sideEffect = .Success
-                    self.resultData = response.value?.teams ?? []
+                    self.resultData = res.teams
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        self.sideEffect = .Result
+                    }
                     break
                 case .failure(let e):
                     self.sideEffect = .Fail
+                    print(e)
                     break
                 }
             }
@@ -50,4 +53,6 @@ class MatchResultViewModel : ObservableObject {
     func completeSuccess() {
         sideEffect = .Result
     }
+    
+    
 }

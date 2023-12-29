@@ -9,12 +9,10 @@ import SwiftUI
 
 struct MatchResultView: View {
     
-    @ObservedObject var viewModel = MatchResultViewModel()
+    @StateObject var viewModel = MatchResultViewModel()
     
-    init(data: [MbtiModel], sliderValue: Int) {
-        viewModel.data = data
-        viewModel.sliderValue = sliderValue
-    }
+    let data: [MbtiModel]
+    let sliderValue: Int
     
     var body: some View {
         VStack {
@@ -28,9 +26,17 @@ struct MatchResultView: View {
             case .Fail:
                 LoadingView()
             }
-            
         }
         .addMbtiLogo()
+        .navigationBarBackButtonHidden()
+        .background(Color.main100)
+        .task {
+            viewModel.getResult()
+        }
+        .onAppear {
+            viewModel.data = data
+            viewModel.sliderValue = sliderValue
+        }
     }
     
     @ViewBuilder
@@ -42,7 +48,10 @@ struct MatchResultView: View {
             .padding(.top, 12)
         ScrollView {
             VStack {
-//                    ForEach()
+                ForEach(viewModel.resultData, id: \.self) {
+                    MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toModel())
+                        .padding(.top, 48)
+                }
             }
         }
     }
