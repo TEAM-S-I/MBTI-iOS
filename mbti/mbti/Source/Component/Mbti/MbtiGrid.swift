@@ -23,13 +23,7 @@ struct MbtiGrid: View {
         ScrollView {
             LazyVGrid(columns: columns, alignment: .center) {
                 ForEach(data, id: \.self) { model in
-                    VStack {
-                        NameCircle(model.name, type: model.mbti.nameCircleType)
-                        Text(model.mbti.rawValue)
-                            .applyFontStyle(.label)
-                            .foregroundColor(.gray300)
-                            .padding(.top, 8)
-                    }
+                    NormalNameCircle(model: model)
                 }
                 HStack {
                     VStack {

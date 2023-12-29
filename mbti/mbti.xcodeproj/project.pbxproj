@@ -27,6 +27,8 @@
 		4D39B4962B3E739F001DBC24 /* MatchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */; };
 		4D39B49A2B3E75B5001DBC24 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4992B3E75B5001DBC24 /* LoadingView.swift */; };
 		4D39B49C2B3E7691001DBC24 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B49B2B3E7691001DBC24 /* CompleteView.swift */; };
+		4D39B49F2B3E7780001DBC24 /* MatchResultTeamCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B49E2B3E7780001DBC24 /* MatchResultTeamCeil.swift */; };
+		4D39B4A12B3E7811001DBC24 /* NormalNameCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */; };
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
@@ -88,6 +90,8 @@
 		4D39B4952B3E739F001DBC24 /* MatchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultViewModel.swift; sourceTree = "<group>"; };
 		4D39B4992B3E75B5001DBC24 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4D39B49B2B3E7691001DBC24 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
+		4D39B49E2B3E7780001DBC24 /* MatchResultTeamCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultTeamCeil.swift; sourceTree = "<group>"; };
+		4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalNameCircle.swift; sourceTree = "<group>"; };
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		4D39B49D2B3E7727001DBC24 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4D39B49E2B3E7780001DBC24 /* MatchResultTeamCeil.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			children = (
 				4DD2BF942B2F1E7300A732CD /* NameCircle.swift */,
 				4DD2BF962B2F1EA700A732CD /* NameCircleType.swift */,
+				4D39B4A02B3E7811001DBC24 /* NormalNameCircle.swift */,
 			);
 			path = NameCircle;
 			sourceTree = "<group>";
@@ -642,6 +648,8 @@
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
 				4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */,
 				4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */,
+				4D39B4A12B3E7811001DBC24 /* NormalNameCircle.swift in Sources */,
+				4D39B49F2B3E7780001DBC24 /* MatchResultTeamCeil.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
 				4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */,
 				4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */,
