@@ -46,6 +46,7 @@ struct HomeView: View {
                                 Button {
                                     selectedTab = tab
                                 } label: {
+                                    
                                     Text("\(tab.rawValue)")
                                         .foregroundColor(selectedTab == tab ? .red : .blue)
                                 }
