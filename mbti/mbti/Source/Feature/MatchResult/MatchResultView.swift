@@ -42,21 +42,54 @@ struct MatchResultView: View {
     
     @ViewBuilder
     var matchResult: some View {
-        VStack(spacing: 0) {
-            Text("매칭 결과")
-                .applyFontStyle(.title)
-                .padding(.top, 72)
-            Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
-                .applyFontStyle(.label)
-                .padding(.top, 12)
-                .padding(.bottom, 36)
-            ScrollView {
-                VStack {
-                    ForEach(viewModel.resultData, id: \.self) {
-                        MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toModel())
-                            .padding(.bottom, 48)
+        ZStack {
+            VStack(spacing: 0) {
+                Text("매칭 결과")
+                    .applyFontStyle(.title)
+                    .padding(.top, 72)
+                Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
+                    .applyFontStyle(.label)
+                    .padding(.top, 12)
+                    .padding(.bottom, 36)
+                ScrollView {
+                    VStack {
+                        ForEach(viewModel.resultData, id: \.self) {
+                            MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toModel())
+                                .padding(.bottom, 48)
+                        }
                     }
                 }
+                MbtiTransparentButton("홈으로") {
+                    NavigationUtil.popToRootView()
+                }
+                .padding(.vertical, 12)
+            }
+            VStack {
+                Spacer()
+                Button {
+                    print("show ad!")
+                } label: {
+                    HStack {
+                        Text("광고를 보고 더 많은 정보를 확인해 보세요!")
+                            .applyFontStyle(.label)
+                            .padding(.leading, 16)
+                        Spacer()
+                        Image("Video")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                        Text("시청")
+                            .foregroundColor(.main800)
+                            .font(Font.custom(GangwonEduAllFontFamily.bold.rawValue, size: 12))
+                            .padding(.trailing, 16)
+                    }
+                    .frame(height: 46)
+                    .background(Color.main100)
+                    .cornerRadius(8)
+                    .padding(.horizontal, 36)
+                    .shadow1()
+                }
+                Spacer()
+                    .frame(height: 60)
             }
         }
         .opacity(opacity)
