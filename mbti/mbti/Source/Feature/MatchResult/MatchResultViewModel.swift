@@ -36,9 +36,11 @@ class MatchResultViewModel : ObservableObject {
         .responseDecodable(of: BaseResponse<[CreateTeamResponse]>.self) { response in
                 switch response.result {
                 case .success(let res):
-                    self.sideEffect = .Success
                     self.resultData = res.teams
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        self.sideEffect = .Success
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3 + 2) {
                         self.sideEffect = .Result
                     }
                     break

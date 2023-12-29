@@ -10,6 +10,7 @@ import SwiftUI
 struct MatchResultView: View {
     
     @StateObject var viewModel = MatchResultViewModel()
+    @State var opacity: Double = 0
     
     let data: [MbtiModel]
     let sliderValue: Int
@@ -31,9 +32,7 @@ struct MatchResultView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            withAnimation {
-                viewModel.getResult()
-            }
+            viewModel.getResult()
         }
         .onAppear {
             viewModel.data = data
@@ -43,18 +42,27 @@ struct MatchResultView: View {
     
     @ViewBuilder
     var matchResult: some View {
-        Text("매칭 결과")
-            .applyFontStyle(.title)
-            .padding(.top, 72)
-        Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
-            .applyFontStyle(.label)
-            .padding(.top, 12)
-        ScrollView {
-            VStack {
-                ForEach(viewModel.resultData, id: \.self) {
-                    MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toModel())
-                        .padding(.top, 48)
+        VStack(spacing: 0) {
+            Text("매칭 결과")
+                .applyFontStyle(.title)
+                .padding(.top, 72)
+            Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
+                .applyFontStyle(.label)
+                .padding(.top, 12)
+                .padding(.bottom, 36)
+            ScrollView {
+                VStack {
+                    ForEach(viewModel.resultData, id: \.self) {
+                        MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toModel())
+                            .padding(.bottom, 48)
+                    }
                 }
+            }
+        }
+        .opacity(opacity)
+        .onAppear {
+            withAnimation {
+                opacity = 1
             }
         }
     }
