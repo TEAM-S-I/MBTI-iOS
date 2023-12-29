@@ -32,7 +32,7 @@ struct MatchSecondView: View {
                     HStack {
                         Text("1")
                             .applyFontStyle(.body)
-                        Slider(value: $sliderValue, in: 1...2, step: 1)
+                        Slider(value: $sliderValue, in: 1...Double(count), step: 1)
                             .tint(.main800)
                             .accentColor(.main300)
                         Text("\(count)")
