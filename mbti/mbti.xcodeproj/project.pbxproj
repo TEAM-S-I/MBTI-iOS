@@ -39,6 +39,9 @@
 		4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6565D32B30FC97009BA840 /* MatchFirst.swift */; };
 		4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */; };
 		4D8D44302B40641B00C6D833 /* MatchLogCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */; };
+		4D8D44332B40654F00C6D833 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8D44322B40654F00C6D833 /* Realm */; };
+		4D8D44352B40654F00C6D833 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8D44342B40654F00C6D833 /* RealmSwift */; };
+		4D8D44392B40657A00C6D833 /* MatchLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44382B40657A00C6D833 /* MatchLogModel.swift */; };
 		4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiModel.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
@@ -108,6 +111,7 @@
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
 		4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogView.swift; sourceTree = "<group>"; };
 		4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogCeil.swift; sourceTree = "<group>"; };
+		4D8D44382B40657A00C6D833 /* MatchLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogModel.swift; sourceTree = "<group>"; };
 		4DD21FFB2B33BE020015311B /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8D44352B40654F00C6D833 /* RealmSwift in Frameworks */,
+				4D8D44332B40654F00C6D833 /* Realm in Frameworks */,
 				4D155B442B3AF29300E64C24 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +272,14 @@
 				4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		4D8D44372B40656D00C6D833 /* MatchLog */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D44382B40657A00C6D833 /* MatchLogModel.swift */,
+			);
+			path = MatchLog;
 			sourceTree = "<group>";
 		};
 		4DD21FFA2B33BDEB0015311B /* DTO */ = {
@@ -487,7 +501,6 @@
 				4DD2BFAF2B2FD03300A732CD /* Extension */,
 				4DD2BFA92B2FB9CF00A732CD /* Util */,
 				4DF0D2072B2C0EBF0065387A /* Local */,
-				4DF0D1FA2B2C0D140065387A /* Service */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -512,13 +525,6 @@
 				4D39B4A42B3E90B7001DBC24 /* Fail */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		4DF0D1FA2B2C0D140065387A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		4DF0D1FB2B2C0D3F0065387A /* Application */ = {
@@ -570,6 +576,7 @@
 		4DF0D2072B2C0EBF0065387A /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				4D8D44372B40656D00C6D833 /* MatchLog */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -617,6 +624,8 @@
 			name = mbti;
 			packageProductDependencies = (
 				4D155B432B3AF29300E64C24 /* Alamofire */,
+				4D8D44322B40654F00C6D833 /* Realm */,
+				4D8D44342B40654F00C6D833 /* RealmSwift */,
 			);
 			productName = mbti;
 			productReference = 4DF0D1E72B2C0CCC0065387A /* mbti.app */;
@@ -648,6 +657,7 @@
 			mainGroup = 4DF0D1DE2B2C0CCC0065387A;
 			packageReferences = (
 				4D155B422B3AF29300E64C24 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 4DF0D1E82B2C0CCC0065387A /* Products */;
 			projectDirPath = "";
@@ -697,6 +707,7 @@
 				4D39B49A2B3E75B5001DBC24 /* LoadingView.swift in Sources */,
 				4D39B4AB2B3EA2C0001DBC24 /* NavigationUtil.swift in Sources */,
 				4D39B4A92B3E9848001DBC24 /* HomeNavigationCeilView.swift in Sources */,
+				4D8D44392B40657A00C6D833 /* MatchLogModel.swift in Sources */,
 				4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */,
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
@@ -956,6 +967,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -963,6 +982,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D155B422B3AF29300E64C24 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		4D8D44322B40654F00C6D833 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4D8D44342B40654F00C6D833 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
