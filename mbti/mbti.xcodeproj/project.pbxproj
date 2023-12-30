@@ -37,6 +37,8 @@
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
 		4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6565D32B30FC97009BA840 /* MatchFirst.swift */; };
+		4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */; };
+		4D8D44302B40641B00C6D833 /* MatchLogCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */; };
 		4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiModel.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
@@ -104,6 +106,8 @@
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
+		4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogView.swift; sourceTree = "<group>"; };
+		4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogCeil.swift; sourceTree = "<group>"; };
 		4DD21FFB2B33BE020015311B /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -245,6 +249,23 @@
 				4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */,
 			);
 			path = MatchFirst;
+			sourceTree = "<group>";
+		};
+		4D8D442B2B4063CD00C6D833 /* MatchLog */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D442E2B40641000C6D833 /* Component */,
+				4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */,
+			);
+			path = MatchLog;
+			sourceTree = "<group>";
+		};
+		4D8D442E2B40641000C6D833 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		4DD21FFA2B33BDEB0015311B /* DTO */ = {
@@ -481,6 +502,7 @@
 				4D6565D22B30FC8D009BA840 /* MatchFirst */,
 				4D3C1E212B32824D000B2234 /* MatchSecond */,
 				4DF0D1FE2B2C0DEE0065387A /* MatchResult */,
+				4D8D442B2B4063CD00C6D833 /* MatchLog */,
 				4DD2BFB62B2FD68F00A732CD /* Find */,
 				4D3C1E242B32B547000B2234 /* FindResult */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
@@ -660,6 +682,7 @@
 				4DD220012B33F7B40015311B /* Dialog.swift in Sources */,
 				4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */,
 				4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */,
+				4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */,
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
 				4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
@@ -691,6 +714,7 @@
 				4D155B5F2B3B00A200E64C24 /* PacMemberResponse.swift in Sources */,
 				4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */,
 				4DD2BF8C2B2F156B00A732CD /* MbtiButton.swift in Sources */,
+				4D8D44302B40641B00C6D833 /* MatchLogCeil.swift in Sources */,
 				4DD220092B3502420015311B /* CheckFirstView.swift in Sources */,
 				4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
