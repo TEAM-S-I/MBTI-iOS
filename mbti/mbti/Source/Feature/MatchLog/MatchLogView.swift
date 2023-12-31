@@ -11,14 +11,14 @@ import RealmSwift
 struct MatchLogView: View {
     
     @Environment(\.dismiss) private var dismiss
-    @ObservedResults(MatchLogModel.self) var teams
     
     var body: some View {
+        let model = MatchLogDataModel.findAll()
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(1..<30) { i in
-                        
+                    ForEach(model) { i in
+                        Text(i.data[0].name)
                     }
                 }
             }
@@ -27,5 +27,7 @@ struct MatchLogView: View {
         .addBackButton {
             dismiss()
         }
+        .background(Color.main100)
+        .navigationBarBackButtonHidden()
     }
 }

@@ -7,17 +7,16 @@
 
 import SwiftUI
 
-//struct MatchLogCeil: View {
-//    
-//    let
-//
-//    var body: some View {
-//        VStack(spacing: 0) {
-//            Text(
-//            HStack {
-//                
-//            }
-//        }
-//        .frame(width: 256, height: 256)
-//    }
-//}
+struct MatchLogCeil: View {
+    
+
+    var body: some View {
+        VStack(spacing: 0) {
+            Text("")
+            HStack {
+                
+            }
+        }
+        .frame(width: 256, height: 256)
+    }
+}

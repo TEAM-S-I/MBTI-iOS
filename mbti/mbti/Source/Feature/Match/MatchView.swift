@@ -27,15 +27,21 @@ struct MatchView: View {
                     .padding(.top, 32)
                 }
                 
-                Button {
-                    print("match log")
+                NavigationLink {
+                    MatchLogView()
                 } label: {
-                    Text("매칭 기록 보기")
-                        .foregroundColor(.gray500)
-                        .applyFontStyle(.label)
-                        .underline()
+                    Button {
+                        print("match log")
+                    } label: {
+                        Text("매칭 기록 보기")
+                            .foregroundColor(.gray500)
+                            .applyFontStyle(.label)
+                            .underline()
+                    }
+                    .disabled(true)
+                    .padding(.top, 24)
                 }
-                .padding(.top, 24)
+                
                 Spacer()
             }
             Spacer()
