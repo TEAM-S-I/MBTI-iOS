@@ -17,6 +17,7 @@ class MatchLogModel: Object, Identifiable {
 }
 
 extension MatchLogModel {
+    
     private static var realm = try! Realm()
     
     static func findAll() -> Results<MatchLogModel> {

@@ -17,8 +17,8 @@ struct MatchLogView: View {
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(model) { i in
-                        Text(i.data[0].name)
+                    ForEach(model, id: \.self) { i in
+                        Text(i.name)
                     }
                 }
             }
@@ -29,5 +29,7 @@ struct MatchLogView: View {
         }
         .background(Color.main100)
         .navigationBarBackButtonHidden()
+        .onAppear {
+        }
     }
 }

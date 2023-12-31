@@ -18,16 +18,22 @@ struct MatchResultView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            switch viewModel.sideEffect {
-            case .Loading:
-                LoadingView(title: "AI가 최적의 팀을\n만드는 중이에요")
-            case .Success:
-                CompleteView(title: "MBTI 팀 매칭이 완료되었습니다\n")
-            case .Result:
-                matchResult
-            case .Fail:
-                FailView(title: "MBTI 팀 매칭에 실패했습니다\n")
+            Spacer()
+            HStack {
+                Spacer()
+                switch viewModel.sideEffect {
+                case .Loading:
+                    LoadingView(title: "AI가 최적의 팀을\n만드는 중이에요")
+                case .Success:
+                    CompleteView(title: "MBTI 팀 매칭이 완료되었습니다\n")
+                case .Result:
+                    matchResult
+                case .Fail:
+                    FailView(title: "MBTI 팀 매칭에 실패했습니다\n")
+                }
+                Spacer()
             }
+            Spacer()
         }
         .navigationBarBackButtonHidden()
         .background(Color.main100)
@@ -106,6 +112,7 @@ struct MatchResultView: View {
                             // TODO: SAVE
                             let model = MatchLogDataModel()
                             
+                            model.name = text.isEmpty ? "이름 없는 매칭" : text
                             model.data.append(objectsIn: viewModel.resultData.map {
                                 $0.toModel()
                             })

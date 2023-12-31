@@ -8,7 +8,9 @@
 import Foundation
 import RealmSwift
 
-class MatchLogDataModel: Object, Identifiable {
+class MatchLogDataModel: Object {
+    @Persisted(primaryKey: true) var objectID: ObjectId
+    @Persisted var name: String
     @Persisted var data: List<MatchLogTeamModel>
 }
 
@@ -28,6 +30,12 @@ extension MatchLogDataModel {
     static func delMatchLog(_ memo: MatchLogDataModel) {
         try! realm.write {
             realm.delete(memo)
+        }
+    }
+    
+    static func delAll() {
+        try! realm.write {
+            realm.deleteAll()
         }
     }
     
