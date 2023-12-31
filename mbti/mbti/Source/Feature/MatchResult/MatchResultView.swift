@@ -1,44 +1,21 @@
 //
-//  ResultView.swift
+//  MatchResultView.swift
 //  mbti
 //
-//  Created by dgsw8th71 on 12/15/23.
+//  Created by dgsw8th71 on 1/1/24.
 //
 
 import SwiftUI
 
 struct MatchResultView: View {
     
-    @StateObject var viewModel = MatchResultViewModel()
-    @State var opacity: Double = 0
-    @Binding var sliderValue: Double
-    @Binding var data: [MbtiDTO]
-    @State var isActive: Bool = true
+    let resultData: [CreateTeamResponse]
+    @State var isActive: Bool = false
     @State var text: String = ""
+    @State var opacity: Double = 0
     
     var body: some View {
-        VStack(spacing: 0) {
-            switch viewModel.sideEffect {
-            case .Loading:
-                LoadingView(title: "AI가 최적의 팀을\n만드는 중이에요")
-            case .Success:
-                CompleteView(title: "MBTI 팀 매칭이 완료되었습니다\n")
-            case .Result:
-                matchResult
-            case .Fail:
-                FailView(title: "MBTI 팀 매칭에 실패했습니다\n")
-            }
-        }
-        .navigationBarBackButtonHidden()
-        .background(Color.main100)
         
-        .task {
-            viewModel.getResult(data: data, sliderValue: Int(sliderValue))
-        }
-    }
-    
-    @ViewBuilder
-    var matchResult: some View {
         ZStack {
             VStack(spacing: 0) {
                 Text("매칭 결과")
@@ -50,11 +27,11 @@ struct MatchResultView: View {
                     .padding(.bottom, 36)
                 ScrollView {
                     VStack {
-                        ForEach(viewModel.resultData, id: \.self) {
+                        ForEach(resultData, id: \.self) {
                             MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.map {
                                 $0.toDTO()
                             })
-                                .padding(.bottom, 48)
+                            .padding(.bottom, 48)
                         }
                     }
                 }
@@ -109,7 +86,7 @@ struct MatchResultView: View {
                             let model = MbtiMatchModel()
                             
                             model.name = text.isEmpty ? "이름 없는 매칭" : text
-                            model.data.append(objectsIn: viewModel.resultData.map {
+                            model.data.append(objectsIn: resultData.map {
                                 $0.toModel()
                             })
                             

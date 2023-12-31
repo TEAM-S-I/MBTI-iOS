@@ -42,7 +42,7 @@ struct MatchSecondView: View {
                         .applyFontStyle(.body)
                     Spacer()
                     NavigationLink {
-                        MatchResultView(sliderValue: $sliderValue, data: $data)
+                        MatchThirdView(sliderValue: $sliderValue, data: $data)
                     } label: {
                         MbtiTransparentButton("매칭 시작!") {
                             
