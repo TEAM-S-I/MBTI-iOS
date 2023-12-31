@@ -18,7 +18,6 @@
 		4D155B4F2B3AFD0F00E64C24 /* TeamResposne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */; };
 		4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */; };
 		4D155B532B3AFD5F00E64C24 /* TeamMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */; };
-		4D155B552B3AFE4300E64C24 /* Mbti2DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */; };
 		4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B562B3AFF4300E64C24 /* PlanResponse.swift */; };
 		4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */; };
 		4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */; };
@@ -93,7 +92,6 @@
 		4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResposne.swift; sourceTree = "<group>"; };
 		4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDescriptionResponse.swift; sourceTree = "<group>"; };
 		4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberResponse.swift; sourceTree = "<group>"; };
-		4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti2DTO.swift; sourceTree = "<group>"; };
 		4D155B562B3AFF4300E64C24 /* PlanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanResponse.swift; sourceTree = "<group>"; };
 		4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMemberResponse.swift; sourceTree = "<group>"; };
 		4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTeamResponse.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 			children = (
 				4D155B472B3AFBE700E64C24 /* Response */,
 				4DD21FFB2B33BE020015311B /* MbtiDTO.swift */,
-				4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -739,7 +736,6 @@
 				4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
-				4D155B552B3AFE4300E64C24 /* Mbti2DTO.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
