@@ -8,5 +8,5 @@
 import Foundation
 
 struct PacResponse: Decodable {
-    let team: PacTeamResponse
+    let team: PacTeamResponse?
 }
