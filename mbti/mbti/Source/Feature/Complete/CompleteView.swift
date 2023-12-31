@@ -24,6 +24,7 @@ struct CompleteView: View {
                 Text(title)
                     .applyFontStyle(.title)
                     .padding(.top, 52)
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
             Spacer()
