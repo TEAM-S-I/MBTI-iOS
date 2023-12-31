@@ -18,7 +18,7 @@ enum CheckResultSideEffect {
 class CheckSecondViewModel: ObservableObject {
     
     @Published var sideEffect: MatchResultSideEffect = .Loading
-    @Published var resultData: PacResponse = PacResponse(team: "", members: [])
+    @Published var resultData: PacResponse = PacResponse(team: PacTeamResponse(members: []))
     
     func getResult(data: [MbtiDTO]) {
         
@@ -29,13 +29,13 @@ class CheckSecondViewModel: ObservableObject {
         
         let prompt = lst.joined(separator: ", ")
         print("prompt - \(prompt)")
-        AF.request("\(Secret.baseUrl)/make/team", method: .post, parameters: [
+        AF.request("\(Secret.baseUrl)/make/pac", method: .post, parameters: [
             "data": prompt
         ], encoding: JSONEncoding.default)
-        .responseDecodable(of: BaseResponse<PacResponse>.self) { response in
+        .responseDecodable(of: PacResponse.self) { response in
                 switch response.result {
                 case .success(let res):
-                    self.resultData = res.data
+                    self.resultData = res
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.sideEffect = .Success
                     }

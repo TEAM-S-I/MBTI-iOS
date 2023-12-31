@@ -8,6 +8,5 @@
 import Foundation
 
 struct PacResponse: Decodable {
-    let team: String
-    let members: [PacMemberResponse]
+    let team: PacTeamResponse
 }
