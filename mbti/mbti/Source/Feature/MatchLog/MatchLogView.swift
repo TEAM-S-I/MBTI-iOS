@@ -18,10 +18,13 @@ struct MatchLogView: View {
             ScrollView {
                 VStack {
                     ForEach(model, id: \.self) { i in
-                        Text(i.name)
+                        MatchLogCeil(model: i) {
+                            
+                        }
                     }
                 }
             }
+            .padding(.top, 144)
         }
         .addMbtiLogo()
         .addBackButton {

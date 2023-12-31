@@ -9,14 +9,42 @@ import SwiftUI
 
 struct MatchLogCeil: View {
     
-
+    let model: MatchLogDataModel
+    let callback: () -> Void
+    
     var body: some View {
-        VStack(spacing: 0) {
-            Text("")
-            HStack {
-                
+        
+        var s = 0
+        
+        let _ = {
+            for i in model.data {
+                s += i.members.count
             }
+        }()
+        
+        Button {
+            callback()
+        } label: {
+            VStack(spacing: 0) {
+                Text("총 \(s)명 \(model.data.count)팀")
+                    .applyFontStyle(.body)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+                    .toLeading()
+                HStack {
+                    Text(model.name)
+                        .applyFontStyle(.subtitle)
+                    Spacer()
+                    Image("Front")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                }
+                .padding(16)
+            }
+            .cornerRadius(16)
+            .frame(width: 256)
+            .background(Color.main100)
+            .shadow1()
         }
-        .frame(width: 256, height: 256)
     }
 }
