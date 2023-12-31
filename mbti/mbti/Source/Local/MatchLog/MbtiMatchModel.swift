@@ -8,26 +8,26 @@
 import Foundation
 import RealmSwift
 
-class MatchLogDataModel: Object {
+class MbtiMatchModel: Object {
     @Persisted(primaryKey: true) var objectID: ObjectId
     @Persisted var name: String
-    @Persisted var data: List<MatchLogTeamModel>
+    @Persisted var data: List<MbtiTeamModel>
 }
 
-extension MatchLogDataModel {
+extension MbtiMatchModel {
     private static var realm = try! Realm()
     
-    static func findAll() -> Results<MatchLogDataModel> {
-        realm.objects(MatchLogDataModel.self)
+    static func findAll() -> Results<MbtiMatchModel> {
+        realm.objects(MbtiMatchModel.self)
     }
     
-    static func addMatchLog(_ memo: MatchLogDataModel) {
+    static func addMatchLog(_ memo: MbtiMatchModel) {
         try! realm.write {
             realm.add(memo)
         }
     }
     
-    static func delMatchLog(_ memo: MatchLogDataModel) {
+    static func delMatchLog(_ memo: MbtiMatchModel) {
         try! realm.write {
             realm.delete(memo)
         }
@@ -39,8 +39,8 @@ extension MatchLogDataModel {
         }
     }
     
-    static func editMatchLog(matchLog: MatchLogDataModel,
-                             data: List<MatchLogTeamModel>
+    static func editMatchLog(matchLog: MbtiMatchModel,
+                             data: List<MbtiTeamModel>
     ) {
         try! realm.write {
             matchLog.data = data

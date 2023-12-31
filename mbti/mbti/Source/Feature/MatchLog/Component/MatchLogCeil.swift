@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchLogCeil: View {
     
-    let model: MatchLogDataModel
+    let model: MbtiMatchModel
     let callback: () -> Void
     
     var body: some View {

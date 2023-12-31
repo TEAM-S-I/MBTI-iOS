@@ -9,34 +9,34 @@ import Foundation
 import RealmSwift
 
 
-class MatchLogModel: Object, Identifiable {
+class MbtiModel: Object, Identifiable {
     @Persisted var name: String = ""
     @Persisted var mbti: String = ""
     @Persisted var role: String? = ""
     @Persisted var desc: String? = ""
 }
 
-extension MatchLogModel {
+extension MbtiModel {
     
     private static var realm = try! Realm()
     
-    static func findAll() -> Results<MatchLogModel> {
-        realm.objects(MatchLogModel.self)
+    static func findAll() -> Results<MbtiModel> {
+        realm.objects(MbtiModel.self)
     }
     
-    static func addMatchLog(_ memo: MatchLogModel) {
+    static func addMatchLog(_ memo: MbtiModel) {
         try! realm.write {
             realm.add(memo)
         }
     }
     
-    static func delMatchLog(_ memo: MatchLogModel) {
+    static func delMatchLog(_ memo: MbtiModel) {
         try! realm.write {
             realm.delete(memo)
         }
     }
     
-    static func editMatchLog(matchLog: MatchLogModel, 
+    static func editMatchLog(matchLog: MbtiModel, 
                              name: String,
                              mbti: String,
                              role: String,

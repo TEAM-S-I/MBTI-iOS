@@ -9,7 +9,7 @@ import Foundation
 
 
 class MatchLogViewModel: ObservableObject {
-    @Published var matchLogList: [MatchLogTeamModel] = []
+    @Published var matchLogList: [MbtiTeamModel] = []
     
     
 }

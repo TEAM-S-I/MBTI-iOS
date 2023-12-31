@@ -71,7 +71,7 @@ struct HomeView: View {
                 migrationBlock: { migration, oldSchemaVersion in
                     if oldSchemaVersion < 2 {
                         // 1-1. 마이그레이션 수행(버전 2보다 작은 경우 버전 2에 맞게 데이터베이스 수정)
-                        migration.enumerateObjects(ofType: MatchLogDataModel.className()) { oldObject, newObject in
+                        migration.enumerateObjects(ofType: MbtiMatchModel.className()) { oldObject, newObject in
                             newObject!["name"] = ""
                         }
                     }

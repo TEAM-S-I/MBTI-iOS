@@ -14,14 +14,22 @@ struct CompleteView: View {
     let title: String
     
     var body: some View {
-        VStack {
-            Image("Check")
-                .resizable()
-                .frame(width: 78, height: 78)
-            Text(title)
-                .applyFontStyle(.title)
-                .padding(.top, 52)
+        HStack {
+            Spacer()
+            VStack {
+                Spacer()
+                Image("Check")
+                    .resizable()
+                    .frame(width: 78, height: 78)
+                Text(title)
+                    .applyFontStyle(.title)
+                    .padding(.top, 52)
+                Spacer()
+            }
+            Spacer()
+            
         }
+        .addMbtiLogo()
         .opacity(opacity)
         .onAppear {
             withAnimation {

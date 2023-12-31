@@ -13,7 +13,8 @@ struct MatchLogView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        let model = MatchLogDataModel.findAll()
+        let model = MbtiMatchModel.findAll()
+        
         VStack {
             ScrollView {
                 VStack {

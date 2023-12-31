@@ -14,13 +14,20 @@ struct FailView: View {
     
     var body: some View {
         ZStack {
-            VStack {
-                Image("X")
-                    .resizable()
-                    .frame(width: 78, height: 78)
-                Text(title)
-                    .applyFontStyle(.title)
-                    .padding(.top, 52)
+            HStack {
+                Spacer()
+                VStack {
+                    Spacer()
+                    Image("X")
+                        .resizable()
+                        .frame(width: 78, height: 78)
+                    Text(title)
+                        .applyFontStyle(.title)
+                        .padding(.top, 52)
+                    Spacer()
+                }
+                Spacer()
+                
             }
             VStack {
                 Spacer()
@@ -30,6 +37,7 @@ struct FailView: View {
                 .padding(.vertical, 12)
             }
         }
+        .addMbtiLogo()
         .opacity(opacity)
         .onAppear {
             withAnimation {

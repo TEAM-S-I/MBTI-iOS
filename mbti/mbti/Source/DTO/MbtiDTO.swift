@@ -30,8 +30,8 @@ struct MbtiDTO: Hashable, Identifiable {
 }
 
 extension MbtiDTO {
-    func toModel() -> MatchLogModel {
-        let model = MatchLogModel()
+    func toModel() -> MbtiModel {
+        let model = MbtiModel()
         model.name = self.name
         model.mbti = self.mbti.rawValue
         model.desc = self.description
