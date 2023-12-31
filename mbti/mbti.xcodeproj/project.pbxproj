@@ -45,6 +45,8 @@
 		4D8D443D2B406A3900C6D833 /* MatchLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */; };
 		4D8D443F2B41AD0D00C6D833 /* MbtiMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D443E2B41AD0D00C6D833 /* MbtiMatchModel.swift */; };
 		4D8D44422B41C26E00C6D833 /* MatchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44412B41C26E00C6D833 /* MatchResultView.swift */; };
+		4D8D44452B41C50000C6D833 /* CheckSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44442B41C50000C6D833 /* CheckSecondView.swift */; };
+		4D8D44472B41C51600C6D833 /* CheckSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */; };
 		4DD21FFC2B33BE020015311B /* MbtiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiDTO.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
@@ -118,6 +120,8 @@
 		4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogViewModel.swift; sourceTree = "<group>"; };
 		4D8D443E2B41AD0D00C6D833 /* MbtiMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiMatchModel.swift; sourceTree = "<group>"; };
 		4D8D44412B41C26E00C6D833 /* MatchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultView.swift; sourceTree = "<group>"; };
+		4D8D44442B41C50000C6D833 /* CheckSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSecondView.swift; sourceTree = "<group>"; };
+		4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSecondViewModel.swift; sourceTree = "<group>"; };
 		4DD21FFB2B33BE020015311B /* MbtiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiDTO.swift; sourceTree = "<group>"; };
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -297,6 +301,15 @@
 				4D8D44412B41C26E00C6D833 /* MatchResultView.swift */,
 			);
 			path = MatchResult;
+			sourceTree = "<group>";
+		};
+		4D8D44432B41C4F000C6D833 /* CheckSecond */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D44442B41C50000C6D833 /* CheckSecondView.swift */,
+				4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */,
+			);
+			path = CheckSecond;
 			sourceTree = "<group>";
 		};
 		4DD21FFA2B33BDEB0015311B /* DTO */ = {
@@ -537,6 +550,7 @@
 				4D3C1E242B32B547000B2234 /* FindResult */,
 				4DD2BFB92B2FD6B400A732CD /* Check */,
 				4DD220072B3502360015311B /* CheckFirst */,
+				4D8D44432B41C4F000C6D833 /* CheckSecond */,
 				4D39B4972B3E758E001DBC24 /* Loading */,
 				4D39B4982B3E75AA001DBC24 /* Complete */,
 				4D39B4A42B3E90B7001DBC24 /* Fail */,
@@ -713,6 +727,7 @@
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
 				4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
+				4D8D44452B41C50000C6D833 /* CheckSecondView.swift in Sources */,
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
 				4DD2BFB12B2FD03A00A732CD /* ViewExt.swift in Sources */,
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
@@ -754,6 +769,7 @@
 				4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
+				4D8D44472B41C51600C6D833 /* CheckSecondViewModel.swift in Sources */,
 				4D8D443F2B41AD0D00C6D833 /* MbtiMatchModel.swift in Sources */,
 				4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */,
 				4D39B4962B3E739F001DBC24 /* MatchThirdViewModel.swift in Sources */,

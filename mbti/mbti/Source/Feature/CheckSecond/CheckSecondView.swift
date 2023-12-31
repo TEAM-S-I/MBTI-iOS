@@ -1,16 +1,15 @@
 //
-//  ResultView.swift
+//  CheckSecond.swift
 //  mbti
 //
-//  Created by dgsw8th71 on 12/15/23.
+//  Created by dgsw8th71 on 1/1/24.
 //
 
 import SwiftUI
 
-struct MatchThirdView: View {
+struct CheckSecondView: View {
     
-    @StateObject var viewModel = MatchResultViewModel()
-    @Binding var sliderValue: Double
+    @StateObject var viewModel = CheckSecondViewModel()
     @Binding var data: [MbtiDTO]
     
     var body: some View {
@@ -29,7 +28,7 @@ struct MatchThirdView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            viewModel.getResult(data: data, sliderValue: Int(sliderValue))
+            viewModel.getResult(data: data)
         }
     }
 }

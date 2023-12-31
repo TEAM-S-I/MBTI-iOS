@@ -31,7 +31,7 @@ struct CheckFirstView: View {
                     .padding(.top, 64)
                     Spacer()
                     NavigationLink {
-                        MatchSecondView(data: $data)
+                        CheckSecondView(data: $data)
                     } label: {
                         MbtiTransparentButton("진단시작!") {
                             isWarnActive = true
