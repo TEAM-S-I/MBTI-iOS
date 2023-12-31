@@ -21,12 +21,3 @@ extension CreateTeamResponse {
         return model
     }
 }
-
-extension [MbtiResponse] {
-    func toDTO() -> [MbtiDTO] {
-        self.map {
-            $0.toDTO()
-        }
-    }
-}
-

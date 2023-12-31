@@ -57,7 +57,9 @@ struct MatchResultView: View {
                 ScrollView {
                     VStack {
                         ForEach(viewModel.resultData, id: \.self) {
-                            MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.toDTO())
+                            MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.map {
+                                $0.toDTO()
+                            })
                                 .padding(.bottom, 48)
                         }
                     }
