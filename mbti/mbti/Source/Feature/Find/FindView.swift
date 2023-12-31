@@ -23,7 +23,7 @@ struct FindView: View {
                 MbtiDropDown(choicedElement: $mbti)
                     .padding(.top, 24)
                 NavigationLink {
-                    FindResultView()
+                    FindResultView(title: "당신(\(mbti?.rawValue ?? "..."))과 가장 맞는 팀원은 바로...")
                 } label: {
                     MbtiButton("찾기") {
                         print("find")

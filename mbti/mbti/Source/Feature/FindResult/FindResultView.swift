@@ -12,13 +12,14 @@ struct FindResultView: View {
     @Environment(\.dismiss) private var dismiss
     
     let data = Array(repeating: 1, count: 10)
+    let title: String
     
     @State var selectedTab = 1
     
     var body: some View {
         GeometryReader { geo in
             VStack {
-                Text("당신(MBTI)과 가장 맞는 팀원은 바로...")
+                Text(title)
                     .applyFontStyle(.body)
                     .padding(.top, geo.size.height / 8)
                 TabView(selection: $selectedTab) {
