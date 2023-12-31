@@ -13,7 +13,7 @@ struct PlanMemberResponse: Decodable {
 }
 
 extension PlanMemberResponse {
-    func toModel() -> MbtiModel {
-        return MbtiModel(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
+    func toModel() -> MbtiDTO {
+        return MbtiDTO(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
     }
 }

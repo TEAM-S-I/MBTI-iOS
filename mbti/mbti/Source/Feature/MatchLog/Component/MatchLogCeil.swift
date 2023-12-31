@@ -9,8 +9,8 @@ import SwiftUI
 
 //struct MatchLogCeil: View {
 //    
-//    let 
-//    
+//    let
+//
 //    var body: some View {
 //        VStack(spacing: 0) {
 //            Text(

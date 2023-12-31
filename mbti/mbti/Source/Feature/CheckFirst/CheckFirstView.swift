@@ -11,7 +11,7 @@ struct CheckFirstView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    var data: [MbtiModel] = []
+    var data: [MbtiDTO] = []
     var body: some View {
         HStack {
             Spacer()

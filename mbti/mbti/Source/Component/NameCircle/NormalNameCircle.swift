@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NormalNameCircle: View {
     
-    let model: MbtiModel
+    let model: MbtiDTO
     
     var body: some View {
         VStack {

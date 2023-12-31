@@ -9,11 +9,11 @@ import Foundation
 import RealmSwift
 
 
-class MatchLogModel: Object {
+class MatchLogModel: Object, Identifiable {
     @Persisted var name: String = ""
     @Persisted var mbti: String = ""
-    @Persisted var role: String = ""
-    @Persisted var desc: String = ""
+    @Persisted var role: String? = ""
+    @Persisted var desc: String? = ""
 }
 
 extension MatchLogModel {

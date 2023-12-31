@@ -19,7 +19,7 @@ class MatchResultViewModel : ObservableObject {
     @Published var sideEffect: MatchResultSideEffect = .Loading
     @Published var resultData: [CreateTeamResponse] = []
     
-    func getResult(data: [MbtiModel], sliderValue: Int) {
+    func getResult(data: [MbtiDTO], sliderValue: Int) {
         
         var lst: [String] = []
         for i in data {

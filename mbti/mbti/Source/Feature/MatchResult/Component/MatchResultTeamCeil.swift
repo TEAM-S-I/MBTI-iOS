@@ -10,7 +10,7 @@ import SwiftUI
 struct MatchResultTeamCeil: View {
     
     let teamName: String
-    let members: [MbtiModel]
+    let members: [MbtiDTO]
     
     var body: some View {
         VStack {

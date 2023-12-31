@@ -11,10 +11,10 @@ struct MbtiGrid: View {
     
     var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 67 + 8)), count: 3)
     
-    var data: [MbtiModel]
+    var data: [MbtiDTO]
     var addCallback: () -> Void
     
-    init(data: [MbtiModel], addCallback: @escaping () -> Void) {
+    init(data: [MbtiDTO], addCallback: @escaping () -> Void) {
         self.data = data
         self.addCallback = addCallback
     }

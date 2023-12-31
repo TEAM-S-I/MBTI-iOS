@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct TeamMemberModel {
+struct Mbti2DTO {
     let name: String
     let mbti: MbtiType
     let role: String

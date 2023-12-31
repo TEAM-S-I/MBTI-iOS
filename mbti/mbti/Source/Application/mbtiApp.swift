@@ -12,7 +12,7 @@ struct mbtiApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MatchResultView(sliderValue: .constant(0), data: .constant([]))
         }
     }
 }

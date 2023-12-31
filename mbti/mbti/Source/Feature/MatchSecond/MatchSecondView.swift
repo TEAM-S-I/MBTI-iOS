@@ -12,7 +12,7 @@ struct MatchSecondView: View {
     @Environment(\.dismiss) private var dismiss
     @State var sliderValue = 1.0
     @ObservedObject var viewModel = MatchSecondViewModel()
-    @Binding var data: [MbtiModel]
+    @Binding var data: [MbtiDTO]
     
     var body: some View {
         let count = data.count

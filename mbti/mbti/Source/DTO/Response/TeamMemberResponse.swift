@@ -15,8 +15,8 @@ struct TeamMemberResponse: Decodable {
 }
 
 extension TeamMemberResponse {
-    func toModel() -> TeamMemberModel {
-        return TeamMemberModel(name: self.name,
+    func toModel() -> Mbti2DTO {
+        return Mbti2DTO(name: self.name,
                                mbti: MbtiType.getType(self.mbti) ?? .enfj,
                                role: self.role,
                                description: self.description)

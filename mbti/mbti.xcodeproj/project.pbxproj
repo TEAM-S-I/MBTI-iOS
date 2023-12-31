@@ -18,7 +18,7 @@
 		4D155B4F2B3AFD0F00E64C24 /* TeamResposne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */; };
 		4D155B512B3AFD3A00E64C24 /* TeamDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */; };
 		4D155B532B3AFD5F00E64C24 /* TeamMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */; };
-		4D155B552B3AFE4300E64C24 /* TeamMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */; };
+		4D155B552B3AFE4300E64C24 /* Mbti2DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */; };
 		4D155B572B3AFF4300E64C24 /* PlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B562B3AFF4300E64C24 /* PlanResponse.swift */; };
 		4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */; };
 		4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */; };
@@ -43,7 +43,9 @@
 		4D8D44352B40654F00C6D833 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8D44342B40654F00C6D833 /* RealmSwift */; };
 		4D8D44392B40657A00C6D833 /* MatchLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44382B40657A00C6D833 /* MatchLogModel.swift */; };
 		4D8D443B2B4069A200C6D833 /* MatchLogTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D443A2B4069A200C6D833 /* MatchLogTeamModel.swift */; };
-		4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiModel.swift */; };
+		4D8D443D2B406A3900C6D833 /* MatchLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */; };
+		4D8D443F2B41AD0D00C6D833 /* MatchLogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D443E2B41AD0D00C6D833 /* MatchLogDataModel.swift */; };
+		4DD21FFC2B33BE020015311B /* MbtiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiDTO.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
 		4DD220062B3501480015311B /* MbtiGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220052B3501480015311B /* MbtiGrid.swift */; };
@@ -91,7 +93,7 @@
 		4D155B4E2B3AFD0F00E64C24 /* TeamResposne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResposne.swift; sourceTree = "<group>"; };
 		4D155B502B3AFD3A00E64C24 /* TeamDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDescriptionResponse.swift; sourceTree = "<group>"; };
 		4D155B522B3AFD5F00E64C24 /* TeamMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberResponse.swift; sourceTree = "<group>"; };
-		4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberModel.swift; sourceTree = "<group>"; };
+		4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti2DTO.swift; sourceTree = "<group>"; };
 		4D155B562B3AFF4300E64C24 /* PlanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanResponse.swift; sourceTree = "<group>"; };
 		4D155B582B3AFF6000E64C24 /* PlanMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMemberResponse.swift; sourceTree = "<group>"; };
 		4D155B5A2B3AFFE300E64C24 /* PlanTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTeamResponse.swift; sourceTree = "<group>"; };
@@ -114,7 +116,9 @@
 		4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogCeil.swift; sourceTree = "<group>"; };
 		4D8D44382B40657A00C6D833 /* MatchLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogModel.swift; sourceTree = "<group>"; };
 		4D8D443A2B4069A200C6D833 /* MatchLogTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogTeamModel.swift; sourceTree = "<group>"; };
-		4DD21FFB2B33BE020015311B /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
+		4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogViewModel.swift; sourceTree = "<group>"; };
+		4D8D443E2B41AD0D00C6D833 /* MatchLogDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogDataModel.swift; sourceTree = "<group>"; };
+		4DD21FFB2B33BE020015311B /* MbtiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiDTO.swift; sourceTree = "<group>"; };
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		4DD220052B3501480015311B /* MbtiGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiGrid.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 			children = (
 				4D8D442E2B40641000C6D833 /* Component */,
 				4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */,
+				4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */,
 			);
 			path = MatchLog;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			children = (
 				4D8D44382B40657A00C6D833 /* MatchLogModel.swift */,
 				4D8D443A2B4069A200C6D833 /* MatchLogTeamModel.swift */,
+				4D8D443E2B41AD0D00C6D833 /* MatchLogDataModel.swift */,
 			);
 			path = MatchLog;
 			sourceTree = "<group>";
@@ -289,8 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				4D155B472B3AFBE700E64C24 /* Response */,
-				4DD21FFB2B33BE020015311B /* MbtiModel.swift */,
-				4D155B542B3AFE4300E64C24 /* TeamMemberModel.swift */,
+				4DD21FFB2B33BE020015311B /* MbtiDTO.swift */,
+				4D155B542B3AFE4300E64C24 /* Mbti2DTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -715,7 +721,7 @@
 				4DF0D2042B2C0EA20065387A /* MatchView.swift in Sources */,
 				4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */,
 				4D155B492B3AFBF100E64C24 /* BaseResponse.swift in Sources */,
-				4DD21FFC2B33BE020015311B /* MbtiModel.swift in Sources */,
+				4DD21FFC2B33BE020015311B /* MbtiDTO.swift in Sources */,
 				4D39B4A12B3E7811001DBC24 /* NormalNameCircle.swift in Sources */,
 				4D39B49F2B3E7780001DBC24 /* MatchResultTeamCeil.swift in Sources */,
 				4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */,
@@ -733,13 +739,14 @@
 				4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
-				4D155B552B3AFE4300E64C24 /* TeamMemberModel.swift in Sources */,
+				4D155B552B3AFE4300E64C24 /* Mbti2DTO.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
 				4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
 				4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */,
+				4D8D443F2B41AD0D00C6D833 /* MatchLogDataModel.swift in Sources */,
 				4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */,
 				4D39B4962B3E739F001DBC24 /* MatchResultViewModel.swift in Sources */,
 				4DD220062B3501480015311B /* MbtiGrid.swift in Sources */,
@@ -747,6 +754,7 @@
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
 				4D39B49C2B3E7691001DBC24 /* CompleteView.swift in Sources */,
+				4D8D443D2B406A3900C6D833 /* MatchLogViewModel.swift in Sources */,
 				4D8D443B2B4069A200C6D833 /* MatchLogTeamModel.swift in Sources */,
 				4D155B3F2B3AEB0B00E64C24 /* MatchFirstViewModel.swift in Sources */,
 				4DF0D20B2B2C0F230065387A /* Color.swift in Sources */,

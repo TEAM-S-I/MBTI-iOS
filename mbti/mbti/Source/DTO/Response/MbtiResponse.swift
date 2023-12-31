@@ -11,8 +11,8 @@ struct MbtiResponse: Decodable, Hashable {
 }
 
 extension MbtiResponse {
-    func toModel() -> MbtiModel {
-        return MbtiModel(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
+    func toDTO() -> MbtiDTO {
+        return MbtiDTO(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
     }
 }
 

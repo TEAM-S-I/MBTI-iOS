@@ -10,10 +10,23 @@ struct CreateTeamResponse: Decodable, Hashable {
     let members: [MbtiResponse]
 }
 
+extension CreateTeamResponse {
+    
+    func toModel() -> MatchLogTeamModel {
+        let model = MatchLogTeamModel()
+        model.name = self.team_name
+        model.members.append(objectsIn: self.members.map {
+            $0.toDTO().toModel()
+        })
+        return model
+    }
+}
+
 extension [MbtiResponse] {
-    func toModel() -> [MbtiModel] {
+    func toDTO() -> [MbtiDTO] {
         self.map {
-            $0.toModel()
+            $0.toDTO()
         }
     }
 }
+

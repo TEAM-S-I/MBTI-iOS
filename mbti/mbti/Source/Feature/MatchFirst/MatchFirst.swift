@@ -14,7 +14,7 @@ struct MatchFirst: View {
     @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
-    @State var data: [MbtiModel] = []
+    @State var data: [MbtiDTO] = []
     
     var body: some View {
         ZStack {
@@ -59,7 +59,7 @@ struct MatchFirst: View {
                     MbtiDropDown(choicedElement: $mbti, type: .bottomRadius)
                     MbtiTransparentButton("추가 완료", fontStyle: .body) {
                         guard name.isEmpty || mbti == nil else {
-                            data.append(MbtiModel(name: name, mbti: mbti ?? .enfj))
+                            data.append(MbtiDTO(name: name, mbti: mbti ?? .enfj))
                             name = ""
                             mbti = nil
                             isAddActive = false
