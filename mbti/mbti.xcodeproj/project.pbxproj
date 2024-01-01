@@ -52,6 +52,7 @@
 		4D8D44472B41C51600C6D833 /* CheckSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */; };
 		4D8D44492B41C9F500C6D833 /* PacTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44482B41C9F500C6D833 /* PacTeamResponse.swift */; };
 		4DC227422B42B8D600849C8F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4DC227412B42B8D600849C8F /* GoogleMobileAds */; };
+		4DC227442B42C0E700849C8F /* RewardAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC227432B42C0E700849C8F /* RewardAd.swift */; };
 		4DD21FFC2B33BE020015311B /* MbtiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiDTO.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
@@ -131,6 +132,7 @@
 		4D8D44442B41C50000C6D833 /* CheckSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSecondView.swift; sourceTree = "<group>"; };
 		4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSecondViewModel.swift; sourceTree = "<group>"; };
 		4D8D44482B41C9F500C6D833 /* PacTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacTeamResponse.swift; sourceTree = "<group>"; };
+		4DC227432B42C0E700849C8F /* RewardAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAd.swift; sourceTree = "<group>"; };
 		4DD21FFB2B33BE020015311B /* MbtiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiDTO.swift; sourceTree = "<group>"; };
 		4DD21FFD2B33BF2E0015311B /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4DD220002B33F7B40015311B /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 				4DD2BFAA2B2FB9DD00A732CD /* MbtiType.swift */,
 				4DD2BFB42B2FD65C00A732CD /* TabViewType.swift */,
 				4D39B4AA2B3EA2C0001DBC24 /* NavigationUtil.swift */,
+				4DC227432B42C0E700849C8F /* RewardAd.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				4D155B592B3AFF6000E64C24 /* PlanMemberResponse.swift in Sources */,
 				4D5A34E22B427E0500A98D06 /* PacMemberDTO.swift in Sources */,
 				4D39B4962B3E739F001DBC24 /* MatchThirdViewModel.swift in Sources */,
+				4DC227442B42C0E700849C8F /* RewardAd.swift in Sources */,
 				4DD220062B3501480015311B /* MbtiGrid.swift in Sources */,
 				4DD2BFB32B2FD1A300A732CD /* MbtiDropDownType.swift in Sources */,
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
@@ -953,6 +957,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangchangbeom.mbti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -983,6 +988,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangchangbeom.mbti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct MatchResultView: View {
     
     let resultData: [CreateTeamResponse]
+    var rewardAd: RewardedAd
+    
     @State var isActive: Bool = false
     @State var text: String = ""
     @State var opacity: Double = 0
+    
+    init(resultData: [CreateTeamResponse]) {
+        self.resultData = resultData
+        self.rewardAd = RewardedAd()
+        self.rewardAd.load()
+    }
     
     var body: some View {
         
@@ -43,7 +52,7 @@ struct MatchResultView: View {
             VStack {
                 Spacer()
                 Button {
-                    print("show ad!")
+                    showAds()
                 } label: {
                     HStack {
                         Text("광고를 보고 더 많은 정보를 확인해 보세요!")
@@ -105,5 +114,13 @@ struct MatchResultView: View {
                 opacity = 1
             }
         }
+    }
+    
+    func showAds() {
+        let result = self.rewardAd.showAd {
+            // TODO: give the user a reward for watching
+            print("!!")
+        }
+        print("result - \(result)")
     }
 }

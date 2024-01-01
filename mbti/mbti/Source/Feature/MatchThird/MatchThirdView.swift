@@ -12,6 +12,7 @@ struct MatchThirdView: View {
     @StateObject var viewModel = MatchResultViewModel()
     @Binding var sliderValue: Double
     @Binding var data: [MbtiDTO]
+    @State var isLoading: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -29,7 +30,10 @@ struct MatchThirdView: View {
         .navigationBarBackButtonHidden()
         .background(Color.main100)
         .task {
-            viewModel.getResult(data: data, sliderValue: Int(sliderValue))
+            if !isLoading {
+                viewModel.getResult(data: data, sliderValue: Int(sliderValue))
+                isLoading = true
+            }
         }
     }
 }
