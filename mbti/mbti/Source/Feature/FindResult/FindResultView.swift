@@ -14,13 +14,22 @@ struct FindResultView: View {
     let data = Array(repeating: 1, count: 10)
     let title: String
     
-    @State var selectedTab = 1
+    @State var selectedTab = 0
     
     // MARK: - Find
-    let findData: PacResponse?
+    let findData: PacDTO?
     
     // MARK: - Check
-    let checkData: PacResponse?
+    let checkData: PacDTO?
+    
+    init(title: String,
+         findData: PacDTO? = nil,
+         checkData: PacDTO? = nil
+    ) {
+        self.title = title
+        self.findData = findData
+        self.checkData = checkData
+    }
     
     
     var body: some View {
@@ -32,17 +41,18 @@ struct FindResultView: View {
                 
                 if checkData != nil {
                     TabView(selection: $selectedTab) {
-                        ForEach(checkData!.toModel().team.members, id: \.self) { i in
+                        ForEach(Array(checkData!.team.members.enumerated()), id: \.element) { idx, i in
                             FindResultCeil(title: i.mbti, subTitle: i.name, strengths: i.strengths, weaknesses: i.weaknesses)
                                 .padding(.horizontal, 12)
+                                .tag(idx)
                         }
                     }
-                    .tabViewStyle(.page(indexDisplayMode: .never))
                     .frame(height: 420)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
                     .shadow1()
                     
                     HStack(spacing: 6) {
-                        ForEach(0..<checkData!.toModel().team.members.count, id: \.self) { i in
+                        ForEach(0..<checkData!.team.members.count) { i in
                             Circle()
                                 .fill(i == selectedTab ? Color.main800 : Color.main300)
                                 .frame(width: 6, height: 6)
