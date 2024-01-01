@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+let isDebug = true
+let dummy = [
+    MbtiDTO(name: "Hello", mbti: .enfj),
+    MbtiDTO(name: "제임스", mbti: .infj),
+    MbtiDTO(name: "호날두", mbti: .estp),
+]
+
 struct CheckFirstView: View {
     
     @Environment(\.dismiss) private var dismiss
@@ -14,7 +21,7 @@ struct CheckFirstView: View {
     @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
-    @State var data: [MbtiDTO] = []
+    @State var data: [MbtiDTO] = isDebug ? dummy : []
     
     var body: some View {
         ZStack {
