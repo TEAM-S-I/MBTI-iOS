@@ -64,7 +64,7 @@ struct FindResultView: View {
                 
                 Spacer()
                 MbtiTransparentButton("홈으로") {
-                    dismiss()
+                    NavigationUtil.popToRootView()
                 }
                 .padding(.vertical, 12)
             }
