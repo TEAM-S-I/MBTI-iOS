@@ -24,16 +24,18 @@ struct MatchResultView: View {
     }
     
     var body: some View {
-        
+        let isAds = resultData[0].members[0].description == nil
         ZStack {
             VStack(spacing: 0) {
                 Text("매칭 결과")
                     .applyFontStyle(.title)
                     .padding(.top, 72)
-                Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
-                    .applyFontStyle(.label)
-                    .padding(.top, 12)
-                    .padding(.bottom, 36)
+                if isAds {
+                    Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
+                        .applyFontStyle(.label)
+                        .padding(.top, 12)
+                        .padding(.bottom, 36)
+                }
                 ScrollView {
                     VStack {
                         ForEach(resultData, id: \.self) {
@@ -47,32 +49,35 @@ struct MatchResultView: View {
                 }
                 .padding(.vertical, 12)
             }
-            VStack {
-                Spacer()
-                Button {
-                    showAds()
-                } label: {
-                    HStack {
-                        Text("광고를 보고 더 많은 정보를 확인해 보세요!")
-                            .applyFontStyle(.label)
-                            .padding(.leading, 16)
-                        Spacer()
-                        Image("Video")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text("시청")
-                            .foregroundColor(.main800)
-                            .font(Font.custom(GangwonEduAllFontFamily.bold.rawValue, size: 12))
-                            .padding(.trailing, 16)
+            
+            if isAds {
+                VStack {
+                    Spacer()
+                    Button {
+                        showAds()
+                    } label: {
+                        HStack {
+                            Text("광고를 보고 더 많은 정보를 확인해 보세요!")
+                                .applyFontStyle(.label)
+                                .padding(.leading, 16)
+                            Spacer()
+                            Image("Video")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text("시청")
+                                .foregroundColor(.main800)
+                                .font(Font.custom(GangwonEduAllFontFamily.bold.rawValue, size: 12))
+                                .padding(.trailing, 16)
+                        }
+                        .frame(height: 46)
+                        .background(Color.main100)
+                        .cornerRadius(8)
+                        .padding(.horizontal, 36)
+                        .shadow1()
                     }
-                    .frame(height: 46)
-                    .background(Color.main100)
-                    .cornerRadius(8)
-                    .padding(.horizontal, 36)
-                    .shadow1()
+                    Spacer()
+                        .frame(height: 60)
                 }
-                Spacer()
-                    .frame(height: 60)
             }
             if isActive {
                 MbtiDialog(isActive: $isActive) {
@@ -116,8 +121,7 @@ struct MatchResultView: View {
     
     func showAds() {
         let result = self.rewardAd.showAd {
-            // TODO: give the user a reward for watching
-            print("!!")
+            
         }
         print("result - \(result)")
     }
