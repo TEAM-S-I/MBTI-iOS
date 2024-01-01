@@ -16,31 +16,41 @@ struct FindResultView: View {
     
     @State var selectedTab = 1
     
+    // MARK: - Find
+    let findData: PacResponse?
+    
+    // MARK: - Check
+    let checkData: PacResponse?
+    
+    
     var body: some View {
         GeometryReader { geo in
             VStack {
                 Text(title)
                     .applyFontStyle(.body)
                     .padding(.top, geo.size.height / 8)
-                TabView(selection: $selectedTab) {
-                    ForEach(0..<10) { _ in
-                        FindResultCeil()
-                            .padding(.horizontal, 12)
-                    }
-                }
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .frame(height: 420)
-                .shadow1()
                 
-                HStack(spacing: 6) {
-                    ForEach(0..<10) { i in
-                        Circle()
-                            .fill(i == selectedTab ? Color.main800 : Color.main300)
-                            .frame(width: 6, height: 6)
-                            
+                if checkData != nil {
+                    TabView(selection: $selectedTab) {
+                        ForEach(checkData!.toModel().team.members, id: \.self) { i in
+                            FindResultCeil(title: i.mbti, subTitle: i.name, strengths: i.strengths, weaknesses: i.weaknesses)
+                                .padding(.horizontal, 12)
+                        }
                     }
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .frame(height: 420)
+                    .shadow1()
+                    
+                    HStack(spacing: 6) {
+                        ForEach(0..<checkData!.toModel().team.members.count, id: \.self) { i in
+                            Circle()
+                                .fill(i == selectedTab ? Color.main800 : Color.main300)
+                                .frame(width: 6, height: 6)
+                                
+                        }
+                    }
+                    .padding(.top, 28)
                 }
-                .padding(.top, 28)
                 
                 Spacer()
                 MbtiTransparentButton("홈으로") {

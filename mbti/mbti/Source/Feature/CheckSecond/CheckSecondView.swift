@@ -20,7 +20,7 @@ struct CheckSecondView: View {
             case .Success:
                 CompleteView(title: "MBTI 팀 진단이 완료되었습니다\n")
             case .Result:
-                FindResultView(title: "팀 진단 결과...")
+                FindResultView(title: "팀 진단 결과...", checkData: viewModel.resultData)
             case .Fail:
                 FailView(title: "MBTI 팀 진단에 실패했습니다\n")
             }

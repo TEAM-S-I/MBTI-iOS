@@ -18,7 +18,7 @@ enum CheckResultSideEffect {
 class CheckSecondViewModel: ObservableObject {
     
     @Published var sideEffect: MatchResultSideEffect = .Loading
-    @Published var resultData: PacResponse = PacResponse(team: PacTeamResponse(members: []))
+    @Published var resultData = PacResponse(team: PacTeamResponse(members: []))
     
     func getResult(data: [MbtiDTO]) {
         
