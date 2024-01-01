@@ -39,6 +39,31 @@ struct FindResultView: View {
                     .applyFontStyle(.body)
                     .padding(.top, geo.size.height / 8)
                 
+                // MARK: - find
+                if findData != nil {
+                    TabView(selection: $selectedTab) {
+                        ForEach(Array(findData!.team.members.enumerated()), id: \.element) { idx, i in
+                            FindResultCeil(title: i.name, subTitle: i.mbti, strengths: i.strengths, weaknesses: i.weaknesses)
+                                .padding(.horizontal, 12)
+                                .tag(idx)
+                        }
+                    }
+                    .frame(height: 420)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .shadow1()
+                    
+                    HStack(spacing: 6) {
+                        ForEach(0..<findData!.team.members.count) { i in
+                            Circle()
+                                .fill(i == selectedTab ? Color.main800 : Color.main300)
+                                .frame(width: 6, height: 6)
+                        }
+                    }
+                    .padding(.top, 28)
+                }
+                // MARK: - find
+                
+                // MARK: - check
                 if checkData != nil {
                     TabView(selection: $selectedTab) {
                         ForEach(Array(checkData!.team.members.enumerated()), id: \.element) { idx, i in
@@ -61,6 +86,7 @@ struct FindResultView: View {
                     }
                     .padding(.top, 28)
                 }
+                // MARK: - check
                 
                 Spacer()
                 MbtiTransparentButton("홈으로") {

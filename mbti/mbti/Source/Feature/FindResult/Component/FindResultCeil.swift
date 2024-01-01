@@ -37,17 +37,20 @@ struct FindResultCeil: View {
                         .padding(.top, 12)
                         .padding(.leading, 16)
                         .toLeading()
-                    Text("\(title)님과 보완해야 할 것들이에요")
-                        .applyFontStyle(.subtitle)
-                        .padding(.leading, 20)
-                        .padding(.top, 72)
-                        .toLeading()
-                    Text(weaknesses)
-                        .foregroundColor(.main300)
-                        .applyFontStyle(.body)
-                        .toLeading()
-                        .padding(.top, 12)
-                        .padding(.leading, 16)
+                    if !weaknesses.isEmpty {
+                        Text("\(title)님과 보완해야 할 것들이에요")
+                            .applyFontStyle(.subtitle)
+                            .padding(.leading, 20)
+                            .padding(.top, 72)
+                            .toLeading()
+                        Text(weaknesses)
+                            .foregroundColor(.main300)
+                            .applyFontStyle(.body)
+                            .toLeading()
+                            .padding(.top, 12)
+                            .padding(.leading, 16)
+                    }
+                    
                 }
                 .padding(.bottom, 54)
             }
