@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct TeamResposne: Decodable {
+struct TeamResponse: Decodable {
     let team: [TeamDescriptionResponse]
 }

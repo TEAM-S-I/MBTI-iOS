@@ -10,14 +10,14 @@ import GoogleMobileAds
 
 struct MatchResultView: View {
     
-    let resultData: [CreateTeamResponse]
+    let resultData: [MbtiTeamDTO]
     var rewardAd: RewardedAd
     
     @State var isActive: Bool = false
     @State var text: String = ""
     @State var opacity: Double = 0
     
-    init(resultData: [CreateTeamResponse]) {
+    init(resultData: [MbtiTeamDTO]) {
         self.resultData = resultData
         self.rewardAd = RewardedAd()
         self.rewardAd.load()
@@ -37,9 +37,7 @@ struct MatchResultView: View {
                 ScrollView {
                     VStack {
                         ForEach(resultData, id: \.self) {
-                            MatchResultTeamCeil(teamName: $0.team_name, members: $0.members.map {
-                                $0.toDTO()
-                            })
+                            MatchResultTeamCeil(teamName: $0.name, members: $0.members)
                             .padding(.bottom, 48)
                         }
                     }

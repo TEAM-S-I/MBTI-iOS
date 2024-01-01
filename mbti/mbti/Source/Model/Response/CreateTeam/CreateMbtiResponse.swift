@@ -5,12 +5,12 @@
 //  Created by dgsw8th71 on 12/26/23.
 //
 
-struct MbtiResponse: Decodable, Hashable {
+struct CreateMbtiResponse: Decodable, Hashable {
     let name: String
     let mbti: String
 }
 
-extension MbtiResponse {
+extension CreateMbtiResponse {
     
     func toDTO() -> MbtiDTO {
         return MbtiDTO(name: self.name, mbti: MbtiType.getType(self.mbti) ?? .enfj)
