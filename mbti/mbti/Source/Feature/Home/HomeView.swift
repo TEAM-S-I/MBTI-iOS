@@ -29,9 +29,10 @@ struct HomeView: View {
                             .tag(TabViewType.check)
                     }
                     .tabViewStyle(.page(indexDisplayMode: .never))
-                    .addMbtiLogo()
                     .tabViewStyle(.page)
                     .indexViewStyle(.page(backgroundDisplayMode: .never))
+                    .ignoresSafeArea()
+                    .addMbtiLogo()
                     VStack(spacing: 0) {
                         Spacer()
                         HStack {
