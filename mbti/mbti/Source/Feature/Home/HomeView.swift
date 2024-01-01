@@ -22,21 +22,13 @@ struct HomeView: View {
                         .ignoresSafeArea()
                     TabView(selection: $selectedTab) {
                         MatchView()
-                            .tabItem {
-                                MbtiLogoImage(type: .small)
-                            }
                             .tag(TabViewType.match)
                         FindView()
-                            .tabItem {
-                                MbtiLogoImage(type: .small)
-                            }
                             .tag(TabViewType.find)
                         CheckView()
-                            .tabItem {
-                                MbtiLogoImage(type: .small)
-                            }
                             .tag(TabViewType.check)
                     }
+                    .tabViewStyle(.page(indexDisplayMode: .never))
                     .addMbtiLogo()
                     .tabViewStyle(.page)
                     .indexViewStyle(.page(backgroundDisplayMode: .never))
