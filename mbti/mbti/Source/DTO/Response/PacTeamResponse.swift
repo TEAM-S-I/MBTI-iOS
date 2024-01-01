@@ -10,3 +10,11 @@ import Foundation
 struct PacTeamResponse: Decodable {
     let members: [PacMemberResponse]
 }
+
+extension PacTeamResponse {
+    func toModel() -> PacTeamDTO {
+        PacTeamDTO(members: self.members.map {
+            $0.toModel()
+        })
+    }
+}

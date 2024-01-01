@@ -13,3 +13,12 @@ struct PacMemberResponse: Decodable {
     let strengths: String
     let weaknesses: String
 }
+
+extension PacMemberResponse {
+    func toModel() -> PacMemberDTO {
+        PacMemberDTO(name: self.name,
+                     mbti: self.mbti,
+                     strengths: self.strengths,
+                     weaknesses: self.weaknesses)
+    }
+}
