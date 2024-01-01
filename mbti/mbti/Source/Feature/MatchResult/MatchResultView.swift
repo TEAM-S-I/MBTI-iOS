@@ -12,15 +12,21 @@ struct MatchResultView: View {
     
     let resultData: [MbtiTeamDTO]
     var rewardAd: RewardedAd
+    let callback: () -> Void
     
-    @State var isActive: Bool = false
+    @State var isSaveDialog: Bool = false
+    @State var isDetailDialog: Bool = false
     @State var text: String = ""
     @State var opacity: Double = 0
+    @State var clickedDTO: MbtiDTO?
     
-    init(resultData: [MbtiTeamDTO]) {
+    init(resultData: [MbtiTeamDTO],
+         callback: @escaping () -> Void
+    ) {
         self.resultData = resultData
         self.rewardAd = RewardedAd()
         self.rewardAd.load()
+        self.callback = callback
     }
     
     var body: some View {
@@ -39,13 +45,16 @@ struct MatchResultView: View {
                 ScrollView {
                     VStack {
                         ForEach(resultData, id: \.self) {
-                            MatchResultTeamCeil(teamName: $0.name, members: $0.members)
+                            MatchResultTeamCeil(teamName: $0.name, members: $0.members) { i in
+                                clickedDTO = i
+                                isDetailDialog = true
+                            }
                             .padding(.bottom, 48)
                         }
                     }
                 }
                 MbtiTransparentButton("홈으로") {
-                    isActive = true
+                    isSaveDialog = true
                 }
                 .padding(.vertical, 12)
             }
@@ -79,8 +88,8 @@ struct MatchResultView: View {
                         .frame(height: 60)
                 }
             }
-            if isActive {
-                MbtiDialog(isActive: $isActive) {
+            if isSaveDialog {
+                MbtiDialog(isActive: $isSaveDialog) {
                     Text("팀 매칭 기록을 저장하시겠습니까?")
                         .applyFontStyle(.subtitle)
                     MbtiTextField("매칭 제목", text: $text)
@@ -88,11 +97,11 @@ struct MatchResultView: View {
                     HStack(spacing: 0) {
                         Spacer()
                         MbtiTransparentButton("아니요") {
-                            isActive = false
+                            isSaveDialog = false
                             NavigationUtil.popToRootView()
                         }
                         MbtiTransparentButton("저장") {
-                            isActive = false
+                            isSaveDialog = false
                             NavigationUtil.popToRootView()
                             // TODO: SAVE
                             let model = MbtiMatchModel()
@@ -109,6 +118,15 @@ struct MatchResultView: View {
                     .padding(.top, 36)
                 }
             }
+            if isDetailDialog {
+                MbtiDialog(isActive: $isDetailDialog) {
+                    if isAds {
+                        Text("광고나 보세요")
+                    } else if clickedDTO != nil {
+                        Text(clickedDTO!.name)
+                    }
+                }
+            }
         }
         .addMbtiLogo()
         .opacity(opacity)
@@ -121,7 +139,7 @@ struct MatchResultView: View {
     
     func showAds() {
         let result = self.rewardAd.showAd {
-            
+            callback()
         }
         print("result - \(result)")
     }

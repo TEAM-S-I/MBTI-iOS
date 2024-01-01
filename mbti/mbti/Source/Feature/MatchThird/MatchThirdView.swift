@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchThirdView: View {
     
-    @StateObject var viewModel = MatchResultViewModel()
+    @StateObject var viewModel = MatchThirdViewModel()
     @Binding var sliderValue: Double
     @Binding var data: [MbtiDTO]
     @State var isLoading: Bool = false
@@ -18,11 +18,13 @@ struct MatchThirdView: View {
         VStack(spacing: 0) {
             switch viewModel.sideEffect {
             case .Loading:
-                LoadingView(title: "AI가 최적의 팀을\n만드는 중이에요")
+                LoadingView(title: viewModel.loadingMsg)
             case .Success:
-                CompleteView(title: "MBTI 팀 매칭이 완료되었습니다\n")
+                CompleteView(title: viewModel.successMsg)
             case .Result:
-                MatchResultView(resultData: viewModel.resultData.map { $0.toDTO() })
+                MatchResultView(resultData: viewModel.resultData) {
+                    viewModel.getResult2()
+                }
             case .Fail:
                 FailView(title: "MBTI 팀 매칭에 실패했습니다\n")
             }
