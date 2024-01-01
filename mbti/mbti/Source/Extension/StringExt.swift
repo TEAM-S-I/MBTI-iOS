@@ -19,4 +19,17 @@ extension String {
 
         return String(self[startIndex...endIndex])
     }
+    
+    func insertNewline(_ charactersPerLine: Int) -> String {
+        var result = ""
+        
+        for (index, char) in self.enumerated() {
+            if index > 0 && index % charactersPerLine == 0 {
+                result.append("\n")
+            }
+            result.append(char)
+        }
+        
+        return result
+    }
 }

@@ -36,12 +36,10 @@ struct MatchResultView: View {
                 Text("매칭 결과")
                     .applyFontStyle(.title)
                     .padding(.top, 72)
-                if isAds {
-                    Text("광고를 보면 팀원들의 역할과 특징을 알 수 있어요!")
-                        .applyFontStyle(.label)
-                        .padding(.top, 12)
-                        .padding(.bottom, 36)
-                }
+                Text(isAds ? "광고를 보면 팀원들의 역할과 특징을 알 수 있어요!" : "이제 팀원을 클릭하여 역할과 특징을 확인해 보세요!")
+                    .applyFontStyle(.label)
+                    .padding(.top, 12)
+                    .padding(.bottom, 36)
                 ScrollView {
                     VStack {
                         ForEach(resultData, id: \.self) {
@@ -123,9 +121,27 @@ struct MatchResultView: View {
             if isDetailDialog {
                 MbtiDialog(isActive: $isDetailDialog) {
                     if isAds {
-                        Text("광고나 보세요")
-                    } else if clickedDTO != nil {
-                        Text(clickedDTO!.name)
+                        Text("광고를 보면 팀원들의\n역할과 특징을 알 수 있어요")
+                            .applyFontStyle(.subtitle)
+                            .padding()
+                    } else if clickedDTO != nil && clickedDTO?.role != nil {
+                        Text("\(clickedDTO!.name)(\(clickedDTO!.mbti.rawValue))님은...")
+                            .applyFontStyle(.body)
+                            .toLeading()
+                        Text("'\(clickedDTO!.role!)'역할이 적합해요!")
+                            .applyFontStyle(.subtitle)
+                            .padding(.top, 4)
+                            .toLeading()
+                        Text(clickedDTO!.description!.insertNewline(30))
+                            .foregroundColor(.main300)
+                            .applyFontStyle(.body)
+                            .padding(.top, 16)
+                        MbtiTransparentButton("닫기") {
+                            isDetailDialog = false
+                        }
+                        .toTrailing()
+                        .padding(.top, 36)
+                        
                     }
                 }
             }
