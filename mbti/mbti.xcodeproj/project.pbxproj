@@ -51,6 +51,7 @@
 		4D8D44452B41C50000C6D833 /* CheckSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44442B41C50000C6D833 /* CheckSecondView.swift */; };
 		4D8D44472B41C51600C6D833 /* CheckSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44462B41C51600C6D833 /* CheckSecondViewModel.swift */; };
 		4D8D44492B41C9F500C6D833 /* PacTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D44482B41C9F500C6D833 /* PacTeamResponse.swift */; };
+		4DC227422B42B8D600849C8F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4DC227412B42B8D600849C8F /* GoogleMobileAds */; };
 		4DD21FFC2B33BE020015311B /* MbtiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFB2B33BE020015311B /* MbtiDTO.swift */; };
 		4DD21FFE2B33BF2E0015311B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD21FFD2B33BF2E0015311B /* StringExt.swift */; };
 		4DD220012B33F7B40015311B /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD220002B33F7B40015311B /* Dialog.swift */; };
@@ -173,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC227422B42B8D600849C8F /* GoogleMobileAds in Frameworks */,
 				4D8D44352B40654F00C6D833 /* RealmSwift in Frameworks */,
 				4D8D44332B40654F00C6D833 /* Realm in Frameworks */,
 				4D155B442B3AF29300E64C24 /* Alamofire in Frameworks */,
@@ -669,6 +671,7 @@
 				4D155B432B3AF29300E64C24 /* Alamofire */,
 				4D8D44322B40654F00C6D833 /* Realm */,
 				4D8D44342B40654F00C6D833 /* RealmSwift */,
+				4DC227412B42B8D600849C8F /* GoogleMobileAds */,
 			);
 			productName = mbti;
 			productReference = 4DF0D1E72B2C0CCC0065387A /* mbti.app */;
@@ -701,6 +704,7 @@
 			packageReferences = (
 				4D155B422B3AF29300E64C24 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4DC227402B42B8D600849C8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 4DF0D1E82B2C0CCC0065387A /* Products */;
 			projectDirPath = "";
@@ -1027,6 +1031,14 @@
 				kind = branch;
 			};
 		};
+		4DC227402B42B8D600849C8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.14.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1044,6 +1056,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		4DC227412B42B8D600849C8F /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DC227402B42B8D600849C8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
