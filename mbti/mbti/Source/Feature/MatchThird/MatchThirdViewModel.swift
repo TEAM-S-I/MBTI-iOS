@@ -20,6 +20,7 @@ class MatchThirdViewModel : ObservableObject {
     @Published var resultData: [MbtiTeamDTO] = []
     @Published var loadingMsg = "AI가 최적의 팀을\n만드는 중이에요"
     @Published var successMsg = "MBTI 팀 매칭이 완료되었습니다\n"
+    @Published var failMsg = "MBTI 팀 매칭에 실패했습니다\n"
     
     func getResult(data: [MbtiDTO], sliderValue: Int) {
         
@@ -38,6 +39,7 @@ class MatchThirdViewModel : ObservableObject {
         .responseDecodable(of: BaseResponse<[CreateTeamResponse]>.self) { response in
                 switch response.result {
                 case .success(let res):
+                    
                     self.resultData = res.data.map { $0.toDTO() }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.sideEffect = .Success
@@ -67,18 +69,21 @@ class MatchThirdViewModel : ObservableObject {
         }
         
         print("prompt - \(prompt)")
+        
+        self.sideEffect = .Loading
+        self.loadingMsg = "AI가 팀의 장단점을 분석하고 있어요..."
+        self.successMsg = "팀의 장단점 분석이 완료되었습니다\n"
+        self.failMsg = "장단점 분석에 실패했습니다"
         AF.request("\(Secret.baseUrl)/make/description", method: .post, parameters: [
             "data": prompt
         ], encoding: JSONEncoding.default)
         .responseDecodable(of: TeamResponse.self) { response in
                 switch response.result {
                 case .success(let res):
-                    self.resultData = res.team.map { $0.toDTO() }
-                    self.loadingMsg = "AI가 팀의 장단점을 분석하고 있어요..."
-                    self.successMsg = "팀의 장단점 분석이 완료되었습니다\n"
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.sideEffect = .Success
                     }
+                    self.resultData = res.team.map { $0.toDTO() }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3 + 2) {
                         self.sideEffect = .Result
                     }

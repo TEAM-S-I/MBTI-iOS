@@ -11,7 +11,7 @@ import GoogleMobileAds
 struct MatchResultView: View {
     
     let resultData: [MbtiTeamDTO]
-    var rewardAd: RewardedAd
+    let rewardAd: RewardedAd
     let callback: () -> Void
     
     @State var isSaveDialog: Bool = false
@@ -48,6 +48,7 @@ struct MatchResultView: View {
                             MatchResultTeamCeil(teamName: $0.name, members: $0.members) { i in
                                 clickedDTO = i
                                 isDetailDialog = true
+                                print(i)
                             }
                             .padding(.bottom, 48)
                         }
@@ -58,6 +59,7 @@ struct MatchResultView: View {
                 }
                 .padding(.vertical, 12)
             }
+            .addMbtiLogo()
             
             if isAds {
                 VStack {
@@ -128,7 +130,6 @@ struct MatchResultView: View {
                 }
             }
         }
-        .addMbtiLogo()
         .opacity(opacity)
         .onAppear {
             withAnimation {
