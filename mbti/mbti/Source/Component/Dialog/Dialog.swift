@@ -62,7 +62,6 @@ struct MbtiDialog<DC>: View where DC: View {
                 .shadow1()
                 .offset(x: 0, y: offset)
                 .onAppear {
-                    print("Hello")
                     withAnimation(.easeInOut(duration: 0.1)) {
                         offset = 0
                         opacity = 1
