@@ -14,10 +14,12 @@ import AdSupport
 struct mbtiApp: App {
     
     @Environment(\.scenePhase) private var scenePhase
+    @StateObject private var rewardVM = RewardViewModel()
     
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(rewardVM)
         }
         .onChange(of: scenePhase) { (newScenePhase) in
             if case .active = newScenePhase {
