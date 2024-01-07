@@ -12,15 +12,16 @@ struct MatchLogView: View {
     
     @Environment(\.dismiss) private var dismiss
     @State var isLog = false
+    @StateObject var viewModel = MatchLogViewModel()
     
     var body: some View {
         let model = MbtiMatchModel.findAll()
-        
         VStack {
             ScrollView {
                 VStack {
                     ForEach(model, id: \.self) { i in
                         MatchLogCeil(model: i) {
+                            viewModel.resultData = i.data.map { $0.toDto() }
                             isLog = true
                         }
                     }
@@ -28,7 +29,7 @@ struct MatchLogView: View {
             }
             .padding(.top, 144)
             NavigationLink(isActive: $isLog) {
-                
+                MatchLogDetailView(viewModel: viewModel)
             } label: {
                 
             }

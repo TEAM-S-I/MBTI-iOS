@@ -80,6 +80,8 @@
 		4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */; };
 		4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */; };
 		4DEC8A882B4A9B54004FE748 /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */; };
+		4DEC8A8A2B4A9FB0004FE748 /* MatchLogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC8A892B4A9FB0004FE748 /* MatchLogDetailView.swift */; };
+		4DEC8A8C2B4AA598004FE748 /* MatchLogResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC8A8B2B4AA598004FE748 /* MatchLogResultView.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
 		4DF0D1F22B2C0CCD0065387A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */; };
@@ -162,6 +164,8 @@
 		4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
+		4DEC8A892B4A9FB0004FE748 /* MatchLogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogDetailView.swift; sourceTree = "<group>"; };
+		4DEC8A8B2B4AA598004FE748 /* MatchLogResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogResultView.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 				4D8D442E2B40641000C6D833 /* Component */,
 				4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */,
 				4D8D443C2B406A3900C6D833 /* MatchLogViewModel.swift */,
+				4DEC8A892B4A9FB0004FE748 /* MatchLogDetailView.swift */,
+				4DEC8A8B2B4AA598004FE748 /* MatchLogResultView.swift */,
 			);
 			path = MatchLog;
 			sourceTree = "<group>";
@@ -803,6 +809,7 @@
 				4D8D44452B41C50000C6D833 /* CheckSecondView.swift in Sources */,
 				4DD2BF8F2B2F15A600A732CD /* MbtiLogoType.swift in Sources */,
 				4DD2BFB12B2FD03A00A732CD /* ViewExt.swift in Sources */,
+				4DEC8A8A2B4A9FB0004FE748 /* MatchLogDetailView.swift in Sources */,
 				4DD2BFA52B2F2C0200A732CD /* MbtiLogo.swift in Sources */,
 				4DF0D2062B2C0EA60065387A /* MatchThirdView.swift in Sources */,
 				4DF0D2332B2C33C20065387A /* Font.swift in Sources */,
@@ -841,6 +848,7 @@
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
+				4DEC8A8C2B4AA598004FE748 /* MatchLogResultView.swift in Sources */,
 				4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */,
 				4D5A34DE2B427DE000A98D06 /* PacDTO.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
