@@ -43,7 +43,8 @@ struct FindResultView: View {
                 if findData != nil {
                     TabView(selection: $selectedTab) {
                         ForEach(Array(findData!.team.members.enumerated()), id: \.element) { idx, i in
-                            FindResultCeil(title: i.name, subTitle: i.mbti, strengths: i.strengths, weaknesses: i.weaknesses)
+                            let _ = print(i.mbti)
+                            FindResultCeil(title: i.name, subTitle: i.mbti, strengths: i.strengths, weaknesses: i.weaknesses, mbti: MbtiType.getType(i.name)!)
                                 .padding(.horizontal, 12)
                                 .tag(idx)
                         }
@@ -67,7 +68,7 @@ struct FindResultView: View {
                 if checkData != nil {
                     TabView(selection: $selectedTab) {
                         ForEach(Array(checkData!.team.members.enumerated()), id: \.element) { idx, i in
-                            FindResultCeil(title: i.mbti, subTitle: i.name, strengths: i.strengths, weaknesses: i.weaknesses)
+                            FindResultCeil(title: i.mbti, subTitle: i.name, strengths: i.strengths, weaknesses: i.weaknesses, mbti: MbtiType.getType(i.mbti) ?? .infj)
                                 .padding(.horizontal, 12)
                                 .tag(idx)
                         }

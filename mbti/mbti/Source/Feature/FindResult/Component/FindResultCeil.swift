@@ -13,6 +13,7 @@ struct FindResultCeil: View {
     let subTitle: String
     let strengths: String
     let weaknesses: String
+    let mbti: MbtiType
     
     var body: some View {
         HStack(spacing: 0) {
@@ -20,7 +21,7 @@ struct FindResultCeil: View {
             ScrollView(showsIndicators: false) {
                 
                 VStack(spacing: 0) {
-                    NameCircle(title, type: .green)
+                    NameCircle(title, type: mbti.nameCircleType)
                         .padding(.top, 24)
                     Text(subTitle)
                         .applyFontStyle(.title)
