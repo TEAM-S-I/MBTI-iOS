@@ -125,17 +125,21 @@ struct MatchResultView: View {
                             .applyFontStyle(.subtitle)
                             .padding()
                     } else if clickedDTO != nil && clickedDTO?.role != nil {
-                        Text("\(clickedDTO!.name)(\(clickedDTO!.mbti.rawValue))님은...")
-                            .applyFontStyle(.body)
-                            .toLeading()
-                        Text("'\(clickedDTO!.role!)'역할이 적합해요!")
-                            .applyFontStyle(.subtitle)
-                            .padding(.top, 4)
-                            .toLeading()
-                        Text(clickedDTO!.description!.insertNewline(30))
-                            .foregroundColor(.main300)
-                            .applyFontStyle(.body)
-                            .padding(.top, 16)
+                        VStack {
+                            Text("\(clickedDTO!.name)(\(clickedDTO!.mbti.rawValue))님은...")
+                                .applyFontStyle(.body)
+                                .toLeading()
+                            Text("'\(clickedDTO!.role!)'역할이 적합해요!")
+                                .applyFontStyle(.subtitle)
+                                .padding(.top, 4)
+                                .toLeading()
+                            Text(clickedDTO!.description!.insertNewline(30))
+                                .foregroundColor(.main300)
+                                .applyFontStyle(.body)
+                                .padding(.top, 16)
+                        }
+                        .padding()
+                        
                         MbtiTransparentButton("닫기") {
                             isDetailDialog = false
                         }
