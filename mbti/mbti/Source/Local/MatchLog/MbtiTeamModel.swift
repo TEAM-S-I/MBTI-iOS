@@ -44,3 +44,10 @@ extension MbtiTeamModel {
         }
     }
 }
+
+
+extension MbtiTeamModel {
+    func toDto() -> MbtiTeamDTO {
+        MbtiTeamDTO(name: self.name, members: self.members.map { $0.toDto() })
+    }
+}

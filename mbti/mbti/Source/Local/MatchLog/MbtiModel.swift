@@ -50,3 +50,11 @@ extension MbtiModel {
         }
     }
 }
+
+extension MbtiModel {
+    func toDto() -> MbtiDTO {
+        MbtiDTO(name: self.name,
+                mbti: MbtiType.getType(self.mbti)!,
+                description: self.desc)
+    }
+}
