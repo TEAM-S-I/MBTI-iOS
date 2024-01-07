@@ -15,13 +15,13 @@ struct MatchLogView: View {
     @StateObject var viewModel = MatchLogViewModel()
     
     var body: some View {
-        let model = MbtiMatchModel.findAll()
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(model, id: \.self) { i in
+                    ForEach(viewModel.models, id: \.self) { i in
                         MatchLogCeil(model: i) {
                             viewModel.resultData = i.data.map { $0.toDto() }
+                            viewModel.clickedModel = i
                             isLog = true
                         }
                     }

@@ -18,6 +18,9 @@ class MatchLogViewModel: ObservableObject {
     @Published var sideEffect: MatchResultSideEffect = .Result
     @Published var resultData: [MbtiTeamDTO] = []
     
+    @Published var models = MbtiMatchModel.findAll()
+    @Published var clickedModel: MbtiMatchModel? = nil
+    
     func getResult2() {
         
         var prompt: String = ""
@@ -36,13 +39,15 @@ class MatchLogViewModel: ObservableObject {
         AF.request("\(Secret.baseUrl)/make/description", method: .post, parameters: [
             "data": prompt
         ], encoding: JSONEncoding.default)
-        .responseDecodable(of: TeamResponse.self) { response in
+        .responseDecodable(of: TeamResponse.self) { [self] response in
                 switch response.result {
                 case .success(let res):
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.sideEffect = .Success
                     }
-                    self.resultData = res.team.map { $0.toDTO() }
+                    resultData = res.team.map { $0.toDTO() }
+                    let d = resultData.map { $0.toModel() }
+                    MbtiMatchModel.editMatchLog(matchLog: clickedModel!, data: d)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3 + 2) {
                         self.sideEffect = .Result
                     }

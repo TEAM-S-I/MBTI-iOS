@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchLogDetailView: View {
     
-    var viewModel: MatchLogViewModel
+    @State var viewModel: MatchLogViewModel
     
     var body: some View {
         VStack(spacing: 0) {

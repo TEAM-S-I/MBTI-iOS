@@ -40,10 +40,11 @@ extension MbtiMatchModel {
     }
     
     static func editMatchLog(matchLog: MbtiMatchModel,
-                             data: List<MbtiTeamModel>
+                             data: [MbtiTeamModel]
     ) {
         try! realm.write {
-            matchLog.data = data
+            matchLog.data.removeAll()
+            matchLog.data.append(objectsIn: data)
         }
     }
 }

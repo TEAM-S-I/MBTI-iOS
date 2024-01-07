@@ -92,36 +92,6 @@ struct MatchLogResultView: View {
                         .frame(height: 60)
                 }
             }
-//            if isSaveDialog {
-//                MbtiDialog(isActive: $isSaveDialog) {
-//                    Text("팀 매칭 기록을 저장하시겠습니까?")
-//                        .applyFontStyle(.subtitle)
-//                    MbtiTextField("매칭 제목", text: $text)
-//                        .padding(.top, 24)
-//                    HStack(spacing: 0) {
-//                        Spacer()
-//                        MbtiTransparentButton("아니요") {
-//                            isSaveDialog = false
-//                            NavigationUtil.popToRootView()
-//                        }
-//                        MbtiTransparentButton("저장") {
-//                            isSaveDialog = false
-//                            NavigationUtil.popToRootView()
-//                            // TODO: SAVE
-//                            let model = MbtiMatchModel()
-//                            
-//                            model.name = text.isEmpty ? "이름 없는 매칭" : text
-//                            model.data.append(objectsIn: resultData.map {
-//                                $0.toModel()
-//                            })
-//                            
-//                            MbtiMatchModel.addMatchLog(model)
-//                        }
-//                        .padding(.leading, 24)
-//                    }
-//                    .padding(.top, 36)
-//                }
-//            }
             if isDetailDialog {
                 MbtiDialog(isActive: $isDetailDialog) {
                     if isAds {
