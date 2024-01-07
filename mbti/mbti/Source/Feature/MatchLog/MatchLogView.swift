@@ -11,6 +11,7 @@ import RealmSwift
 struct MatchLogView: View {
     
     @Environment(\.dismiss) private var dismiss
+    @State var isLog = false
     
     var body: some View {
         let model = MbtiMatchModel.findAll()
@@ -20,12 +21,17 @@ struct MatchLogView: View {
                 VStack {
                     ForEach(model, id: \.self) { i in
                         MatchLogCeil(model: i) {
-                            
+                            isLog = true
                         }
                     }
                 }
             }
             .padding(.top, 144)
+            NavigationLink(isActive: $isLog) {
+                
+            } label: {
+                
+            }
         }
         .addMbtiLogo()
         .addBackButton {

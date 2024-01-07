@@ -15,7 +15,7 @@ struct MatchFirst: View {
     @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
-    @State var data: [MbtiDTO] = []
+    @State var data: [MbtiDTO] = isDebug ? dummy : []
     
     @State var clickedDTO: MbtiDTO?
     @State var fixName = ""

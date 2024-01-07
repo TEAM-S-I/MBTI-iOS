@@ -11,7 +11,7 @@ import GoogleMobileAds
 struct MatchResultView: View {
     
     let resultData: [MbtiTeamDTO]
-    let rewardAd: RewardedAd
+    @EnvironmentObject var rewardVM: RewardViewModel
     let callback: () -> Void
     
     @State var isSaveDialog: Bool = false
@@ -24,8 +24,6 @@ struct MatchResultView: View {
          callback: @escaping () -> Void
     ) {
         self.resultData = resultData
-        self.rewardAd = RewardedAd()
-        self.rewardAd.load()
         self.callback = callback
     }
     
@@ -138,7 +136,7 @@ struct MatchResultView: View {
                                 .applyFontStyle(.body)
                                 .padding(.top, 16)
                         }
-                        .padding()
+                        .padding(5)
                         
                         MbtiTransparentButton("닫기") {
                             isDetailDialog = false
@@ -159,7 +157,8 @@ struct MatchResultView: View {
     }
     
     func showAds() {
-        let result = self.rewardAd.showAd {
+        let result = rewardVM.reward.showAd {
+            print("callback - matchreusltview")
             callback()
         }
         print("result - \(result)")

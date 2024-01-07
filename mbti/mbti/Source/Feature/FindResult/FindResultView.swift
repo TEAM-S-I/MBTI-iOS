@@ -82,7 +82,6 @@ struct FindResultView: View {
                             Circle()
                                 .fill(i == selectedTab ? Color.main800 : Color.main300)
                                 .frame(width: 6, height: 6)
-                                
                         }
                     }
                     .padding(.top, 28)

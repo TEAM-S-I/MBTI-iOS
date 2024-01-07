@@ -79,6 +79,7 @@
 		4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFB72B2FD69F00A732CD /* FindView.swift */; };
 		4DD2BFBB2B2FD6BB00A732CD /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */; };
 		4DD2BFBE2B2FE3CB00A732CD /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */; };
+		4DEC8A882B4A9B54004FE748 /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */; };
 		4DF0D1EB2B2C0CCC0065387A /* mbtiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */; };
 		4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */; };
 		4DF0D1F22B2C0CCD0065387A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0D1F12B2C0CCD0065387A /* Preview Assets.xcassets */; };
@@ -160,6 +161,7 @@
 		4DD2BFB72B2FD69F00A732CD /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
 		4DD2BFBA2B2FD6BB00A732CD /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		4DD2BFBD2B2FE3CB00A732CD /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
 		4DF0D1E72B2C0CCC0065387A /* mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbtiApp.swift; sourceTree = "<group>"; };
 		4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 			children = (
 				4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */,
 				4D155B452B3AF2E600E64C24 /* Secret.swift */,
+				4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				4D155B4F2B3AFD0F00E64C24 /* TeamResponse.swift in Sources */,
 				4DD2BFB52B2FD65C00A732CD /* TabViewType.swift in Sources */,
 				4DD2BFAB2B2FB9DD00A732CD /* MbtiType.swift in Sources */,
+				4DEC8A882B4A9B54004FE748 /* RewardViewModel.swift in Sources */,
 				4D39B49A2B3E75B5001DBC24 /* LoadingView.swift in Sources */,
 				4D39B4AB2B3EA2C0001DBC24 /* NavigationUtil.swift in Sources */,
 				4D39B4A92B3E9848001DBC24 /* HomeNavigationCeilView.swift in Sources */,
