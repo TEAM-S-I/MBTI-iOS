@@ -13,10 +13,15 @@ struct MbtiGrid: View {
     
     var data: [MbtiDTO]
     var addCallback: () -> Void
+    var fixCallback: (MbtiDTO) -> Void
     
-    init(data: [MbtiDTO], addCallback: @escaping () -> Void) {
+    init(data: [MbtiDTO], 
+         addCallback: @escaping () -> Void,
+         fixCallback: @escaping (MbtiDTO) -> Void
+    ) {
         self.data = data
         self.addCallback = addCallback
+        self.fixCallback = fixCallback
     }
     
     var body: some View {
@@ -24,6 +29,9 @@ struct MbtiGrid: View {
             LazyVGrid(columns: columns, alignment: .center) {
                 ForEach(data, id: \.self) { model in
                     NormalNameCircle(model: model)
+                        .onTapGesture {
+                            fixCallback(model)
+                        }
                 }
                 HStack {
                     VStack {
