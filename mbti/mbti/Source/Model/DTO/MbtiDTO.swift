@@ -10,10 +10,10 @@ import Foundation
 
 struct MbtiDTO: Hashable, Identifiable {
     var id = UUID()
-    let name: String
-    let mbti: MbtiType
-    let role: String?
-    let description: String?
+    var name: String
+    var mbti: MbtiType
+    var role: String?
+    var description: String?
     
     init(id: UUID = UUID(),
          name: String,
