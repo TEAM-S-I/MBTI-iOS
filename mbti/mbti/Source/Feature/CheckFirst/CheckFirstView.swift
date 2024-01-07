@@ -34,6 +34,8 @@ struct CheckFirstView: View {
                         .padding(.top, 100)
                     MbtiGrid(data: data) {
                         isAddActive = true
+                    } fixCallback: { dto in
+                        
                     }
                     .padding(.top, 64)
                     Spacer()

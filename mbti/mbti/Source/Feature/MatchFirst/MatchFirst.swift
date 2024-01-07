@@ -11,10 +11,15 @@ struct MatchFirst: View {
     
     @Environment(\.dismiss) private var dismiss
     @State var isAddActive = false
+    @State var isFixActive = false
     @State var isWarnActive = false
     @State var name = ""
     @State var mbti: MbtiType? = nil
     @State var data: [MbtiDTO] = []
+    
+    @State var clickedDTO: MbtiDTO?
+    @State var fixName = ""
+    @State var fixMbti: MbtiType? = nil
     
     var body: some View {
         ZStack {
@@ -27,6 +32,9 @@ struct MatchFirst: View {
                         .padding(.top, 100)
                     MbtiGrid(data: data) {
                         isAddActive = true
+                    } fixCallback: { clickedDTO in
+                        self.clickedDTO = clickedDTO
+                        self.isFixActive = true
                     }
                     .padding(.top, 64)
                     Spacer()
@@ -64,6 +72,55 @@ struct MatchFirst: View {
                             mbti = nil
                             isAddActive = false
                             return
+                        }
+                    }
+                    .padding(.top, 16)
+                    .padding(.bottom, 4)
+                }
+            }
+            if isFixActive {
+                MbtiDialog(isActive: $isFixActive) {
+                    Text("팀원 정보 수정")
+                        .applyFontStyle(.subtitle)
+                        .padding(.leading, 4)
+                        .toLeading()
+                    MbtiTextField("이름을 입력해 주세요", text: $fixName, type: .topRadius)
+                        .padding(.top, 12)
+                    MbtiDropDown(choicedElement: $fixMbti, type: .bottomRadius)
+                    ZStack {
+                        HStack {
+                            Button {
+                                self.data = data.filter {
+                                    $0.id != clickedDTO?.id
+                                }
+                                isFixActive = false
+                            } label: {
+                                Text("삭제")
+                                    .foregroundColor(.red)
+                                    .applyFontStyle(.label)
+                            }
+                            Spacer()
+                        }
+                        MbtiTransparentButton("수정 완료", fontStyle: .body) {
+                            guard fixName.isEmpty || fixMbti == nil else {
+                                var oldData = Array(data)
+                                for var (idx, i) in Array(oldData.enumerated()) {
+                                    if i.id == clickedDTO?.id {
+                                        var d = i
+                                        d.name = fixName
+                                        fixName = ""
+                                        d.mbti = fixMbti!
+                                        fixMbti = nil
+                                        isFixActive = false
+                                        oldData[idx] = d
+                                        data = oldData
+                                        print("changed to \(data) \(oldData)")
+                                        return
+                                    }
+                                }
+                                
+                                return
+                            }
                         }
                     }
                     .padding(.top, 16)
