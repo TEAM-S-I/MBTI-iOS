@@ -9,7 +9,7 @@ import Foundation
 import GoogleMobileAds
 
 final class RewardedAd {
-    private let rewardId = "ca-app-pub-3940256099942544/1712485313" // TODO: replace this with your own Ad ID
+    private let rewardId = "ca-app-pub-2331712080648578/9227178786" // TODO: replace this with your own Ad ID
     
     var rewardedAd: GADRewardedAd?
     

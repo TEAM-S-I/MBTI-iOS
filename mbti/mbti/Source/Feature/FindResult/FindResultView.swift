@@ -44,7 +44,7 @@ struct FindResultView: View {
                     TabView(selection: $selectedTab) {
                         ForEach(Array(findData!.team.members.enumerated()), id: \.element) { idx, i in
                             let _ = print(i.mbti)
-                            FindResultCeil(title: i.name, subTitle: i.mbti, strengths: i.strengths, weaknesses: i.weaknesses, mbti: MbtiType.getType(i.name)!)
+                            FindResultCeil(title: i.name, subTitle: i.mbti, strengths: i.strengths, weaknesses: i.weaknesses, mbti: MbtiType.getType(i.name) ?? .entp)
                                 .padding(.horizontal, 12)
                                 .tag(idx)
                         }
