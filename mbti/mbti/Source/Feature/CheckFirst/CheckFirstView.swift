@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let isDebug = true
+let isDebug = false
 let dummy = [
     MbtiDTO(name: "Hello", mbti: .enfj),
     MbtiDTO(name: "제임스", mbti: .infj),

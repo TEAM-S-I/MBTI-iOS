@@ -39,6 +39,9 @@
 		4D5A34E02B427DF600A98D06 /* PacTeamDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34DF2B427DF600A98D06 /* PacTeamDTO.swift */; };
 		4D5A34E22B427E0500A98D06 /* PacMemberDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34E12B427E0500A98D06 /* PacMemberDTO.swift */; };
 		4D6565D42B30FC97009BA840 /* MatchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6565D32B30FC97009BA840 /* MatchFirst.swift */; };
+		4D71C9522B68D182009B44EC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4D71C9512B68D182009B44EC /* Lottie */; };
+		4D71C9552B68D1A0009B44EC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71C9542B68D1A0009B44EC /* LottieView.swift */; };
+		4D71C9572B68D208009B44EC /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D71C9562B68D208009B44EC /* lottie.json */; };
 		4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */; };
 		4D8D44302B40641B00C6D833 /* MatchLogCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */; };
 		4D8D44332B40654F00C6D833 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8D44322B40654F00C6D833 /* Realm */; };
@@ -126,6 +129,8 @@
 		4D5A34DF2B427DF600A98D06 /* PacTeamDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacTeamDTO.swift; sourceTree = "<group>"; };
 		4D5A34E12B427E0500A98D06 /* PacMemberDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacMemberDTO.swift; sourceTree = "<group>"; };
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
+		4D71C9542B68D1A0009B44EC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		4D71C9562B68D208009B44EC /* lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
 		4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogView.swift; sourceTree = "<group>"; };
 		4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogCeil.swift; sourceTree = "<group>"; };
 		4D8D44382B40657A00C6D833 /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
@@ -184,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D71C9522B68D182009B44EC /* Lottie in Frameworks */,
 				4DC227422B42B8D600849C8F /* GoogleMobileAds in Frameworks */,
 				4D8D44352B40654F00C6D833 /* RealmSwift in Frameworks */,
 				4D8D44332B40654F00C6D833 /* Realm in Frameworks */,
@@ -279,6 +285,15 @@
 				4D155B3E2B3AEB0B00E64C24 /* MatchFirstViewModel.swift */,
 			);
 			path = MatchFirst;
+			sourceTree = "<group>";
+		};
+		4D71C9532B68D19A009B44EC /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				4D71C9562B68D208009B44EC /* lottie.json */,
+				4D71C9542B68D1A0009B44EC /* LottieView.swift */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		4D8D442B2B4063CD00C6D833 /* MatchLog */ = {
@@ -665,6 +680,7 @@
 		4DF0D1FF2B2C0E660065387A /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4D71C9532B68D19A009B44EC /* Lottie */,
 				4DD220042B35013B0015311B /* Mbti */,
 				4DD21FFF2B33F7AF0015311B /* Dialog */,
 				4DD2BFAC2B2FD01100A732CD /* Shape */,
@@ -735,6 +751,7 @@
 				4D8D44322B40654F00C6D833 /* Realm */,
 				4D8D44342B40654F00C6D833 /* RealmSwift */,
 				4DC227412B42B8D600849C8F /* GoogleMobileAds */,
+				4D71C9512B68D182009B44EC /* Lottie */,
 			);
 			productName = mbti;
 			productReference = 4DF0D1E72B2C0CCC0065387A /* mbti.app */;
@@ -768,6 +785,7 @@
 				4D155B422B3AF29300E64C24 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				4DC227402B42B8D600849C8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				4D71C9502B68D182009B44EC /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 4DF0D1E82B2C0CCC0065387A /* Products */;
 			projectDirPath = "";
@@ -783,6 +801,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D71C9572B68D208009B44EC /* lottie.json in Resources */,
 				4DF0D1F22B2C0CCD0065387A /* Preview Assets.xcassets in Resources */,
 				4DF0D22E2B2C32C00065387A /* GangwonEduAll-OTFLight.otf in Resources */,
 				4DF0D1EF2B2C0CCD0065387A /* Assets.xcassets in Resources */,
@@ -844,6 +863,7 @@
 				4DD220092B3502420015311B /* CheckFirstView.swift in Sources */,
 				4D155B462B3AF2E600E64C24 /* Secret.swift in Sources */,
 				4DD2BF9F2B2F26AD00A732CD /* MbtiTextFieldType.swift in Sources */,
+				4D71C9552B68D1A0009B44EC /* LottieView.swift in Sources */,
 				4DD2BFB82B2FD69F00A732CD /* FindView.swift in Sources */,
 				4DD2BF922B2F17DA00A732CD /* Shadow.swift in Sources */,
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
@@ -1093,6 +1113,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		4D71C9502B68D182009B44EC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
 		4D8D44312B40654F00C6D833 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -1116,6 +1144,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D155B422B3AF29300E64C24 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		4D71C9512B68D182009B44EC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D71C9502B68D182009B44EC /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		4D8D44322B40654F00C6D833 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;

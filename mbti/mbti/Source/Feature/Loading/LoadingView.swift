@@ -18,7 +18,7 @@ struct LoadingView: View {
             Spacer()
             VStack {
                 Spacer()
-                Circle()
+                LottieView(jsonName: "lottie")
                     .foregroundColor(.main800)
                     .frame(width: 78, height: 78)
                 Text(title)
