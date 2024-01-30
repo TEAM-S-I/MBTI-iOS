@@ -42,6 +42,9 @@
 		4D71C9522B68D182009B44EC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4D71C9512B68D182009B44EC /* Lottie */; };
 		4D71C9552B68D1A0009B44EC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71C9542B68D1A0009B44EC /* LottieView.swift */; };
 		4D71C9572B68D208009B44EC /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D71C9562B68D208009B44EC /* lottie.json */; };
+		4D71C95A2B691CC7009B44EC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71C9592B691CC7009B44EC /* SettingView.swift */; };
+		4D71C95C2B691CCC009B44EC /* SettingCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71C95B2B691CCC009B44EC /* SettingCeil.swift */; };
+		4D71C95E2B691DA6009B44EC /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71C95D2B691DA6009B44EC /* Setting.swift */; };
 		4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */; };
 		4D8D44302B40641B00C6D833 /* MatchLogCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */; };
 		4D8D44332B40654F00C6D833 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8D44322B40654F00C6D833 /* Realm */; };
@@ -131,6 +134,9 @@
 		4D6565D32B30FC97009BA840 /* MatchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFirst.swift; sourceTree = "<group>"; };
 		4D71C9542B68D1A0009B44EC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		4D71C9562B68D208009B44EC /* lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
+		4D71C9592B691CC7009B44EC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		4D71C95B2B691CCC009B44EC /* SettingCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCeil.swift; sourceTree = "<group>"; };
+		4D71C95D2B691DA6009B44EC /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		4D8D442C2B4063DB00C6D833 /* MatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogView.swift; sourceTree = "<group>"; };
 		4D8D442F2B40641B00C6D833 /* MatchLogCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLogCeil.swift; sourceTree = "<group>"; };
 		4D8D44382B40657A00C6D833 /* MbtiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiModel.swift; sourceTree = "<group>"; };
@@ -294,6 +300,16 @@
 				4D71C9542B68D1A0009B44EC /* LottieView.swift */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		4D71C9582B691CC3009B44EC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4D71C9592B691CC7009B44EC /* SettingView.swift */,
+				4D71C95B2B691CCC009B44EC /* SettingCeil.swift */,
+				4D71C95D2B691DA6009B44EC /* Setting.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		4D8D442B2B4063CD00C6D833 /* MatchLog */ = {
@@ -628,6 +644,7 @@
 		4DF0D1F92B2C0D0C0065387A /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				4D71C9582B691CC3009B44EC /* Setting */,
 				4DD2BFBF2B2FE44E00A732CD /* Home */,
 				4DD2BFBC2B2FE3C500A732CD /* LaunchScreen */,
 				4DD2BFA02B2F2B9600A732CD /* Test */,
@@ -823,6 +840,7 @@
 				4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */,
 				4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */,
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
+				4D71C95C2B691CCC009B44EC /* SettingCeil.swift in Sources */,
 				4D155B412B3AF1B300E64C24 /* MatchSecondViewModel.swift in Sources */,
 				4DD2BF892B2F116200A732CD /* MbtiLogoImage.swift in Sources */,
 				4D8D44452B41C50000C6D833 /* CheckSecondView.swift in Sources */,
@@ -869,6 +887,7 @@
 				4DD2BFAE2B2FD01A00A732CD /* RoundedCorner.swift in Sources */,
 				4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */,
 				4DEC8A8C2B4AA598004FE748 /* MatchLogResultView.swift in Sources */,
+				4D71C95A2B691CC7009B44EC /* SettingView.swift in Sources */,
 				4D155B5B2B3AFFE300E64C24 /* PlanTeamResponse.swift in Sources */,
 				4D5A34DE2B427DE000A98D06 /* PacDTO.swift in Sources */,
 				4DD2BF952B2F1E7300A732CD /* NameCircle.swift in Sources */,
@@ -885,6 +904,7 @@
 				4DD2BFA82B2FB8CC00A732CD /* MbtiDropDown.swift in Sources */,
 				4DD2BF9D2B2F22CA00A732CD /* MbtiTextField.swift in Sources */,
 				4D39B49C2B3E7691001DBC24 /* CompleteView.swift in Sources */,
+				4D71C95E2B691DA6009B44EC /* Setting.swift in Sources */,
 				4D8D443D2B406A3900C6D833 /* MatchLogViewModel.swift in Sources */,
 				4D8D443B2B4069A200C6D833 /* MbtiTeamModel.swift in Sources */,
 				4D155B3F2B3AEB0B00E64C24 /* MatchFirstViewModel.swift in Sources */,

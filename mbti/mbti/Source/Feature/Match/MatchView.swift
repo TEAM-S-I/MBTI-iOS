@@ -10,41 +10,54 @@ import SwiftUI
 struct MatchView: View {
     
     var body: some View {
-        HStack {
-            Spacer()
-            VStack(spacing: 0) {
+        ZStack {
+            NavigationLink {
+                SettingView()
+            } label: {
+                Image("Setting")
+                    .resizable()
+                    .frame(width: 28, height: 28)
+                    .toTrailing()
+                    .toTop()
+                    .padding(24)
+            }
+            HStack {
                 Spacer()
-                MbtiLogoImage(type: .normal)
-                Text("팀 매칭")
-                    .applyFontStyle(.title)
-                    .padding(.top, 12)
-                NavigationLink {
-                    MatchFirst()
-                } label: {
-                    MbtiButton("MBTI 팀 매칭 시작") {
-                    }
-                    .disabled(true)
-                    .padding(.top, 32)
-                }
-                
-                NavigationLink {
-                    MatchLogView()
-                } label: {
-                    Button {
-                        print("match log")
+                VStack(spacing: 0) {
+                    Spacer()
+                    MbtiLogoImage(type: .normal)
+                    Text("팀 매칭")
+                        .applyFontStyle(.title)
+                        .padding(.top, 12)
+                    NavigationLink {
+                        MatchFirst()
                     } label: {
-                        Text("매칭 기록 보기")
-                            .foregroundColor(.gray500)
-                            .applyFontStyle(.label)
-                            .underline()
+                        MbtiButton("MBTI 팀 매칭 시작") {
+                        }
+                        .disabled(true)
+                        .padding(.top, 32)
                     }
-                    .disabled(true)
-                    .padding(.top, 24)
+                    
+                    NavigationLink {
+                        MatchLogView()
+                    } label: {
+                        Button {
+                            print("match log")
+                        } label: {
+                            Text("매칭 기록 보기")
+                                .foregroundColor(.gray500)
+                                .applyFontStyle(.label)
+                                .underline()
+                        }
+                        .disabled(true)
+                        .padding(.top, 24)
+                    }
+                    
+                    Spacer()
                 }
-                
                 Spacer()
             }
-            Spacer()
         }
+        
     }
 }
