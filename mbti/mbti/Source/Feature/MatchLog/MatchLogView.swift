@@ -16,7 +16,7 @@ struct MatchLogView: View {
     
     var body: some View {
         VStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     ForEach(viewModel.models, id: \.self) { i in
                         MatchLogCeil(model: i) {

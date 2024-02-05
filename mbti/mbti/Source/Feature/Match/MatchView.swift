@@ -11,16 +11,6 @@ struct MatchView: View {
     
     var body: some View {
         ZStack {
-            NavigationLink {
-                SettingView()
-            } label: {
-                Image("Setting")
-                    .resizable()
-                    .frame(width: 28, height: 28)
-                    .toTrailing()
-                    .toTop()
-                    .padding(24)
-            }
             HStack {
                 Spacer()
                 VStack(spacing: 0) {

@@ -33,6 +33,17 @@ struct HomeView: View {
                     .indexViewStyle(.page(backgroundDisplayMode: .never))
                     .ignoresSafeArea()
                     .addMbtiLogo()
+                    
+                    NavigationLink {
+                        SettingView()
+                    } label: {
+                        Image("Setting")
+                            .resizable()
+                            .frame(width: 28, height: 28)
+                            .padding(24)
+                    }
+                    .toTrailing()
+                    .toTop()
                     VStack(spacing: 0) {
                         Spacer()
                         HStack {
