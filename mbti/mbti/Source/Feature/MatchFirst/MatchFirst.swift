@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct MatchFirst: View {
     
@@ -47,6 +48,9 @@ struct MatchFirst: View {
                         .disabled(data.count >= 2)
                     }
                     .padding(.vertical, 12)
+                    
+                    GADBannerViewController()
+                        .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
                 }
                 Spacer()
             }

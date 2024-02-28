@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealmSwift
+import GoogleMobileAds
 
 struct MatchLogView: View {
     
@@ -33,6 +34,8 @@ struct MatchLogView: View {
             } label: {
                 
             }
+            GADBannerViewController()
+                .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
         }
         .addMbtiLogo()
         .addBackButton {

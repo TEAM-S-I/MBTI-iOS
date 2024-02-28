@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct MatchSecondView: View {
     
@@ -50,6 +51,9 @@ struct MatchSecondView: View {
                         .disabled(true)
                     }
                     .padding(.vertical, 12)
+                    
+                    GADBannerViewController()
+                        .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
                 }
                 Spacer()
             }

@@ -38,7 +38,7 @@ struct MatchResultView: View {
                     .applyFontStyle(.label)
                     .padding(.top, 12)
                     .padding(.bottom, 36)
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack {
                         ForEach(resultData, id: \.self) {
                             MatchResultTeamCeil(teamName: $0.name, members: $0.members) { i in
@@ -54,6 +54,8 @@ struct MatchResultView: View {
                     isSaveDialog = true
                 }
                 .padding(.vertical, 12)
+                GADBannerViewController()
+                    .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
             }
             .addMbtiLogo()
             
@@ -90,6 +92,7 @@ struct MatchResultView: View {
                 MbtiDialog(isActive: $isSaveDialog) {
                     Text("팀 매칭 기록을 저장하시겠습니까?")
                         .applyFontStyle(.subtitle)
+                        .padding(.top, 16)
                     MbtiTextField("매칭 제목", text: $text)
                         .padding(.top, 24)
                     HStack(spacing: 0) {

@@ -45,7 +45,7 @@ struct MatchLogResultView: View {
                     .applyFontStyle(.label)
                     .padding(.top, 12)
                     .padding(.bottom, 36)
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack {
                         ForEach(resultData, id: \.self) {
                             MatchResultTeamCeil(teamName: $0.name, members: $0.members) { i in
@@ -97,7 +97,7 @@ struct MatchLogResultView: View {
                     if isAds {
                         Text("광고를 보면 팀원들의\n역할과 특징을 알 수 있어요")
                             .applyFontStyle(.subtitle)
-                            .padding()
+                            .padding(.top, 16)
                     } else if clickedDTO != nil {
                         VStack {
                             Text("\(clickedDTO!.name)(\(clickedDTO!.mbti.rawValue))님은...")

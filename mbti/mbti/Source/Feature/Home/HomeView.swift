@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealmSwift
+import GoogleMobileAds
 
 struct HomeView: View {
     
@@ -57,6 +58,7 @@ struct HomeView: View {
                             }
                         }
                     }
+
                 }
             }
             if isLoading {
