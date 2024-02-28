@@ -85,7 +85,7 @@ struct MatchResultView: View {
                         .shadow1()
                     }
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 120)
                 }
             }
             if isSaveDialog {

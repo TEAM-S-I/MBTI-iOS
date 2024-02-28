@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 let isDebug = false
 let dummy = [
@@ -55,6 +56,8 @@ struct CheckFirstView: View {
                         .disabled(data.count >= 2)
                     }
                     .padding(.vertical, 12)
+                    GADBannerViewController()
+                        .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
                 }
                 Spacer()
             }

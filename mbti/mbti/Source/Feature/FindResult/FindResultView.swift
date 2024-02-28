@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct FindResultView: View {
     
@@ -93,6 +94,8 @@ struct FindResultView: View {
                     NavigationUtil.popToRootView()
                 }
                 .padding(.vertical, 12)
+                GADBannerViewController()
+                    .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
             }
         }
         .addMbtiLogo()
