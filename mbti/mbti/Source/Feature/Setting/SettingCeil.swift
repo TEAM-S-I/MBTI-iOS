@@ -22,6 +22,7 @@ struct SettingCeil: View {
     var body: some View {
         HStack {
             Text(title)
+                .foregroundStyle(Color.black)
                 .font(.body)
                 .padding(.leading, 24)
             Spacer()
@@ -32,6 +33,7 @@ struct SettingCeil: View {
                     .padding(.trailing, 24)
             } else {
                 Text(description)
+                    .foregroundStyle(Color.black)
                     .font(.body)
                     .padding(.trailing, 24)
             }

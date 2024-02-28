@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
-fileprivate let settings = [
-    Setting("개인정보 약관", link: ""),
-    Setting("서비스 이용정책", link: ""),
-    Setting("버전", description: "v1.0")
-]
 
 struct SettingView: View {
+    
+    private let settings = [
+        Setting("개인정보 약관", link: ""),
+        Setting("서비스 이용정책", link: ""),
+        Setting("버전", description: "v1.0")
+    ]
     
     @Environment(\.dismiss) var dismiss
     
@@ -30,8 +32,10 @@ struct SettingView: View {
                         }
                 }
             }
-            .padding(.top, 64)
+            .padding(.top, 72)
             Spacer()
+            GADBannerViewController()
+                .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
         }
         .addMbtiLogo()
         .addBackButton {
