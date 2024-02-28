@@ -35,6 +35,7 @@
 		4D3C1E232B32825A000B2234 /* MatchSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E222B32825A000B2234 /* MatchSecondView.swift */; };
 		4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E252B32B553000B2234 /* FindResultView.swift */; };
 		4D3C1E292B32B5C3000B2234 /* FindResultCeil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */; };
+		4D4D7AC12B8ECE160088BFBE /* GADBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D7AC02B8ECE160088BFBE /* GADBannerViewController.swift */; };
 		4D5A34DE2B427DE000A98D06 /* PacDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34DD2B427DE000A98D06 /* PacDTO.swift */; };
 		4D5A34E02B427DF600A98D06 /* PacTeamDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34DF2B427DF600A98D06 /* PacTeamDTO.swift */; };
 		4D5A34E22B427E0500A98D06 /* PacMemberDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34E12B427E0500A98D06 /* PacMemberDTO.swift */; };
@@ -128,6 +129,8 @@
 		4D3C1E222B32825A000B2234 /* MatchSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSecondView.swift; sourceTree = "<group>"; };
 		4D3C1E252B32B553000B2234 /* FindResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultView.swift; sourceTree = "<group>"; };
 		4D3C1E282B32B5C3000B2234 /* FindResultCeil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResultCeil.swift; sourceTree = "<group>"; };
+		4D4088642B887DBE002AA616 /* mbti.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mbti.entitlements; sourceTree = "<group>"; };
+		4D4D7AC02B8ECE160088BFBE /* GADBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADBannerViewController.swift; sourceTree = "<group>"; };
 		4D5A34DD2B427DE000A98D06 /* PacDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacDTO.swift; sourceTree = "<group>"; };
 		4D5A34DF2B427DF600A98D06 /* PacTeamDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacTeamDTO.swift; sourceTree = "<group>"; };
 		4D5A34E12B427E0500A98D06 /* PacMemberDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacMemberDTO.swift; sourceTree = "<group>"; };
@@ -611,6 +614,7 @@
 		4DF0D1E92B2C0CCC0065387A /* mbti */ = {
 			isa = PBXGroup;
 			children = (
+				4D4088642B887DBE002AA616 /* mbti.entitlements */,
 				4DF0D1F82B2C0CED0065387A /* Source */,
 				4DF0D20C2B2C15230065387A /* Fonts */,
 				4DF0D1EE2B2C0CCD0065387A /* Assets.xcassets */,
@@ -672,6 +676,7 @@
 				4DF0D1EA2B2C0CCC0065387A /* mbtiApp.swift */,
 				4D155B452B3AF2E600E64C24 /* Secret.swift */,
 				4DEC8A872B4A9B53004FE748 /* RewardViewModel.swift */,
+				4D4D7AC02B8ECE160088BFBE /* GADBannerViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -838,6 +843,7 @@
 				4DD220012B33F7B40015311B /* Dialog.swift in Sources */,
 				4D3C1E262B32B553000B2234 /* FindResultView.swift in Sources */,
 				4D155B3B2B3ADE2D00E64C24 /* DialogTestView.swift in Sources */,
+				4D4D7AC12B8ECE160088BFBE /* GADBannerViewController.swift in Sources */,
 				4D8D442D2B4063DB00C6D833 /* MatchLogView.swift in Sources */,
 				4DF0D2022B2C0E990065387A /* HomeView.swift in Sources */,
 				4D71C95C2B691CCC009B44EC /* SettingCeil.swift in Sources */,
@@ -1044,9 +1050,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mbti/mbti.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mbti/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mbti/Info.plist;
@@ -1075,9 +1083,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mbti/mbti.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mbti/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mbti/Info.plist;
